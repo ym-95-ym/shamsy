@@ -21,7 +21,6 @@ const VergangeneProj = () => {
       year: "2022-2024",
       description: "Die Wiedereröffnung einer kriegsbeschädigten Schule wurde durch die Mobilisierung von Freiwilligen, die Reparatur der Infrastruktur und die Wiederherstellung sicherer Lernräume ermöglicht. Gemeinsam gaben wir Kindern ihre Zukunft zurück – einen Ort, an dem Hoffnung und Bildung wieder gedeihen können.",
       beneficiaries: "400 Schüler",
-      cost: "€20,000",
       challenges: "Beschaffung von Materialien, Transport in unsichere Gebiete, Koordination mit lokalen Partnern unter Geheimhaltung",
       impact: "Bessere Lernbedingungen für eine ganze Generation",
       icon: GraduationCap,
@@ -35,7 +34,6 @@ const VergangeneProj = () => {
       location: "Verschiedene Krankenhäuser",
       year: "2011-2024",
       description: "Lebensverändernde Operationen und medizinische Eingriffe für bedürftige Patienten und Kindedr wurden finanziert und koordiniert – einschließlich der Bereitstellung von spezialisierten Hörgeräten für Kriegsbetroffene. Gemeinsam schenkten wir Menschen ihre Gesundheit und Lebensqualität zurück, die durch den Krieg verloren gegangen waren.",
-      cost: "€30,000",
       challenges: "Suche nach bedürftigen Patienten in Kriegszeiten, Koordination mit Ärzten und Krankenhäuser, Anschaffung medizinischer Geräte",
       impact: "Menschenleben gerettet, Neue Möglichkeiten geschaffen",
       icon: Heart,
@@ -50,7 +48,6 @@ const VergangeneProj = () => {
       year: "2011-2024",
       description: "15 widerstandsfähige Unterkünfte wurden für Familien errichtet, die durch den Krieg im ländlichen Damaskus ihr Zuhause verloren haben – von der Planung über den Bau bis hin zur vollständigen Ausstattung. Gemeinsam mit unseren lokalen Partner NGOs sorgte unser transparentes Auswahlverfahren dafür, dass die Hilfe die Familien erreichte, die sie am dringendsten benötigten.",
       beneficiaries: "120 Familien",
-      cost: "€200,000",
       challenges: "Materialtransport unter Kriegsbedingungen, Sicherheit der Bauteams, Geheimhaltung vor dem Regime",
       impact: "Über 500 Menschen erhielten sicheren Wohnraum",
       icon: Home,
@@ -65,21 +62,19 @@ const VergangeneProj = () => {
       year: "2011-2024",
       description: "Winterhilfe, Kleidung und Nahrungsmittel erreichten vertriebene Familien, während Jugendliche und Frauen durch IT- und Sprachworkshops neue Perspektiven erhielten. Gemeinsam schafften wir nicht nur Überlebenshilfe, sondern auch Wege in eine selbstbestimmte Zukunft.",
       beneficiaries: "Menschen die mit Nichts fliehen mussten, Kinder, Frauen",
-      cost: "Kleidung, Essen",
       challenges: "Materialtransport unter Kriegsbedingungen und von Deutschland nach Syrien, Geheimhaltung vor dem Regime",
       icon: Home,
       status: "laufend",
       image: "/shamsy/images/kindergruppe.jpg"
     },
     {
-      id: 4,
+      id: 5,
       title: "Medikamente bereitgestellt",
       category: "Humanitär",
       location: "Damascus und Umgebung",
       year: "2011-2024",
       description: "Beschaffung und Lieferung von Medikamenten und kritischen Diagnostikgeräten zur Verbesserung der Notfall- und Spezialversorgung. Sichere Lieferung und Schulung des Krankenhauspersonals in Douma wurden gewährleistet – damit lebensrettende Hilfe dort ankommt, wo sie am dringendsten gebraucht wird.",
       beneficiaries: "Menschen in Not und Kriegsbetroffene",
-      cost: "€10,000",
       challenges: "Materialtransport unter Kriegsbedingungen und von Deutschland nach Syrien, Geheimhaltung vor dem Regime",
       icon: Home,
       status: "Erfolgreich abgeschlossen",
@@ -272,7 +267,7 @@ const VergangeneProj = () => {
               </div>
               
               <blockquote className="text-2xl md:text-3xl font-light italic text-foreground mb-8 leading-relaxed">
-                "Jedes dieser Projekte kam aus der Not. Unser Diktator hat ganze Städte und viele Familien zerstört. Er hat alle rote Linien überschritten. Hilfe war dort verboten, wo Bomben gefallen sind. Familien von politischen Gefangenen wurden vertrieben. Verletzte aus Kriegsgebieten durften nur heimlich versorgt werden. Es war grausam... Aber die Diktatur ist vorbei!"
+                "Jedes dieser Projekte kam aus der Not. Unser Diktator hat ganze Städte und viele Familien zerstört. Er hat alle rote Linien überschritten. Hilfe war dort verboten, wo Bomben und chemische Waffen gefallen sind. Familien von politischen Gefangenen wurden vertrieben. Verletzte aus Kriegsgebieten durften nur heimlich versorgt werden. Es war grausam... Aber die Diktatur ist vorbei!"
               </blockquote>
               
               <cite className="text-lg font-semibold text-shamsy-primary">
