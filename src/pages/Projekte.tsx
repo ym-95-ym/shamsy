@@ -21,7 +21,7 @@ const Projekte = () => {
       id: 1,
       category: "Humanitär",
       title: "Monatsgehalt an Familie in Not schenken",
-      description: "JA! Tatsächlich sind die Gehälter in Syrien sehr niedrig, trotz neulicher Erhöhung seit Dezember 2024. Die Waren und Grundnahrungsmittel aber nicht. Sogar an mehreren Stellen wie in Deutschland! Mit einer -für Deutschland- nicht allzu hohen Summe können Sie die Möglichkeiten einer Familie in Not für einen Monat zu verdoppeln.",
+      description: "JA! Tatsächlich sind die Gehälter in Syrien sehr niedrig, trotz neulicher Erhöhung seit Dezember 2024. Die Waren und Grundnahrungsmittel aber nicht. Mit einer Summe <100 € können Sie eine Familie in Not für einen Monat enorm unterstützen.",
       icon: Heart,
       image: "/shamsy/images/gehalt.jpg"
     },
@@ -29,7 +29,7 @@ const Projekte = () => {
       id: 2,
       category: "Humanitär", 
       title: "Waisenkind Patenschaft - Ein Jahr Essen und Bildung",
-      description: "Finanzierung von Lebensunterhalt und Bildungskosten eines Waisenindes in Syrien. Durch direkte Kommunikation mit unseren lokalen Partnern können wir für maximale Transparenz sorgen und sicherstellen, das das Geld an den richtigen Stellen kommt.",
+      description: "Finanzierung von Lebensunterhalt und Bildungskosten eines Waisenkindes in Syrien. Durch direkte Kommunikation mit unseren lokalen Partnern können wir für maximale Transparenz sorgen und sicherstellen, das das Geld an die richtigen Stellen kommt.",
       icon: Heart,
       image: "/shamsy/images/children.jpg"
     },
@@ -37,7 +37,7 @@ const Projekte = () => {
       id: 3,
       category: "Humanitär",
       title: "Anschaffung Trinkwasserbrunnen für Dorf",
-      description: "Anschaffung und Installation eines Trinkwasserbrunnens für einen kleinen Dorf, besonders wichtig für die extreme Hitze aufgrund vom Klimawandel und Mangel an Trinkmöglichkeiten in Syrien.",
+      description: "Anschaffung und Installation eines Trinkwasserbrunnens für ein kleines Dorf, besonders wichtig für die extreme Hitze aufgrund vom Klimawandel und Mangel an Trinkmöglichkeiten in Syrien.",
       icon: Users,
       image: "/shamsy/images/water.jpg"
     }
