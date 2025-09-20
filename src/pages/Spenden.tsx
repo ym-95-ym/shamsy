@@ -520,8 +520,8 @@ const Spenden = () => {
                     </div>
                     <div className="flex items-center gap-2">
                       <span className="text-shamsy-primary">📞</span>
-                      <a href="tel:+4991143332925" className="text-shamsy-primary hover:underline">
-                        +49 911 43332925
+                      <a href="tel:+4991143332926" className="text-shamsy-primary hover:underline">
+                        +49 911 43332926
                       </a>
                     </div>
                   </div>
