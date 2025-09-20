@@ -251,12 +251,24 @@ const Mitmachen = () => {
               </div>
               
               <blockquote className="text-2xl md:text-3xl font-light italic text-foreground mb-8 leading-relaxed">
-                "Ich unterstütze ShamSy, weil ich weiß, dass meine Spende wirklich ankommt. 
-                Die Transparenz und die regelmäßigen Updates zeigen mir, wie mein Beitrag konkret hilft."
+                "Ich bin mit ShamSy nach Syrien geflogen und habe gesehen, was für eine Wirkung ihre Unterstützung dort hat. Ich habe auch gesehen, was für Arbeit noch zu tun ist und wie viele Lebensgrundlagen fehlen."
               </blockquote>
               
               <cite className="text-lg font-semibold text-shamsy-primary">
-                — Maria K., Spenderin seit 2023
+                — Marie W., Spenderin seit 2018
+              </cite>
+            </CardContent>
+            <CardContent className="p-12">
+              <div className="w-16 h-16 bg-shamsy-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Megaphone className="w-8 h-8 text-shamsy-primary" />
+              </div>
+              
+              <blockquote className="text-2xl md:text-3xl font-light italic text-foreground mb-8 leading-relaxed">
+                "Ich freue mich aus Deutschland helfen zu können. V.a. mit ShamSy, was relevante Projekte vor Ort verwirklichen kann. Durch die Transparenz und die regelmäßigen Updates weiß ich sicher, wie mein Beitrag konkret hilft."
+              </blockquote>
+              
+              <cite className="text-lg font-semibold text-shamsy-primary">
+                — Marie W., Spenderin seit 2018
               </cite>
             </CardContent>
           </Card>
