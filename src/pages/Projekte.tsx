@@ -21,7 +21,6 @@ const Projekte = () => {
       id: 1,
       category: "Humanitär",
       title: "Monatsgehalt an Familie in Not schenken",
-      price: "80 € - einmalig",
       description: "JA! Tatsächlich sind die Gehälter in Syrien sehr niedrig, trotz neulicher Erhöhung seit Dezember 2024. Die Waren und Grundnahrungsmittel aber nicht. Sogar an mehreren Stellen wie in Deutschland! Mit einer -für Deutschland- nicht allzu hohen Summe können Sie die Möglichkeiten einer Familie in Not für einen Monat zu verdoppeln.",
       icon: Heart,
       image: "/shamsy/images/gehalt.jpg"
@@ -30,7 +29,6 @@ const Projekte = () => {
       id: 2,
       category: "Humanitär", 
       title: "Waisenkind Patenschaft - Ein Jahr Essen und Bildung",
-      price: "17 € mtl.",
       description: "Finanzierung von Lebensunterhalt und Bildungskosten eines Waisenindes in Syrien. Durch direkte Kommunikation mit unseren lokalen Partnern können wir für maximale Transparenz sorgen und sicherstellen, das das Geld an den richtigen Stellen kommt.",
       icon: Heart,
       image: "/shamsy/images/children.jpg"
@@ -38,47 +36,10 @@ const Projekte = () => {
     {
       id: 3,
       category: "Humanitär",
-      title: "Schönen Schulanfang für ein Kind ermöglichen", 
-      price: "40 € - einmalig",
-      description: "Kleidung, Rücksack, Hefte, Stifte uvm. für einen ordentlichen Schulanfang besorgen, dass Kinder in Syrien mit Hoffnung aufs Jahr blicken können.",
-      icon: GraduationCap,
-      image: "/shamsy/images/kindergruppe.jpg"
-    },
-    {
-      id: 4,
-      category: "Humanitär",
-      title: "Medizinische Behandlung finanzieren",
-      price: "beliebig", 
-      description: "Ermöglichen Sie eine medizinische Behandlung oder Operation für eine Person in Not! Es gibt zahlreiche Menschen in Damaskus und Umgebung ohne Geld für medizinische Behandlung. Eine Versicherung gibt es auch nicht. Sie können uns eine beliebige Summe spenden und wir stellen sicher, dass damit eine medizinise Behandlung/Operation bezahlt wird. Ihr Beitrag kann Leben retten.",
-      icon: Heart,
-      image: "/shamsy/images/operation.jpg"
-    },
-    {
-      id: 5,
-      category: "Humanitär",
       title: "Anschaffung Trinkwasserbrunnen für Dorf",
-      price: "1.000 € (Teilspenden möglich!)",
       description: "Anschaffung und Installation eines Trinkwasserbrunnens für einen kleinen Dorf, besonders wichtig für die extreme Hitze aufgrund vom Klimawandel und Mangel an Trinkmöglichkeiten in Syrien.",
       icon: Users,
       image: "/shamsy/images/water.jpg"
-    },
-    {
-      id: 6,
-      category: "Humanitär",
-      title: "Anschaffung medizinischer Geräte für Krankenhäuser",
-      price: "beliebig - für Geräte ab 6.000 € (Teilspenden möglich!)",
-      description: "Wir haben zahlreiche Angebote von Krankenhäusern und Partner NGOs über diverse medizinische Geräte, die bei der Rehabilitierung von zerstörten Krankenhäusern fehlen. Darunter Bildgebungsgeräte (CT, Röntgen, Röntgen-Thorax, EKG) für Kliniken die Milionen von Menschen versorgen (Douma, Ibn El-Nafis, Qattana, uvm.).",
-      icon: Heart,
-      image: "/shamsy/images/operation.jpg"
-    },
-    {
-      id: 7,
-      category: "Bildung",
-      title: "Schule Rehabilitierung - Der El-Asafir",
-      price: "5.000 € (Teilspenden möglich!)",
-      description: "Unterstützung und Weiterbildung des Bildungskaders, Sanierung und Reparatur der Schule sowie Sicherung ihrer Versorgung.",
-      icon: GraduationCap,
-      image: "/shamsy/images/schule-kind.jpg"
     }
   ];
 
@@ -88,7 +49,6 @@ const Projekte = () => {
       id: 1,
       category: "Energie & Bildung",
       title: "Der El-Asafir Gemeinschaftsinfrastruktur",
-      price: "400.000 €",
       description: "250 kW Solarsystem für eine ländliche Schule, landwirtschaftlichen Hub und Wohnhäuser. Über 10.000 Menschen, 500 Schüler und 50 landwirtschaftliche Betriebe erhalten stabile Elektrizität für Bildung und Produktion.",
       icon: Zap,
       image: "/shamsy/images/pv-sys.jpg",
@@ -102,7 +62,6 @@ const Projekte = () => {
       id: 2,
       category: "Gesundheit",
       title: "Douma National Hospital Renovierung",
-      price: "350.000 €",
       description: "Wiederherstellung Teil der Kapazitäten eines Krankenhauses, das über 1 Million Patienten jährlich versorgt. Das Krankenhaus, nach 12.2024 mit Dronenaufnahme dokumentiert, wurde vom alten Regime komplett bombardiert. Unser Partner NGO (Al-Sahha al-Khairiyah) in Douma hat nach der Zerstörung eine Multi-Fachklinik eingerichtet und will das weiterbauen und zu einem Krankenhaus rehabilitieren. Heute wollen wir mit dem Wiederaufbau unterstützen und planen Anschaffung medizinischer Geräten z.B., CT-Scanner und einem voll-integrierten Solarsystem.",
       icon: Heart,
       image: "/shamsy/images/douma-hospital-after.jpg",
@@ -116,7 +75,6 @@ const Projekte = () => {
       id: 3,
       category: "Bildung",
       title: "Renovierung von 5 Schulen in Douma", 
-      price: "250.000 €",
       description: "Sanierung von Schulen zu sicheren, hochwertigen Standards. 3.000+ Schüler erhalten verbesserte Bildungsumgebungen mit modernen Klassenzimmern, sanitären Anlagen und barrierefreiem Zugang.",
       icon: GraduationCap,
       image: "/shamsy/images/schule.jpg",
