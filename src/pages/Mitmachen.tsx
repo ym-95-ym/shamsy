@@ -255,13 +255,8 @@ const Mitmachen = () => {
               </blockquote>
               
               <cite className="text-lg font-semibold text-shamsy-primary">
-                — Marie W., Spenderin seit 2018
+                — Omar D., Helfer seit 2016
               </cite>
-            </CardContent>
-            <CardContent className="p-12">
-              <div className="w-16 h-16 bg-shamsy-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Megaphone className="w-8 h-8 text-shamsy-primary" />
-              </div>
               
               <blockquote className="text-2xl md:text-3xl font-light italic text-foreground mb-8 leading-relaxed">
                 "Ich freue mich aus Deutschland helfen zu können. V.a. mit ShamSy, was relevante Projekte vor Ort verwirklichen kann. Durch die Transparenz und die regelmäßigen Updates weiß ich sicher, wie mein Beitrag konkret hilft."
