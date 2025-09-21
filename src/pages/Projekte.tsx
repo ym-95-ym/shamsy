@@ -204,7 +204,7 @@ const Projekte = () => {
               Großprojekte: Für Sponsors und Crowdfunding
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Teilspenden möglich! Nachhaltige Infrastrukturprojekte mit großer Wirkung
+              Nachhaltige Infrastrukturprojekte mit großer Wirkung
             </p>
           </div>
 
