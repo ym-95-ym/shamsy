@@ -1,6 +1,3 @@
-# Welcome to your Lovable project
-
-
 
 This project is built with:
 
