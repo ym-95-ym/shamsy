@@ -89,16 +89,16 @@ const Navigation = () => {
       } border-b border-shamsy-primary/10`} dir={isRTL ? 'rtl' : 'ltr'}>
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
-            {/* Logo with Flags */}
+           {/* Logo with Flags */}
             <Link 
               to={getCurrentLanguage() === 'de' ? '/' : `/${getCurrentLanguage()}`}
               className="flex items-center gap-3 text-2xl font-bold text-shamsy-primary hover:text-shamsy-light shamsy-transition tracking-tight"
             >
               ShamSy
-              <div className="flex items-center gap-2">
+          {/*    <div className="flex items-center gap-2">
                 <img src={flagSyria} alt="Syrian Flag" className="w-8 h-6 object-cover rounded-sm shadow-sm" />
                 <img src={flagGermany} alt="German Flag" className="w-8 h-6 object-cover rounded-sm shadow-sm" />
-              </div>
+              </div> */}
             </Link>
 
             {/* Desktop Navigation with Language Switcher and Donate Button */}
