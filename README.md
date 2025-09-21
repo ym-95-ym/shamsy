@@ -14,4 +14,4 @@ This project is built with:
 add in vite: base: '/shamsy/', // Replace with your actual repo name
 
 
-add in App: <BrowserRouter basename="/shamsy">  {/* ← DIESE ZEILE HINZUGEFÜGT */}
+add in App: BrowserRouter basename="/shamsy"  {/* ← DIESE ZEILE HINZUGEFÜGT */}
