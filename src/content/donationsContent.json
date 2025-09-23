@@ -1,0 +1,245 @@
+{
+  "de": {
+    "header": {
+      "title": "Spenden",
+      "subtitle": "Ihre Spende bewirkt sofortigen und nachhaltigen Wandel in Syrien"
+    },
+    "donationType": {
+      "title": "Spenden-Art",
+      "single": {
+        "title": "Einmalspende",
+        "description": "Unterstützen Sie uns mit einer einmaligen Spende für sofortige Hilfe."
+      },
+      "monthly": {
+        "title": "Monatlich spenden", 
+        "description": "Regelmäßige Unterstützung ermöglicht uns nachhaltige Projektplanung.",
+        "recommended": "Empfohlen"
+      }
+    },
+    "projectSelection": {
+      "title": "Projekt auswählen",
+      "general": {
+        "title": "Wo am nötigsten",
+        "description": "Unterstützen Sie uns dabei, die Mittel dort einzusetzen, wo sie am dringendsten gebraucht werden."
+      },
+      "humanitarian": "Humanitäre Projekte",
+      "major": "Großprojekte",
+      "learnMore": "Mehr über unsere Projekte erfahren"
+    },
+    "amount": {
+      "title": "Spendenbetrag",
+      "customLabel": "Oder eigener Betrag:",
+      "impactTitle": "Ihre Wirkung:",
+      "impactPrefix": "Mit €{amount} können Sie:",
+      "impacts": {
+        "1000": "{count} Familien 1 Monat mit Solarstrom versorgen",
+        "500": "{count} Schulkinder 1 Jahr mit Schulmaterialien ausstatten", 
+        "100": "{count} medizinische Behandlungen ermöglichen",
+        "50": "2 Familien 1 Woche mit Notversorgung helfen",
+        "25": "1 Familie 1 Woche mit Grundversorgung helfen",
+        "default": "Jeder Beitrag hilft beim Wiederaufbau"
+      }
+    },
+    "payment": {
+      "title": "Zahlungsmethoden",
+      "methods": {
+        "card": "Kreditkarte",
+        "paypal": "PayPal", 
+        "transfer": "Überweisung"
+      },
+      "button": "Jetzt Spenden"
+    },
+    "trust": {
+      "title": "Vertrauen & Sicherheit",
+      "items": [
+        {
+          "title": "100% Transparenz",
+          "description": "Alle Ausgaben werden dokumentiert und veröffentlicht"
+        },
+        {
+          "title": "Sichere Übertragung",
+          "description": "SSL-verschlüsselte Datenübertragung"
+        },
+        {
+          "title": "Gemeinnütziger Verein",
+          "description": "Offiziell anerkannt und steuerlich absetzbar"
+        }
+      ]
+    },
+    "impact": {
+      "title": "Aktuelle Projektwirkung",
+      "items": [
+        "500+ Schüler erhalten Bildung",
+        "50+ Familien haben ein neues Zuhause",
+        "1000+ Menschen erhalten medizinische Hilfe"
+      ]
+    },
+    "contact": {
+      "title": "Haben Sie Fragen?",
+      "description": "Kontaktieren Sie uns gerne für weitere Informationen",
+      "button": "Kontakt aufnehmen"
+    }
+  },
+  "en": {
+    "header": {
+      "title": "Donate",
+      "subtitle": "Your donation creates immediate and sustainable change in Syria"
+    },
+    "donationType": {
+      "title": "Donation Type",
+      "single": {
+        "title": "One-time donation",
+        "description": "Support us with a one-time donation for immediate help."
+      },
+      "monthly": {
+        "title": "Donate monthly",
+        "description": "Regular support enables us to plan projects sustainably.",
+        "recommended": "Recommended"
+      }
+    },
+    "projectSelection": {
+      "title": "Select Project",
+      "general": {
+        "title": "Where most needed",
+        "description": "Support us in deploying funds where they are most urgently needed."
+      },
+      "humanitarian": "Humanitarian Projects",
+      "major": "Major projects (partial donations possible)",
+      "learnMore": "Learn more about our projects"
+    },
+    "amount": {
+      "title": "Donation Amount",
+      "customLabel": "Or custom amount:",
+      "impactTitle": "Your Impact:",
+      "impactPrefix": "With €{amount} you can:",
+      "impacts": {
+        "1000": "Supply {count} families with solar power for 1 month",
+        "500": "Equip {count} school children with school materials for 1 year",
+        "100": "Enable {count} medical treatments",
+        "50": "Help 2 families with emergency supplies for 1 week",
+        "25": "Help 1 family with basic supplies for 1 week",
+        "default": "Every contribution helps with reconstruction"
+      }
+    },
+    "payment": {
+      "title": "Payment Methods",
+      "methods": {
+        "card": "Credit Card",
+        "paypal": "PayPal",
+        "transfer": "Bank Transfer"
+      },
+      "button": "Donate Now"
+    },
+    "trust": {
+      "title": "Trust & Security",
+      "items": [
+        {
+          "title": "100% Transparency",
+          "description": "All expenses are documented and published"
+        },
+        {
+          "title": "Secure Transfer",
+          "description": "SSL-encrypted data transmission"
+        },
+        {
+          "title": "Non-profit Organization",
+          "description": "Officially recognized and tax-deductible"
+        }
+      ]
+    },
+    "impact": {
+      "title": "Current Project Impact",
+      "items": [
+        "500+ students receive education",
+        "50+ families have a new home",
+        "1000+ people receive medical help"
+      ]
+    },
+    "contact": {
+      "title": "Have Questions?",
+      "description": "Contact us for more information",
+      "button": "Get in Touch"
+    }
+  },
+  "ar": {
+    "header": {
+      "title": "التبرعات",
+      "subtitle": "تبرعك يحدث تغييراً فورياً ومستداماً في سوريا"
+    },
+    "donationType": {
+      "title": "نوع التبرع",
+      "single": {
+        "title": "تبرع لمرة واحدة",
+        "description": "ادعمنا بتبرع لمرة واحدة للمساعدة الفورية."
+      },
+      "monthly": {
+        "title": "تبرع شهري",
+        "description": "الدعم المنتظم يمكننا من التخطيط المستدام للمشاريع.",
+        "recommended": "موصى به"
+      }
+    },
+    "projectSelection": {
+      "title": "اختيار المشروع",
+      "general": {
+        "title": "حيث الحاجة أكبر",
+        "description": "ادعمنا في استخدام الأموال حيث تكون الحاجة إليها أكثر إلحاحاً."
+      },
+      "humanitarian": "المشاريع الإنسانية",
+      "major": "المشاريع الكبرى (التبرعات الجزئية ممكنة)",
+      "learnMore": "تعرف على المزيد عن مشاريعنا"
+    },
+    "amount": {
+      "title": "مبلغ التبرع",
+      "customLabel": "أو مبلغ مخصص:",
+      "impactTitle": "تأثيرك:",
+      "impactPrefix": "بـ €{amount} يمكنك:",
+      "impacts": {
+        "1000": "تزويد {count} عائلة بالكهرباء الشمسية لشهر واحد",
+        "500": "تجهيز {count} طفل مدرسة بالمواد المدرسية لعام واحد",
+        "100": "تمكين {count} علاج طبي",
+        "50": "مساعدة عائلتين بالإمداد الطارئ لأسبوع واحد",  
+        "25": "مساعدة عائلة واحدة بالإمداد الأساسي لأسبوع واحد",
+        "default": "كل مساهمة تساعد في إعادة الإعمار"
+      }
+    },
+    "payment": {
+      "title": "طرق الدفع",
+      "methods": {
+        "card": "بطاقة ائتمان",
+        "paypal": "باي بال",
+        "transfer": "تحويل بنكي"
+      },
+      "button": "تبرع الآن"
+    },
+    "trust": {
+      "title": "الثقة والأمان",
+      "items": [
+        {
+          "title": "100% شفافية",
+          "description": "جميع النفقات موثقة ومنشورة"
+        },
+        {
+          "title": "نقل آمن",
+          "description": "نقل البيانات مشفر بـ SSL"
+        },
+        {
+          "title": "منظمة غير ربحية",
+          "description": "معترف بها رسمياً وقابلة للخصم الضريبي"
+        }
+      ]
+    },
+    "impact": {
+      "title": "تأثير المشروع الحالي",
+      "items": [
+        "500+ طالب يحصل على التعليم",
+        "50+ عائلة لديها منزل جديد",
+        "1000+ شخص يحصل على المساعدة الطبية"
+      ]
+    },
+    "contact": {
+      "title": "لديك أسئلة؟",
+      "description": "تواصل معنا للحصول على مزيد من المعلومات",
+      "button": "تواصل معنا"
+    }
+  }
+}

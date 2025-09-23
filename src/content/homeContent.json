@@ -1,0 +1,131 @@
+{
+  "hero": {
+    "de": {
+      "title": "Shams Syria e.V.",
+      "description1": "Syrien ist ein Land voller Narben durch **14 Jahre Krieg, 55 Jahre Diktatur,** sowie Mangel an den wichtigsten Lebensgrundlagen.",
+      "description2": "Doch trotz all dieser Dunkelheit gibt es Hoffnung: Menschen, die geblieben sind. Menschen, die zurückkehren. Menschen wie wir, die **Brücken zwischen der Welt und dem zerstörten Syrien** schlagen.<br/>Wir unterstützen aus Deutschland, wo wir auch Zuhause sind.",
+      "button1": "Unsere Projekte",
+      "button2": "Jetzt helfen"
+    },
+    "en": {
+      "title": "Shams Syria e.V.",
+      "description1": "Syria is a country full of scars from **14 years of war, 55 years of dictatorship,** and lack of the most basic necessities of life.",
+      "description2": "But despite all this darkness, there is hope: People who stayed. People who are returning. People like us who **build bridges between the world and destroyed Syria**.<br/>We support from Germany, where we also call home.",
+      "button1": "Our Projects",
+      "button2": "Help Now"
+    },
+    "ar": {
+      "title": "شمس سوريا",
+      "description1": "سوريا بلد مليء بالندوب من **14 عاماً من الحرب، 55 عاماً من الديكتاتورية،** ونقص في أهم ضروريات الحياة.",
+      "description2": "لكن رغم كل هذا الظلام، هناك أمل: أناس بقوا. أناس يعودون. أناس مثلنا **يبنون جسوراً بين العالم وسوريا المدمرة**.<br/>ندعم من ألمانيا، حيث نسميها أيضاً وطننا.",
+      "button1": "مشاريعنا",
+      "button2": "ساعد الآن"
+    }
+  },
+  "quote": {
+    "de": {
+      "text": "Als **Syrer** können wir den Erfolg relevanter Projekte sicherstellen und durch unsere **bestehenden Netzwerke** schnell realisieren.<br/>Als **Deutsche** können wir die Projekte **nachhaltig und zeitgemäß** gestalten und eine Brücke für Integration und Zusammenarbeit bauen.",
+      "author": "Das ShamSy Team"
+    },
+    "en": {
+      "text": "As **Syrians**, we can ensure the success of relevant projects and implement them quickly through our **existing networks**.<br/>As **Germans**, we can design projects **sustainably and contemporarily** and build a bridge for integration and cooperation.",
+      "author": "The ShamSy Team"
+    },
+    "ar": {
+      "text": "كـ**سوريين**، يمكننا ضمان نجاح المشاريع ذات الصلة وتنفيذها بسرعة من خلال **شبكاتنا الموجودة**.<br/>كـ**ألمان**، يمكننا تصميم المشاريع **بشكل مستدام ومعاصر** وبناء جسر للاندماج والتعاون.",
+      "author": "فريق شمس سوريا"
+    }
+  },
+  "overview": {
+    "de": {
+      "title": "Entdecken Sie ShamSy",
+      "subtitle": "Erfahren Sie mehr über unsere Mission, Projekte und wie Sie helfen können",
+      "cards": [
+        {
+          "title": "Unsere Geschichte",
+          "description": "Von der Flucht 2011 bis zur offiziellen Mission 2025. Erfahren Sie, wie wir trotz Gefahr nie aufgehört haben zu helfen und nun endlich frei agieren können.",
+          "link": "/geschichte",
+          "buttonText": "Geschichte lesen"
+        },
+        {
+          "title": "Aktuelle Projekte",
+          "description": "Energie, Bildung, Gesundheit - unsere laufenden Projekte für nachhaltigen Wiederaufbau. Von Kleinprojekten bis zu Großinfrastruktur.",
+          "link": "/projekte",
+          "buttonText": "Projekte ansehen"
+        },
+        {
+          "title": "Vergangene Erfolge",
+          "description": "15 Shelters, medizinische Operationen, Schulrenovierungen - unsere Erfolge vor der Befreiung, trotz Angst und Verfolgung.",
+          "link": "/vergangene-projekte",
+          "buttonText": "Erfolge entdecken"
+        },
+        {
+          "title": "Jetzt mitmachen",
+          "description": "Werden Sie Teil unserer Mission. Als Mitglied, Spender oder Unterstützer - jede Hilfe bringt Syrien seinem Wiederaufbau näher.",
+          "link": "/mitmachen",
+          "buttonText": "Jetzt helfen"
+        }
+      ]
+    },
+    "en": {
+      "title": "Discover ShamSy",
+      "subtitle": "Learn more about our mission, projects and how you can help",
+      "cards": [
+        {
+          "title": "Our History",
+          "description": "From fleeing in 2011 to the official mission in 2025. Learn how we never stopped helping despite danger and can now finally act freely.",
+          "link": "/en/history",
+          "buttonText": "Read History"
+        },
+        {
+          "title": "Current Projects",
+          "description": "Energy, education, health - our ongoing projects for sustainable reconstruction. From small projects to major infrastructure.",
+          "link": "/en/projects",
+          "buttonText": "View Projects"
+        },
+        {
+          "title": "Past Successes",
+          "description": "15 shelters, medical operations, school renovations - our successes before liberation, despite fear and persecution.",
+          "link": "/en/past-projects",
+          "buttonText": "Discover Successes"
+        },
+        {
+          "title": "Get Involved Now",
+          "description": "Become part of our mission. As a member, donor or supporter - every help brings Syria closer to its reconstruction.",
+          "link": "/en/get-involved",
+          "buttonText": "Help Now"
+        }
+      ]
+    },
+    "ar": {
+      "title": "اكتشف شمس سوريا",
+      "subtitle": "تعرف على المزيد حول مهمتنا ومشاريعنا وكيف يمكنك المساعدة",
+      "cards": [
+        {
+          "title": "تاريخنا",
+          "description": "من الهجرة في 2011 إلى المهمة الرسمية في 2025. تعلم كيف لم نتوقف أبداً عن المساعدة رغم الخطر ويمكننا الآن أخيراً التصرف بحرية.",
+          "link": "/ar/history",
+          "buttonText": "اقرأ التاريخ"
+        },
+        {
+          "title": "المشاريع الحالية",
+          "description": "الطاقة، التعليم، الصحة - مشاريعنا الجارية لإعادة الإعمار المستدام. من المشاريع الصغيرة إلى البنية التحتية الكبرى.",
+          "link": "/ar/projects",
+          "buttonText": "شاهد المشاريع"
+        },
+        {
+          "title": "النجاحات السابقة",
+          "description": "15 مأوى، عمليات طبية، تجديد المدارس - نجاحاتنا قبل التحرير، رغم الخوف والاضطهاد.",
+          "link": "/ar/past-projects",
+          "buttonText": "اكتشف النجاحات"
+        },
+        {
+          "title": "شارك الآن",
+          "description": "كن جزءاً من مهمتنا. كعضو أو مانح أو مؤيد - كل مساعدة تقرب سوريا من إعادة إعمارها.",
+          "link": "/ar/get-involved",
+          "buttonText": "ساعد الآن"
+        }
+      ]
+    }
+  }
+}

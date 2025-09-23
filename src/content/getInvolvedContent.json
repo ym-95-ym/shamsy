@@ -1,0 +1,335 @@
+{
+  "de": {
+    "header": {
+      "title": "Mitmachen",
+      "subtitle": "Werden Sie Teil unserer Mission für den Wiederaufbau Syriens"
+    },
+    "stats": {
+      "title": "Gemeinsam bereits erreicht",
+      "subtitle": "Dank unserer Unterstützer konnten wir schon viel bewegen",
+      "items": [
+        { "value": "300,000 €", "label": "Spendengelder mit unseren Partnern eingesetzt", "key": "totalDonated" },
+        { "value": "10", "label": "Aktive Mitglieder", "key": "activeMembers" },
+        { "value": "10", "label": "Ehrenamtliche Helfer", "key": "volunteers" },
+        { "value": "1", "label": "Unternehmenspartnerschaften", "key": "partnerships" }
+      ]
+    },
+    "options": {
+      "title": "Wie Sie helfen können",
+      "subtitle": "Wählen Sie die Art der Unterstützung, die am besten zu Ihnen passt",
+      "items": [
+        {
+          "title": "Spenden",
+          "subtitle": "Direkte finanzielle Unterstützung",
+          "description": "Ihre Spende fließt zu 100% in die richtigen Händen. Sie können auch direkt für ein Projekt spenden. Jeder Euro hilft beim Wiederaufbau Syriens.",
+          "benefits": [
+            "Transparente Verwendung Ihrer Spende",
+            "Regelmäßige Updates über Projektfortschritte",
+            "Spendenquittung für Steuerersparnis",
+            "Einladung zu exklusiven Spendenveranstaltungen"
+          ],
+          "cta": "Jetzt Spenden",
+          "ctaLink": "/spenden"
+        },
+        {
+          "title": "Vereinsmitgliedschaft",
+          "subtitle": "Aktiv mitgestalten und entscheiden",
+          "description": "Als Vereinsmitglied haben Sie Mitspracherecht bei wichtigen Entscheidungen und gestalten die Zukunft von ShamSy aktiv mit.",
+          "benefits": [
+            "Stimmrecht bei Vereinsversammlungen",
+            "Mitgestaltung der Projektstrategie",
+            "Exklusiver Zugang zu Mitgliederversammlungen",
+            "Vernetzung mit Gleichgesinnten",
+            "Bereits ab €5/Monat möglich"
+          ],
+          "cta": "Mitglied werden",
+          "ctaEmail": "mailto:info.shamsyr@gmail.com?subject=Vereinsmitgliedschaft&body=Hallo, ich interessiere mich für eine Vereinsmitgliedschaft bei ShamSy."
+        },
+        {
+          "title": "Ehrenamtliche Mitarbeit",
+          "subtitle": "Zeit und Fähigkeiten einsetzen",
+          "description": "Bringen Sie Ihre Expertise ein - ob Marketing, Technik, Organisation oder Projektmanagement.",
+          "benefits": [
+            "Flexible Zeiteinteilung",
+            "Remote oder vor Ort möglich",
+            "Weiterbildungsmöglichkeiten",
+            "Internationale Projekterfahrung sammeln",
+            "Direkten Impact auf Projekte haben"
+          ],
+          "cta": "Kontakt aufnehmen",
+          "ctaEmail": "mailto:info.shamsyr@gmail.com"
+        },
+        {
+          "title": "Unternehmenskooperationen",
+          "subtitle": "Corporate Social Responsibility",
+          "description": "Ihr Unternehmen kann durch Kooperationen, Sponsoring oder Pro-Bono-Services einen wertvollen Beitrag leisten.",
+          "benefits": [
+            "Positive Unternehmensreputation",
+            "CSR-Berichterstattung möglich",
+            "Marketing-Kooperationen",
+            "Team-Building durch gemeinnützige Projekte",
+            "Steuerliche Vorteile"
+          ],
+          "cta": "Partnerschaft anfragen",
+          "ctaEmail": "mailto:info.shamsyr@gmail.com?subject=Unternehmenspartnerschaft&body=Hallo, wir interessieren uns für eine Unternehmenspartnerschaft mit ShamSy."
+        }
+      ]
+    },
+    "testimonial": {
+      "quotes": [
+        {
+          "text": "Ich bin mit ShamSy nach Syrien geflogen und habe gesehen, was für eine Wirkung ihre Unterstützung dort hat. Ich habe auch gesehen, was für Arbeit noch zu tun ist und wie viele Lebensgrundlagen fehlen.",
+          "author": "Omar D., Helfer seit 2016"
+        },
+        {
+          "text": "Ich freue mich aus Deutschland helfen zu können. V.a. mit ShamSy, was relevante Projekte vor Ort verwirklichen kann. Durch die Transparenz und die regelmäßigen Updates weiß ich sicher, wie mein Beitrag konkret hilft.",
+          "author": "Marie W., Spenderin seit 2018"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Häufige Fragen",
+      "subtitle": "Antworten auf die wichtigsten Fragen zum Mitmachen",
+      "items": [
+        {
+          "question": "Wie transparent ist ShamSy mit Spendengeldern?",
+          "answer": "Wir veröffentlichen detaillierte Projektberichte und Finanzberichte. Jeder Euro wird dokumentiert und Sie erhalten regelmäßige Updates über die Verwendung Ihrer Spende."
+        },
+        {
+          "question": "Kann ich als Nicht-Syrer/Deutsche auch Mitglied werden?",
+          "answer": "Selbstverständlich! ShamSy ist offen für alle Menschen, die unsere Mission unterstützen möchten, unabhängig von Nationalität oder Herkunft."
+        },
+        {
+          "question": "Wie viel Zeit muss ich als Ehrenamtlicher investieren?",
+          "answer": "Das bestimmen Sie selbst! Wir haben Aufgaben von 2-3 Stunden pro Monat bis hin zu größeren Projekten. Jede Hilfe ist wertvoll."
+        },
+        {
+          "question": "Sind Sachspenden möglich?",
+          "answer": "Ja, gerne! Besonders medizinisches Equipment, Schulmaterialien oder Werkzeuge können wir gut gebrauchen. Kontaktieren Sie uns für Details."
+        }
+      ]
+    }
+  },
+  "en": {
+    "header": {
+      "title": "Get Involved",
+      "subtitle": "Join our mission for Syria's reconstruction"
+    },
+    "stats": {
+      "title": "Already Achieved Together",
+      "subtitle": "Thanks to our supporters, we have already made a big impact",
+      "items": [
+        { "value": "300,000 €", "label": "Donations deployed with our partners", "key": "totalDonated" },
+        { "value": "10", "label": "Active Members", "key": "activeMembers" },
+        { "value": "10", "label": "Volunteers", "key": "volunteers" },
+        { "value": "1", "label": "Corporate Partnerships", "key": "partnerships" }
+      ]
+    },
+    "options": {
+      "title": "How You Can Help",
+      "subtitle": "Choose the type of support that suits you best",
+      "items": [
+        {
+          "title": "Donations",
+          "subtitle": "Direct financial support",
+          "description": "Your donation flows 100% to the right hands. You can also donate directly to a project. Every euro helps rebuild Syria.",
+          "benefits": [
+            "Transparent use of your donation",
+            "Regular updates on project progress",
+            "Donation receipt for tax savings",
+            "Invitation to exclusive donor events"
+          ],
+          "cta": "Donate Now",
+          "ctaLink": "/en/donate"
+        },
+        {
+          "title": "Membership",
+          "subtitle": "Actively participate and decide",
+          "description": "As a member, you have a voice in important decisions and actively shape ShamSy's future.",
+          "benefits": [
+            "Voting rights at member meetings",
+            "Participation in project strategy",
+            "Exclusive access to member assemblies",
+            "Networking with like-minded people",
+            "Starting from €5/month"
+          ],
+          "cta": "Become a Member",
+          "ctaEmail": "mailto:info.shamsyr@gmail.com?subject=Membership&body=Hello, I am interested in becoming a ShamSy member."
+        },
+        {
+          "title": "Volunteering",
+          "subtitle": "Use your time and skills",
+          "description": "Bring in your expertise - whether marketing, technology, organization, or project management.",
+          "benefits": [
+            "Flexible scheduling",
+            "Remote or on-site possible",
+            "Training opportunities",
+            "Gain international project experience",
+            "Direct impact on projects"
+          ],
+          "cta": "Get in Touch",
+          "ctaEmail": "mailto:info.shamsyr@gmail.com"
+        },
+        {
+          "title": "Corporate Partnerships",
+          "subtitle": "Corporate Social Responsibility",
+          "description": "Your company can make a valuable contribution through cooperation, sponsorship, or pro-bono services.",
+          "benefits": [
+            "Positive corporate reputation",
+            "CSR reporting possible",
+            "Marketing cooperations",
+            "Team building through charitable projects",
+            "Tax benefits"
+          ],
+          "cta": "Request Partnership",
+          "ctaEmail": "mailto:info.shamsyr@gmail.com?subject=Corporate Partnership&body=Hello, we are interested in a corporate partnership with ShamSy."
+        }
+      ]
+    },
+    "testimonial": {
+      "quotes": [
+        {
+          "text": "I flew to Syria with ShamSy and saw what impact their support has there. I also saw what work still needs to be done and how many livelihoods are missing.",
+          "author": "Omar D., Helper since 2016"
+        },
+        {
+          "text": "I'm happy to be able to help from Germany. Especially with ShamSy, which can implement relevant projects on the ground. Through transparency and regular updates, I know for sure how my contribution helps concretely.",
+          "author": "Marie W., Donor since 2018"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Answers to the most important questions about getting involved",
+      "items": [
+        {
+          "question": "How transparent is ShamSy with donations?",
+          "answer": "We publish detailed project reports and financial reports. Every euro is documented and you receive regular updates on how your donation is used."
+        },
+        {
+          "question": "Can I become a member as a non-Syrian/German?",
+          "answer": "Of course! ShamSy is open to all people who want to support our mission, regardless of nationality or origin."
+        },
+        {
+          "question": "How much time do I need to invest as a volunteer?",
+          "answer": "You decide! We have tasks from 2-3 hours per month up to larger projects. Every help is valuable."
+        },
+        {
+          "question": "Are in-kind donations possible?",
+          "answer": "Yes, gladly! Especially medical equipment, school materials, or tools we can use well. Contact us for details."
+        }
+      ]
+    }
+  },
+  "ar": {
+    "header": {
+      "title": "انضم إلينا",
+      "subtitle": "كن جزءاً من مهمتنا لإعادة إعمار سوريا"
+    },
+    "stats": {
+      "title": "ما حققناه معاً",
+      "subtitle": "بفضل داعمينا، تمكنا من إحداث تأثير كبير",
+      "items": [
+        { "value": "300,000 €", "label": "التبرعات المستخدمة مع شركائنا", "key": "totalDonated" },
+        { "value": "10", "label": "الأعضاء النشطين", "key": "activeMembers" },
+        { "value": "10", "label": "المتطوعين", "key": "volunteers" },
+        { "value": "1", "label": "الشراكات المؤسسية", "key": "partnerships" }
+      ]
+    },
+    "options": {
+      "title": "كيف يمكنك المساعدة",
+      "subtitle": "اختر نوع الدعم الذي يناسبك أكثر",
+      "items": [
+        {
+          "title": "التبرعات",
+          "subtitle": "الدعم المالي المباشر",
+          "description": "تبرعك يذهب 100% إلى الأيدي الصحيحة. يمكنك أيضاً التبرع مباشرة لمشروع. كل يورو يساعد في إعادة بناء سوريا.",
+          "benefits": [
+            "استخدام شفاف لتبرعك",
+            "تحديثات منتظمة حول تقدم المشاريع",
+            "إيصال تبرع لتوفير الضرائب",
+            "دعوة لفعاليات المتبرعين الحصرية"
+          ],
+          "cta": "تبرع الآن",
+          "ctaLink": "/ar/donate"
+        },
+        {
+          "title": "العضوية",
+          "subtitle": "شارك بفعالية واتخذ القرارات",
+          "description": "كعضو، لك صوت في القرارات المهمة وتشكل مستقبل شمس سوريا بفعالية.",
+          "benefits": [
+            "حق التصويت في اجتماعات الأعضاء",
+            "المشاركة في استراتيجية المشاريع",
+            "وصول حصري لاجتماعات الأعضاء",
+            "التواصل مع أشخاص متشابهي التفكير",
+            "ابتداءً من 5 يورو/شهر"
+          ],
+          "cta": "كن عضواً",
+          "ctaEmail": "mailto:info.shamsyr@gmail.com?subject=العضوية&body=مرحباً، أهتم بأن أصبح عضواً في شمس سوريا."
+        },
+        {
+          "title": "العمل التطوعي",
+          "subtitle": "استخدم وقتك ومهاراتك",
+          "description": "أدخل خبرتك - سواء في التسويق، التكنولوجيا، التنظيم، أو إدارة المشاريع.",
+          "benefits": [
+            "جدولة مرنة",
+            "عن بعد أو في الموقع",
+            "فرص التدريب",
+            "اكتساب خبرة مشاريع دولية",
+            "تأثير مباشر على المشاريع"
+          ],
+          "cta": "تواصل معنا",
+          "ctaEmail": "mailto:info.shamsyr@gmail.com"
+        },
+        {
+          "title": "الشراكات المؤسسية",
+          "subtitle": "المسؤولية الاجتماعية للشركات",
+          "description": "يمكن لشركتك تقديم مساهمة قيمة من خلال التعاون، الرعاية، أو الخدمات المجانية.",
+          "benefits": [
+            "سمعة شركة إيجابية",
+            "إمكانية تقارير المسؤولية الاجتماعية",
+            "تعاونات تسويقية",
+            "بناء الفريق من خلال المشاريع الخيرية",
+            "فوائد ضريبية"
+          ],
+          "cta": "طلب شراكة",
+          "ctaEmail": "mailto:info.shamsyr@gmail.com?subject=الشراكة المؤسسية&body=مرحباً، نحن مهتمون بشراكة مؤسسية مع شمس سوريا."
+        }
+      ]
+    },
+    "testimonial": {
+      "quotes": [
+        {
+          "text": "سافرت إلى سوريا مع شمس سوريا ورأيت أي تأثير لدعمهم هناك. رأيت أيضاً أي عمل لا يزال يحتاج إلى القيام به وكم من سبل العيش مفقودة.",
+          "author": "عمر د.، مساعد منذ 2016"
+        },
+        {
+          "text": "أنا سعيد لأنني أستطيع المساعدة من ألمانيا. خاصة مع شمس سوريا، التي يمكنها تنفيذ مشاريع ذات صلة على الأرض. من خلال الشفافية والتحديثات المنتظمة، أعرف بالتأكيد كيف تساعد مساهمتي بشكل ملموس.",
+          "author": "ماري و.، متبرعة منذ 2018"
+        }
+      ]
+    },
+    "faq": {
+      "title": "الأسئلة الشائعة",
+      "subtitle": "إجابات على الأسئلة الأكثر أهمية حول المشاركة",
+      "items": [
+        {
+          "question": "كيف تكون شمس سوريا شفافة مع التبرعات؟",
+          "answer": "ننشر تقارير مشاريع مفصلة وتقارير مالية. كل يورو موثق وتحصل على تحديثات منتظمة حول كيفية استخدام تبرعك."
+        },
+        {
+          "question": "هل يمكنني أن أصبح عضواً كشخص غير سوري/ألماني؟",
+          "answer": "بالطبع! شمس سوريا مفتوحة لجميع الناس الذين يريدون دعم مهمتنا، بغض النظر عن الجنسية أو الأصل."
+        },
+        {
+          "question": "كم من الوقت أحتاج لاستثماره كمتطوع؟",
+          "answer": "أنت تقرر! لدينا مهام من 2-3 ساعات شهرياً حتى مشاريع أكبر. كل مساعدة قيمة."
+        },
+        {
+          "question": "هل التبرعات العينية ممكنة؟",
+          "answer": "نعم، بكل سرور! خاصة المعدات الطبية، مواد المدارس، أو الأدوات يمكننا استخدامها جيداً. اتصل بنا للتفاصيل."
+        }
+      ]
+    }
+  }
+}

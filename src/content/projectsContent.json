@@ -1,0 +1,353 @@
+{
+  "de": {
+    "header": {
+      "title": "Aktuelle Projekte",
+      "subtitle": "Energie, Bildung, Gesundheit - Unsere laufenden Initiativen für nachhaltigen Wiederaufbau"
+    },
+    "stats": [
+      { "label": "Aktuelle Projekte", "key": "projectCount" },
+      { "value": "1 Mio+", "label": "Menschen helfen" },
+      { "value": "Jeder €", "label": "hilft enorm" },
+      { "value": "100%", "label": "Transparenz" }
+    ],
+    "humanitarian": {
+      "title": "Humanitäre Projekte",
+      "subtitle": "Direkte Hilfe für Menschen in Not - jeder Beitrag hilft enorm.",
+      "projects": [
+        {
+          "title": "Einer Familie in Not einen Monatslohn schenken",
+          "price": "€80 - einmalig",
+          "description": "JA! Gehälter sind in Syrien tatsächlich sehr niedrig, trotz der letzten Erhöhung seit Dezember 2024. Aber Waren und Grundnahrungsmittel sind es nicht. Sogar an mehreren Orten wie in Deutschland! Mit einer Summe, die für Deutschland nicht allzu hoch ist, können Sie die Möglichkeiten einer bedürftigen Familie für einen Monat verdoppeln.",
+          "category": "Humanitär",
+          "image": "/images/gehalt.jpg"
+        },
+        {
+          "title": "Waisenpatenschaft - Ein Jahr Essen und Bildung",
+          "price": "€13 monatlich",
+          "description": "Finanzierung der Lebenshaltungskosten und Bildungsausgaben für ein Waisenkind in Syrien. Durch direkte Kommunikation mit unseren lokalen Partnern können wir maximale Transparenz gewährleisten und sicherstellen, dass das Geld an den richtigen Stellen ankommt.",
+          "category": "Humanitär",
+          "image": "/images/children.jpg"
+        },
+        {
+          "title": "Einem Kind einen schönen Schulstart ermöglichen",
+          "price": "€40 - einmalig",
+          "description": "Kleidung, Schulranzen, Hefte, Stifte und vieles mehr für einen ordentlichen Schulstart bereitstellen, damit Kinder in Syrien mit Hoffnung auf das Jahr blicken können.",
+          "category": "Humanitär",
+          "image": "/images/kindergruppe.jpg"
+        },
+        {
+          "title": "Medizinische Behandlung finanzieren",
+          "price": "beliebiger Betrag",
+          "description": "Medizinische Behandlung oder Operation für eine bedürftige Person ermöglichen! Es gibt zahlreiche Menschen in Damaskus und Umgebung ohne Geld für medizinische Behandlung. Es gibt auch keine Versicherung. Sie können uns jeden Betrag spenden und wir sorgen dafür, dass damit medizinische Behandlung/Operation bezahlt wird. Ihr Beitrag kann Leben retten.",
+          "category": "Humanitär",
+          "image": "/images/operation.jpg"
+        },
+        {
+          "title": "Trinkwasserbrunnen für Dorf erwerben",
+          "price": "€1.000",
+          "description": "Kauf und Installation eines Trinkwasserbrunnens für ein kleines Dorf, besonders wichtig bei extremer Hitze aufgrund des Klimawandels und fehlender Trinkmöglichkeiten in Syrien.",
+          "category": "Humanitär",
+          "image": "/images/water.jpg"
+        },
+        {
+          "title": "Medizinische Geräte für Krankenhäuser erwerben",
+          "price": "beliebiger Betrag - für Geräte ab €6.000",
+          "description": "Wir haben zahlreiche Angebote von Krankenhäusern und Partner-NGOs für verschiedene medizinische Geräte, die bei der Rehabilitation zerstörter Krankenhäuser fehlen. Einschließlich Bildgebungsgeräte (CT, Röntgen, Thorax-Röntgen, EKG) für Kliniken, die Millionen von Menschen dienen (Douma, Ibn El-Nafis, Qattana und mehr).",
+          "category": "Humanitär",
+          "image": "/images/operation.jpg"
+        },
+        {
+          "title": "Schulrehabilitation - Der El-Asafir",
+          "price": "€5.000",
+          "description": "Unterstützung und Schulung des Bildungspersonals, Renovierung und Reparatur der Schule sowie Sicherung ihrer Versorgung.",
+          "category": "Bildung",
+          "image": "/images/schule-kind.jpg"
+        }
+      ]
+    },
+    "major": {
+      "title": "Großprojekte: Für Sponsors und Crowdfunding",
+      "subtitle": "Nachhaltige Infrastrukturprojekte mit großer Wirkung",
+      "projects": [
+        {
+          "title": "Der El-Asafir Gemeinde-Infrastruktur",
+          "price": "€400.000",
+          "description": "250 kW Solaranlage für eine ländliche Schule, Agrarzentrum und Wohnhäuser. Über 10.000 Menschen, 500 Schüler und 50 landwirtschaftliche Betriebe erhalten stabile Elektrizität für Bildung und Produktion.",
+          "category": "Energie & Bildung",
+          "image": "/images/pv-sys.jpg",
+          "stats": [
+            { "number": "10.000", "label": "Menschen mit Strom versorgt" },
+            { "number": "500+", "label": "Schüler mit Strom versorgt" },
+            { "number": ">50", "label": "Landwirtschaftliche Betriebe mit Strom versorgt" }
+          ]
+        },
+        {
+          "title": "Douma National Hospital Renovierung",
+          "price": "€350.000",
+          "description": "Wiederherstellung eines Teils der Kapazitäten eines Krankenhauses, das über 1 Million Patienten jährlich versorgt. Das Krankenhaus, dokumentiert mit Drohnenaufnahmen nach 12.2024, wurde vom alten Regime vollständig bombardiert. Unsere Partner-NGO (Al-Sahha al-Khairiyah) in Douma errichtete nach der Zerstörung eine multidisziplinäre Klinik und möchte diese weiter ausbauen und zu einem Krankenhaus rehabilitieren. Heute wollen wir den Wiederaufbau unterstützen und planen die Beschaffung medizinischer Geräte wie CT-Scanner und ein vollständig integriertes Solarsystem.",
+          "category": "Gesundheit",
+          "image": "/images/douma-hospital-after.jpg",
+          "stats": [
+            { "number": "1 Million+", "label": "Patienten/Jahr" },
+            { "number": "100%", "label": "Notwendig" },
+            { "number": "100%", "label": "Nachhaltig" }
+          ]
+        },
+        {
+          "title": "Renovierung von 5 Schulen in Douma",
+          "price": "€250.000",
+          "description": "Renovierung von Schulen zu sicheren, hochwertigen Standards. 3.000+ Schüler erhalten verbesserte Bildungsumgebungen mit modernen Klassenzimmern, Sanitäranlagen und barrierefreiem Zugang.",
+          "category": "Bildung",
+          "image": "/images/schule.jpg",
+          "stats": [
+            { "number": "3000+", "label": "Schüler" },
+            { "number": "5", "label": "Schulen" },
+            { "number": "100%", "label": "Zukunftssicher" }
+          ]
+        }
+      ]
+    },
+    "cta": {
+      "title": "Werden Sie Teil unserer Mission",
+      "description": "Jeder Beitrag hilft uns dabei, Syrien Schritt für Schritt wieder aufzubauen. Unterstützen Sie unsere Projekte und werden Sie Teil der Lösung.",
+      "buttons": [
+        { "text": "Jetzt Spenden", "link": "/spenden" },
+        { "text": "Mitglied werden", "link": "/mitmachen" }
+      ]
+    }
+  },
+  "en": {
+    "header": {
+      "title": "Current Projects",
+      "subtitle": "Energy, Education, Health - Our ongoing initiatives for sustainable reconstruction"
+    },
+    "stats": [
+      { "label": "Current Projects", "key": "projectCount" },
+      { "value": "1 Million+", "label": "People to help" },
+      { "value": "from €13 monthly", "label": "Support orphan" },
+      { "value": "100%", "label": "Transparency" }
+    ],
+    "humanitarian": {
+      "title": "Humanitarian Projects",
+      "subtitle": "Direct help for people in need - every contribution reaches its destination",
+      "projects": [
+        {
+          "title": "Give a monthly salary to a family in need",
+          "price": "€80 - one-time",
+          "description": "YES! Salaries in Syria are actually very low, despite the recent increase since December 2024. But goods and basic foodstuffs are not. Even in several places like in Germany! With a sum that is not too high for Germany, you can double a family in need's possibilities for a month.",
+          "category": "Humanitarian",
+          "image": "/images/gehalt.jpg"
+        },
+        {
+          "title": "Orphan sponsorship - One year of food and education",
+          "price": "€13 monthly",
+          "description": "Financing living costs and educational expenses for an orphan child in Syria. Through direct communication with our local partners, we can ensure maximum transparency and make sure the money reaches the right places.",
+          "category": "Humanitarian",
+          "image": "/images/children.jpg"
+        },
+        {
+          "title": "Enable a beautiful school start for a child",
+          "price": "€40 - one-time",
+          "description": "Provide clothing, backpack, notebooks, pens and much more for a proper school start, so children in Syria can look forward to the year with hope.",
+          "category": "Humanitarian",
+          "image": "/images/kindergruppe.jpg"
+        },
+        {
+          "title": "Finance medical treatment",
+          "price": "any amount",
+          "description": "Enable medical treatment or surgery for a person in need! There are numerous people in Damascus and surrounding areas without money for medical treatment. There is no insurance either. You can donate any amount to us and we ensure that medical treatment/surgery is paid for with it. Your contribution can save lives.",
+          "category": "Humanitarian",
+          "image": "/images/operation.jpg"
+        },
+        {
+          "title": "Purchase drinking water well for village",
+          "price": "€1,000 (partial donations possible!)",
+          "description": "Purchase and installation of a drinking water well for a small village, especially important for extreme heat due to climate change and lack of drinking opportunities in Syria.",
+          "category": "Humanitarian",
+          "image": "/images/water.jpg"
+        },
+        {
+          "title": "Purchase medical equipment for hospitals",
+          "price": "any amount - for equipment from €6,000 (partial donations possible!)",
+          "description": "We have numerous offers from hospitals and partner NGOs for various medical equipment that is missing in the rehabilitation of destroyed hospitals. Including imaging equipment (CT, X-ray, chest X-ray, ECG) for clinics that serve millions of people (Douma, Ibn El-Nafis, Qattana, and more).",
+          "category": "Humanitarian",
+          "image": "/images/operation.jpg"
+        },
+        {
+          "title": "School rehabilitation - Der El-Asafir",
+          "price": "€5,000 (partial donations possible!)",
+          "description": "Support and training of educational staff, renovation and repair of the school as well as securing its supply.",
+          "category": "Education",
+          "image": "/images/schule-kind.jpg"
+        }
+      ]
+    },
+    "major": {
+      "title": "Major Projects: For Sponsors and Crowdfunding",
+      "subtitle": "Partial donations possible! Sustainable infrastructure projects with great impact",
+      "projects": [
+        {
+          "title": "Der El-Asafir Community Infrastructure",
+          "price": "€400,000",
+          "description": "250 kW solar system for a rural school, agricultural hub and residential houses. Over 10,000 people, 500 students and 50 agricultural businesses receive stable electricity for education and production.",
+          "category": "Energy & Education",
+          "image": "/images/pv-sys.jpg",
+          "stats": [
+            { "number": "10,000", "label": "People supplied with electricity" },
+            { "number": "500+", "label": "Students supplied with electricity" },
+            { "number": ">50", "label": "Agricultural businesses supplied with electricity" }
+          ]
+        },
+        {
+          "title": "Douma National Hospital Renovation",
+          "price": "€350,000",
+          "description": "Restoration of part of the capacities of a hospital that serves over 1 million patients annually. The hospital, documented with drone footage after 12.2024, was completely bombed by the old regime. Our partner NGO (Al-Sahha al-Khairiyah) in Douma established a multi-specialty clinic after the destruction and wants to continue building it and rehabilitate it into a hospital. Today we want to support the reconstruction and plan procurement of medical equipment e.g., CT scanner and a fully integrated solar system.",
+          "category": "Health",
+          "image": "/images/douma-hospital-after.jpg",
+          "stats": [
+            { "number": "1 Million+", "label": "Patients/Year" },
+            { "number": "100%", "label": "Necessary" },
+            { "number": "100%", "label": "Sustainable" }
+          ]
+        },
+        {
+          "title": "Renovation of 5 schools in Douma",
+          "price": "€250,000",
+          "description": "Renovation of schools to safe, high-quality standards. 3,000+ students receive improved educational environments with modern classrooms, sanitary facilities and barrier-free access.",
+          "category": "Education",
+          "image": "/images/schule.jpg",
+          "stats": [
+            { "number": "3000+", "label": "Students" },
+            { "number": "5", "label": "Schools" },
+            { "number": "100%", "label": "Future-proof" }
+          ]
+        }
+      ]
+    },
+    "cta": {
+      "title": "Become Part of Our Mission",
+      "description": "Every contribution helps us rebuild Syria step by step. Support our projects and become part of the solution.",
+      "buttons": [
+        { "text": "Donate Now", "link": "/en/donate" },
+        { "text": "Become Member", "link": "/en/get-involved" }
+      ]
+    }
+  },
+  "ar": {
+    "header": {
+      "title": "المشاريع الحالية",
+      "subtitle": "الطاقة، التعليم، الصحة - مبادراتنا الجارية لإعادة الإعمار المستدام"
+    },
+    "stats": [
+      { "label": "المشاريع الحالية", "key": "projectCount" },
+      { "value": "1 مليون+", "label": "شخص للمساعدة" },
+      { "value": "من 13 € شهرياً", "label": "دعم يتيم" },
+      { "value": "100%", "label": "الشفافية" }
+    ],
+    "humanitarian": {
+      "title": "المشاريع الإنسانية",
+      "subtitle": "مساعدة مباشرة للأشخاص المحتاجين - كل مساهمة تصل إلى وجهتها",
+      "projects": [
+        {
+          "title": "إهداء راتب شهري لعائلة محتاجة",
+          "price": "80 € - مرة واحدة",
+          "description": "نعم! الرواتب في سوريا منخفضة جداً فعلاً، رغم الزيادة الأخيرة منذ ديسمبر 2024. لكن البضائع والمواد الغذائية الأساسية ليست كذلك. حتى في عدة أماكن مثل ألمانيا! بمبلغ ليس مرتفعاً جداً بالنسبة لألمانيا، يمكنك مضاعفة إمكانيات عائلة محتاجة لشهر واحد.",
+          "category": "إنساني",
+          "image": "/images/gehalt.jpg"
+        },
+        {
+          "title": "كفالة يتيم - عام من الطعام والتعليم",
+          "price": "13 € شهرياً",
+          "description": "تمويل تكاليف المعيشة والتعليم لطفل يتيم في سوريا. من خلال التواصل المباشر مع شركائنا المحليين، يمكننا ضمان أقصى شفافية والتأكد من وصول المال إلى الأماكن الصحيحة.",
+          "category": "إنساني",
+          "image": "/images/children.jpg"
+        },
+        {
+          "title": "تمكين بداية مدرسية جميلة لطفل",
+          "price": "40 € - مرة واحدة",
+          "description": "توفير الملابس والحقيبة المدرسية والدفاتر والأقلام وأكثر لبداية مدرسية مناسبة، حتى يتمكن الأطفال في سوريا من التطلع إلى العام بأمل.",
+          "category": "إنساني",
+          "image": "/images/kindergruppe.jpg"
+        },
+        {
+          "title": "تمويل العلاج الطبي",
+          "price": "أي مبلغ",
+          "description": "تمكين العلاج الطبي أو الجراحة لشخص محتاج! هناك العديد من الأشخاص في دمشق والمناطق المحيطة بدون مال للعلاج الطبي. لا يوجد تأمين أيضاً. يمكنك التبرع بأي مبلغ لنا وسنضمن دفع العلاج الطبي/الجراحة به. مساهمتك يمكن أن تنقذ الأرواح.",
+          "category": "إنساني",
+          "image": "/images/operation.jpg"
+        },
+        {
+          "title": "شراء بئر مياه شرب للقرية",
+          "price": "1.000 € (التبرعات الجزئية ممكنة!)",
+          "description": "شراء وتركيب بئر مياه شرب لقرية صغيرة، مهم بشكل خاص للحرارة الشديدة بسبب تغير المناخ ونقص فرص الشرب في سوريا.",
+          "category": "إنساني",
+          "image": "/images/water.jpg"
+        },
+        {
+          "title": "شراء معدات طبية للمستشفيات",
+          "price": "أي مبلغ - للمعدات من 6.000 € (التبرعات الجزئية ممكنة!)",
+          "description": "لدينا عروض عديدة من المستشفيات والمنظمات غير الحكومية الشريكة لمعدات طبية متنوعة مفقودة في إعادة تأهيل المستشفيات المدمرة. تشمل معدات التصوير (CT، الأشعة السينية، أشعة الصدر، ECG) للعيادات التي تخدم ملايين الأشخاص (دوما، ابن النفيس، قطنا، وأكثر).",
+          "category": "إنساني",
+          "image": "/images/operation.jpg"
+        },
+        {
+          "title": "إعادة تأهيل المدرسة - دير العصافير",
+          "price": "5.000 € (التبرعات الجزئية ممكنة!)",
+          "description": "دعم وتدريب الكادر التعليمي، تجديد وإصلاح المدرسة وضمان إمدادها.",
+          "category": "تعليم",
+          "image": "/images/schule-kind.jpg"
+        }
+      ]
+    },
+    "major": {
+      "title": "المشاريع الكبرى: للرعاة والتمويل الجماعي",
+      "subtitle": "التبرعات الجزئية ممكنة! مشاريع البنية التحتية المستدامة ذات التأثير الكبير",
+      "projects": [
+        {
+          "title": "البنية التحتية المجتمعية دير العصافير",
+          "price": "400.000 €",
+          "description": "نظام شمسي بقوة 250 كيلو واط لمدرسة ريفية ومركز زراعي ومنازل سكنية. أكثر من 10.000 شخص و500 طالب و50 مشروع زراعي يحصلون على كهرباء مستقرة للتعليم والإنتاج.",
+          "category": "الطاقة والتعليم",
+          "image": "/images/pv-sys.jpg",
+          "stats": [
+            { "number": "10.000", "label": "شخص يحصل على الكهرباء" },
+            { "number": "500+", "label": "طالب يحصل على الكهرباء" },
+            { "number": ">50", "label": "مشروع زراعي يحصل على الكهرباء" }
+          ]
+        },
+        {
+          "title": "تجديد مستشفى دوما الوطني",
+          "price": "350.000 €",
+          "description": "استعادة جزء من قدرات مستشفى يخدم أكثر من مليون مريض سنوياً. المستشفى، الموثق بلقطات الطائرة المسيرة بعد 12.2024، تم قصفه بالكامل من قبل النظام القديم. منظمتنا الشريكة غير الحكومية (الصحة الخيرية) في دوما أنشأت عيادة متعددة التخصصات بعد الدمار وتريد الاستمرار في بنائها وإعادة تأهيلها إلى مستشفى. اليوم نريد دعم إعادة البناء ونخطط لشراء معدات طبية مثل ماسح CT ونظام شمسي متكامل بالكامل.",
+          "category": "صحة",
+          "image": "/images/douma-hospital-after.jpg",
+          "stats": [
+            { "number": "1 مليون+", "label": "مريض/سنة" },
+            { "number": "100%", "label": "ضروري" },
+            { "number": "100%", "label": "مستدام" }
+          ]
+        },
+        {
+          "title": "تجديد 5 مدارس في دوما",
+          "price": "250.000 €",
+          "description": "تجديد المدارس إلى معايير آمنة وعالية الجودة. أكثر من 3000 طالب يحصلون على بيئات تعليمية محسنة مع فصول دراسية حديثة ومرافق صحية ووصول خالٍ من الحواجز.",
+          "category": "تعليم",
+          "image": "/images/schule.jpg",
+          "stats": [
+            { "number": "3000+", "label": "طالب" },
+            { "number": "5", "label": "مدارس" },
+            { "number": "100%", "label": "مضمون للمستقبل" }
+          ]
+        }
+      ]
+    },
+    "cta": {
+      "title": "كن جزءاً من مهمتنا",
+      "description": "كل مساهمة تساعدنا على إعادة بناء سوريا خطوة بخطوة. ادعم مشاريعنا وكن جزءاً من الحل.",
+      "buttons": [
+        { "text": "تبرع الآن", "link": "/ar/donate" },
+        { "text": "كن عضواً", "link": "/ar/get-involved" }
+      ]
+    }
+  }
+}
