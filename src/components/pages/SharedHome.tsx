@@ -59,6 +59,10 @@ const SharedHome = () => {
               <p className="break-words" dangerouslySetInnerHTML={{ __html: hero.description2.split('**').map((part, index) => 
                 index % 2 === 0 ? part : `<strong>${part}</strong>`
               ).join('') }} />
+              
+              <p className="break-words">
+                {renderText(hero.description3)}
+              </p>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
