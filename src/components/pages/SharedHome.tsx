@@ -30,7 +30,7 @@ const SharedHome = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
-            src="/images/hero-destruction.jpg" 
+            src="/shamsy/images/hero-destruction.jpg" 
             alt="Hero background - ShamSy Archive"
             className="w-full h-full object-cover"
           />
