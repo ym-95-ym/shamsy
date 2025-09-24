@@ -14,7 +14,7 @@ interface PastProject {
 
 export const getPastProjects = async (): Promise<PastProject[]> => {
   try {
-    const response = await fetch('/past-projects-template.csv');
+    const response = await fetch('/shamsy/past-projects-template.csv');
     if (!response.ok) {
       console.log('CSV file not found, using default past projects');
       return getFallbackPastProjects();
@@ -49,7 +49,7 @@ export const getPastProjects = async (): Promise<PastProject[]> => {
           challenges: values[7] || '',
           impact: values[8] || '',
           status: values[9] || '',
-          image: values[10] || '/images/help.jpg'
+          image: values[10] || '/shamsy/images/help.jpg'
         };
         projects.push(project);
       }
@@ -96,7 +96,7 @@ const getFallbackPastProjects = (): PastProject[] => [
     challenges: "Beschaffung von Materialien, Transport in unsichere Gebiete, Koordination mit lokalen Partnern unter Geheimhaltung",
     impact: "Bessere Lernbedingungen für eine ganze Generation",
     status: "Erfolgreich abgeschlossen",
-    image: "/images/kindergruppe.jpg"
+    image: "/shamsy/images/kindergruppe.jpg"
   },
   {
     id: 2,
@@ -109,7 +109,7 @@ const getFallbackPastProjects = (): PastProject[] => [
     challenges: "Materialtransport unter Kriegsbedingungen, Sicherheit der Bauteams, Geheimhaltung vor dem Regime",
     impact: "Über 500 Menschen erhielten sicheren Wohnraum",
     status: "Erfolgreich abgeschlossen",
-    image: "/images/hero-destruction.jpg"
+    image: "/shamsy/images/hero-destruction.jpg"
   },
   {
     id: 3,
@@ -122,7 +122,7 @@ const getFallbackPastProjects = (): PastProject[] => [
     challenges: "Suche nach bedürftigen Patienten in Kriegszeiten, Koordination mit Ärzten und Krankenhäuser, Anschaffung medizinischer Geräte",
     impact: "Menschenleben gerettet, Neue Möglichkeiten geschaffen",
     status: "Erfolgreich abgeschlossen",
-    image: "/images/operation.jpg"
+    image: "/shamsy/images/operation.jpg"
   },
   {
     id: 4,
@@ -135,7 +135,7 @@ const getFallbackPastProjects = (): PastProject[] => [
     challenges: "Materialtransport unter Kriegsbedingungen und von Deutschland nach Syrien, Geheimhaltung vor dem Regime",
     impact: "Überlebenssicherung und neue Perspektiven",
     status: "laufend",
-    image: "/images/kindergruppe.jpg"
+    image: "/shamsy/images/kindergruppe.jpg"
   },
   {
     id: 5,
@@ -148,6 +148,6 @@ const getFallbackPastProjects = (): PastProject[] => [
     challenges: "Materialtransport unter Kriegsbedingungen und von Deutschland nach Syrien, Geheimhaltung vor dem Regime",
     impact: "Lebensrettende medizinische Versorgung sichergestellt",
     status: "Erfolgreich abgeschlossen",
-    image: "/images/help.jpg"
+    image: "/shamsy/images/help.jpg"
   }
 ];
