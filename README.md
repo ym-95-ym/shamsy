@@ -8,8 +8,9 @@ This project is built with:
 - Tailwind CSS
 
 
-add in vite: base: '/shamsy/', // Replace with your actual repo name
-
+add in vite: 
+export default defineConfig(({ mode }) => ({
+    base: '/shamsy/', // <-- Korrekt hier!
 
 add in App: BrowserRouter basename="/shamsy"  {/* ← DIESE ZEILE HINZUGEFÜGT */}
 
