@@ -94,7 +94,7 @@ const SharedHome = () => {
         <div className="container mx-auto px-4 text-center">
           <blockquote className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-light italic text-foreground max-w-5xl mx-auto mb-6 md:mb-8 leading-relaxed break-words px-2"
                       dangerouslySetInnerHTML={{ __html: quote.text.split('**').map((part, index) => 
-                        index % 2 === 0 ? part : `<strong>${part}</strong>`
+                        index % 2 === 0 ? part : `<strong class="text-shamsy-primary">${part}</strong>`
                       ).join('') }} />
           <cite className="text-lg sm:text-xl md:text-2xl font-semibold text-shamsy-primary break-words">
             — {quote.author}
