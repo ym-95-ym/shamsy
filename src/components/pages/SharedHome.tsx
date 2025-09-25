@@ -38,7 +38,7 @@ const SharedHome = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <LazyImage 
-            src="/images/hero-destruction.jpg"
+            src="/shamsy/images/hero-destruction.jpg"
             alt="Hero background - ShamSy Archive"
             className="w-full h-full"
           />
