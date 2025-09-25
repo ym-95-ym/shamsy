@@ -8,7 +8,7 @@ import { loadProjects, Project } from "@/lib/projectManager";
 import { useProjectsContent } from "@/hooks/useContent";
 import { getStats } from "@/lib/statsManager";
 import ShareButton from "@/components/ui/share-button";
-import LazyImage from "@/components/LazyImage";
+
 import SEOHead from "@/components/SEOHead";
 
 const SharedProjects = () => {
@@ -115,11 +115,11 @@ const SharedProjects = () => {
                   <Card key={project.id} className="shamsy-card border-shamsy-primary/20 overflow-hidden hover:shadow-xl shamsy-transition group hover:-translate-y-2">
                     <CardContent className="p-0">
               <div className="relative h-64">
-                <LazyImage 
+                <img 
                   key={`${project.id}-${content.language}`}
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full group-hover:scale-105 shamsy-transition"
+                  className="w-full h-full object-cover group-hover:scale-105 shamsy-transition"
                 />
                 <div className={`absolute bottom-2 ${isRTL ? 'left-2' : 'right-2'} bg-black/60 text-white text-xs px-2 py-1 rounded`}>
                   {content.imageSource}
@@ -193,11 +193,11 @@ const SharedProjects = () => {
                       <div className="grid grid-cols-1 lg:grid-cols-2">
                         {/* Project Image */}
                         <div className="relative h-80 lg:h-auto">
-                          <LazyImage 
+                          <img 
                             key={`${project.id}-${content.language}`}
                             src={project.image}
                             alt={project.title}
-                            className="w-full h-full group-hover:scale-105 shamsy-transition"
+                            className="w-full h-full object-cover group-hover:scale-105 shamsy-transition"
                           />
                           <div className={`absolute bottom-2 ${isRTL ? 'left-2' : 'right-2'} bg-black/60 text-white text-xs px-2 py-1 rounded`}>
                             {content.imageSource}
