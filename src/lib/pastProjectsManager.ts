@@ -88,7 +88,7 @@ const parseCSVLine = (line: string): string[] => {
 const getFallbackPastProjects = (): PastProject[] => [
   {
     id: 1,
-    title: "Schulen renoviert und ausgestattet ?!",
+    title: "Schulen renoviert und ausgestattet test",
     category: "Bildung",
     location: "Der El-Asafir, Rural Damaskus",
     year: "2022-2024",
