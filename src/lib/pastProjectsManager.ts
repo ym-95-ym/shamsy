@@ -88,9 +88,9 @@ const parseCSVLine = (line: string): string[] => {
 const getFallbackPastProjects = (): PastProject[] => [
   {
     id: 1,
-    title: "Schulen renoviert und ausgestattet",
+    title: "Schulen renoviert und ausgestattet ?!",
     category: "Bildung",
-    location: "Der El-Asafir, Rural Damaskus*",
+    location: "Der El-Asafir, Rural Damaskus",
     year: "2022-2024",
     description: "Die Wiedereröffnung einer kriegsbeschädigten Schule wurde durch die Mobilisierung von Freiwilligen, die Reparatur der Infrastruktur und die Wiederherstellung sicherer Lernräume ermöglicht. Gemeinsam gaben wir Kindern ihre Zukunft zurück – einen Ort, an dem Hoffnung und Bildung wieder gedeihen können.",
     beneficiaries: "400 Schüler",
