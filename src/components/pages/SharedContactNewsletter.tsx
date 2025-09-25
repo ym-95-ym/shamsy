@@ -49,14 +49,6 @@ const SharedContactNewsletter = () => {
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Form */}
           <Card className="shamsy-card">
-            <CardHeader>
-              <CardTitle className="text-2xl text-shamsy-primary">
-                Nachricht senden
-              </CardTitle>
-              <p className="text-muted-foreground">
-                Teilen Sie uns mit, wie wir Ihnen helfen können
-              </p>
-            </CardHeader>
             <CardContent>
               <ContactForm />
             </CardContent>
