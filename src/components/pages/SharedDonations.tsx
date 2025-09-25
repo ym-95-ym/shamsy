@@ -27,7 +27,7 @@ import {
 import { loadProjects, Project } from "@/lib/projectManager";
 import { useDonationsContent } from "@/hooks/useContent";
 import { toast } from "sonner";
-
+ 
 // Stripe Publishable Key - Replace with your actual key
 const STRIPE_PUBLISHABLE_KEY = "pk_test_51SBEOBHF4Z0Mcr4wdgPvmOsv74mrnhw2Ur75ZmtQFelitMffNOw60qxYSm1XSVneWkLtGDrzMc2RP8ZwRp5oRwDQ00vAAR17TB"; // TODO: Replace with your Stripe publishable key
 
