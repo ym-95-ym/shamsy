@@ -183,7 +183,7 @@ export const defaultProjects: Project[] = [
 // Load projects from CSV or return defaults
 export async function loadProjects(language: string = 'de'): Promise<Project[]> {
   try {
-    const csvFile = language === 'de' ? '/shamsy/projects-template.csv' : `/projects-template-${language}.csv`;
+    const csvFile = language === 'de' ? '/shamsy/projects-template.csv' : `/shamsy/projects-template-${language}.csv`;
     const response = await fetch(csvFile);
     if (!response.ok) {
       console.log(`CSV file ${csvFile} not found, using default projects`);
