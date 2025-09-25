@@ -113,3 +113,16 @@ export function useDonationsContent() {
     language
   };
 }
+
+export function useContactContent() {
+  const content = useContent<any>('contactContent');
+  const location = useLocation();
+  const language = getLanguageFromPath(location.pathname);
+
+  if (!content) return null;
+
+  return {
+    ...content[language],
+    language
+  };
+}
