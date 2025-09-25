@@ -1,7 +1,8 @@
 const express = require('express');
 const Stripe = require('stripe');
 const app = express();
-const stripe = Stripe('pk_test_51SBEOBHF4Z0Mcr4wAV4bf5G8d3SIDMcIe7HJgFrZYKGqUMOsZnMIFHmJe19CqA1DOwAPhPxzDCd9fIaUnkMrch0I00CWCLIbiX'); // Replace with your SK key
+require('dotenv').config();
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 app.use(express.json());
 
