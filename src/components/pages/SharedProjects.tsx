@@ -116,6 +116,7 @@ const SharedProjects = () => {
                     <CardContent className="p-0">
               <div className="relative h-64">
                 <LazyImage 
+                  key={`${project.id}-${content.language}`}
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full group-hover:scale-105 shamsy-transition"
@@ -193,6 +194,7 @@ const SharedProjects = () => {
                         {/* Project Image */}
                         <div className="relative h-80 lg:h-auto">
                           <LazyImage 
+                            key={`${project.id}-${content.language}`}
                             src={project.image}
                             alt={project.title}
                             className="w-full h-full group-hover:scale-105 shamsy-transition"
