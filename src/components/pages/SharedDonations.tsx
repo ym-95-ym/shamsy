@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Badge } from "@/components/ui/badge";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { 
   Heart, 
   CreditCard, 
@@ -21,19 +21,26 @@ import {
   Building,
   FileText,
   Award,
-  ExternalLink
+  ExternalLink,
+  Loader2
 } from "lucide-react";
 import { loadProjects, Project } from "@/lib/projectManager";
 import { useDonationsContent } from "@/hooks/useContent";
+import { toast } from "sonner";
+
+// Stripe Publishable Key - Replace with your actual key
+const STRIPE_PUBLISHABLE_KEY = "pk_test_..."; // TODO: Replace with your Stripe publishable key
 
 const SharedDonations = () => {
   const content = useDonationsContent();
+  const [searchParams] = useSearchParams();
   const [selectedAmount, setSelectedAmount] = useState<number | null>(50);
   const [customAmount, setCustomAmount] = useState("");
   const [donationType, setDonationType] = useState<"single" | "monthly">("single");
   const [selectedProject, setSelectedProject] = useState("general");
   const [projects, setProjects] = useState<Project[]>([]);
   const [loading, setLoading] = useState(true);
+  const [processingPayment, setProcessingPayment] = useState(false);
 
   const quickAmounts = [5, 10, 25, 50, 100, 250, 500, 1000];
 
@@ -71,6 +78,36 @@ const SharedDonations = () => {
     }
   }, [content?.language]);
 
+  // Check for success/cancel params from Stripe
+  useEffect(() => {
+    const success = searchParams.get('success');
+    const canceled = searchParams.get('canceled');
+    const amount = searchParams.get('amount');
+    const type = searchParams.get('type');
+
+    if (success === 'true') {
+      toast.success(
+        content?.language === 'de' 
+          ? `Vielen Dank für Ihre ${type === 'monthly' ? 'monatliche' : 'einmalige'} Spende von €${amount}!`
+          : content?.language === 'en'
+          ? `Thank you for your ${type === 'monthly' ? 'monthly' : 'one-time'} donation of €${amount}!`
+          : `شكراً لك على تبرعك ${type === 'monthly' ? 'الشهري' : 'لمرة واحدة'} بمبلغ €${amount}!`
+      );
+      // Clean up URL
+      window.history.replaceState({}, '', window.location.pathname);
+    } else if (canceled === 'true') {
+      toast.error(
+        content?.language === 'de' 
+          ? 'Spende wurde abgebrochen.'
+          : content?.language === 'en'
+          ? 'Donation was canceled.'
+          : 'تم إلغاء التبرع.'
+      );
+      // Clean up URL
+      window.history.replaceState({}, '', window.location.pathname);
+    }
+  }, [searchParams, content]);
+
   if (!content || loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -100,6 +137,94 @@ const SharedDonations = () => {
     if (amount >= 50) return content.amount.impacts["50"];
     if (amount >= 25) return content.amount.impacts["25"];
     return content.amount.impacts.default;
+  };
+
+  const handleDonateClick = async () => {
+    const amount = getCurrentAmount();
+    if (amount <= 0) {
+      toast.error(
+        content?.language === 'de' 
+          ? 'Bitte wählen Sie einen Spendenbetrag.'
+          : content?.language === 'en'
+          ? 'Please select a donation amount.'
+          : 'يرجى تحديد مبلغ التبرع.'
+      );
+      return;
+    }
+
+    if (!STRIPE_PUBLISHABLE_KEY || STRIPE_PUBLISHABLE_KEY === "pk_test_...") {
+      toast.error(
+        content?.language === 'de' 
+          ? 'Stripe ist noch nicht konfiguriert. Bitte Stripe Publishable Key hinzufügen.'
+          : content?.language === 'en'
+          ? 'Stripe not configured. Please add Stripe Publishable Key.'
+          : 'Stripe غير مكوّن. يرجى إضافة مفتاح Stripe.'
+      );
+      return;
+    }
+
+    setProcessingPayment(true);
+
+    try {
+      // Get selected project name
+      const selectedProjectData = projects.find(p => p.id === selectedProject);
+      const projectName = selectedProjectData?.title || "General";
+      
+      // Dynamically import Stripe
+      const { loadStripe } = await import('@stripe/stripe-js');
+      const stripe = await loadStripe(STRIPE_PUBLISHABLE_KEY);
+
+      if (!stripe) {
+        throw new Error('Failed to load Stripe');
+      }
+
+      const mode = donationType === "monthly" ? "subscription" : "payment";
+      const description = donationType === "monthly" 
+        ? "Monatliche Spende für ShamSy e.V." 
+        : "Einmalige Spende für ShamSy e.V.";
+
+      // Create line items for Stripe
+      const lineItems = [{
+        price_data: {
+          currency: 'eur',
+          product_data: {
+            name: `Spende - ${projectName}`,
+            description: description,
+          },
+          unit_amount: Math.round(amount * 100), // Convert to cents
+          ...(donationType === "monthly" && {
+            recurring: {
+              interval: 'month',
+            },
+          }),
+        },
+        quantity: 1,
+      }];
+
+      // Redirect to Stripe Checkout
+      const { error } = await stripe.redirectToCheckout({
+        mode,
+        lineItems,
+        successUrl: `${window.location.origin}/spenden?success=true&amount=${amount}&type=${donationType}`,
+        cancelUrl: `${window.location.origin}/spenden?canceled=true`,
+      });
+
+      if (error) {
+        throw new Error(error.message);
+      }
+      
+    } catch (error) {
+      console.error('Payment error:', error);
+      toast.error(
+        content?.language === 'de' 
+          ? 'Fehler beim Erstellen der Zahlung. Bitte versuchen Sie es erneut.'
+          : content?.language === 'en'
+          ? 'Error creating payment. Please try again.'
+          : 'خطأ في إنشاء الدفع. يرجى المحاولة مرة أخرى.'
+      );
+    } finally {
+      setProcessingPayment(false);
+    }
   };
 
   const isRTL = content.language === 'ar';
@@ -420,10 +545,22 @@ const SharedDonations = () => {
 
                   <Button 
                     size="lg" 
+                    onClick={handleDonateClick}
+                    disabled={getCurrentAmount() === 0 || processingPayment}
                     className="w-full bg-shamsy-primary hover:bg-shamsy-dark shamsy-transition shamsy-shadow-green text-lg font-semibold py-6"
-                    disabled={getCurrentAmount() === 0}
                   >
-                    {content.payment.button} €{getCurrentAmount()}
+                    {processingPayment ? (
+                      <>
+                        <Loader2 className="w-5 h-5 animate-spin mr-2" />
+                        {content?.language === 'de' 
+                          ? 'Weiterleitung...' 
+                          : content?.language === 'en'
+                          ? 'Redirecting...'
+                          : 'إعادة توجيه...'}
+                      </>
+                    ) : (
+                      `${content.payment.button} €${getCurrentAmount()}`
+                    )}
                   </Button>
                 </CardContent>
               </Card>
