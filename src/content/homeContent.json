@@ -18,9 +18,9 @@
     },
     "ar": {
       "title": "شمس سوريا",
-      "description1": "سوريا بلد مليء بالجراح من **١٤ عاماً من الحرب، ٥٥ عاماً من الديكتاتورية،** ونقص في أهم ضروريات الحياة.",
+      "description1": "سوريا بلد مليء بالجراح - **١٤ عاماً من الحرب، ٥٥ عاماً من الديكتاتورية،** ونقص في أهم ضروريات الحياة.",
       "description2": "تجاوز دكتاتورنا كل الخطوط الحمراء. كانت المساعدة ممنوعة في الأماكن التي سقطت فيها القنابل والأسلحة الكيميائية. تم تهجير العائلات. لم يُسمح برعاية  للغايةالجرحى إلا سرًا. كان الأمر قاسيًا…",
-      "description3": "لكن كل هذا انتهى! الآن نبدأ بإعادة الإعمار و كلنا أمل.",
+      "description3": "**لكن كل هذا انتهى!** الآن نبدأ بإعادة الإعمار و كلنا أمل.",
       "button1": "مشاريعنا",
       "button2": "ساعد الآن"
     }
@@ -58,7 +58,7 @@
         },
         {
           "title": "Vergangene Erfolge",
-          "description": "15 Shelters, medizinische Operationen, Schulrenovierungen - unsere Erfolge vor der Befreiung, trotz Angst und Verfolgung.",
+          "description": "15 Unterkünfte fürVertriebene, medizinische Operationen, Schulrenovierungen - unsere Erfolge vor der Befreiung, trotz Angst und Verfolgung.",
           "link": "/vergangene-projekte",
           "buttonText": "Erfolge entdecken"
         },
@@ -76,7 +76,7 @@
       "cards": [
         {
           "title": "Our History",
-          "description": "From fleeing in 2011 to the official mission in 2025. Learn how we never stopped helping despite danger and can now finally act freely.",
+          "description": "From fleeing in 2011 to the official mission in 2025. Learn how we never stopped helping despite danger. Now we can finally act freely.",
           "link": "/en/history",
           "buttonText": "Read History"
         },
@@ -105,10 +105,10 @@
       "subtitle": "تعرف على المزيد حول مهمتنا ومشاريعنا وكيف يمكنك المساعدة",
       "cards": [
         {
-          "title": "تاريخنا",
-          "description": "من الهجرة في 2011 إلى المهمة الرسمية في 2025. تعلم كيف لم نتوقف أبداً عن المساعدة رغم الخطر ويمكننا الآن أخيراً التصرف بحرية.",
+          "title": "قصتنا",
+          "description": "من الهجرة في 2011 إلى مهمة إعادة الإعمار في 2025. تعلم كيف لم نتوقف أبداً عن المساعدة رغم الخطر. الآن يمكننا أخيراً التصرف بحرية.",
           "link": "/ar/history",
-          "buttonText": "اقرأ التاريخ"
+          "buttonText": "اقرأ قصتنا"
         },
         {
           "title": "المشاريع الحالية",
@@ -118,7 +118,7 @@
         },
         {
           "title": "النجاحات السابقة",
-          "description": "15 مأوى، عمليات طبية، تجديد المدارس - نجاحاتنا قبل التحرير، رغم الخوف والاضطهاد.",
+          "description": "١٥ مأوى، عمليات طبية، تجديد المدارس - نجاحاتنا قبل التحرير، رغم الخوف والاضطهاد.",
           "link": "/ar/past-projects",
           "buttonText": "اكتشف النجاحات"
         },
