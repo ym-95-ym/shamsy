@@ -1,0 +1,212 @@
+{
+  "de": {
+    "title": "Kontakt",
+    "subtitle": "Haben Sie Fragen oder möchten Sie mit uns zusammenarbeiten? Wir freuen uns auf Ihre Nachricht.",
+    "form": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Ihr vollständiger Name"
+      },
+      "email": {
+        "label": "E-Mail",
+        "placeholder": "ihre.email@beispiel.de"
+      },
+      "subject": {
+        "label": "Betreff",
+        "placeholder": "Worum geht es in Ihrer Nachricht?"
+      },
+      "message": {
+        "label": "Nachricht",
+        "placeholder": "Teilen Sie uns mit, wie wir Ihnen helfen können..."
+      },
+      "send": "Nachricht senden",
+      "success": "Vielen Dank! Ihre Nachricht wurde gesendet. Wir melden uns bald bei Ihnen.",
+      "error": "Es gab einen Fehler beim Senden. Bitte versuchen Sie es erneut."
+    },
+    "info": {
+      "title": "Kontaktinformationen",
+      "items": [
+        {
+          "icon": "Mail",
+          "label": "E-Mail",
+          "value": "info.shamsyr@gmail.com",
+          "link": "mailto:info.shamsyr@gmail.com"
+        },
+        {
+          "icon": "Phone",
+          "label": "Telefon",
+          "value": "+49 911 43332926",
+          "link": "tel:+4991143332926"
+        },
+        {
+          "icon": "MapPin",
+          "label": "Adresse",
+          "value": "ShamSy e.V.\nNürnberg, 90425",
+          "link": null
+        }
+      ]
+    },
+    "reasons": [
+      {
+        "icon": "Heart",
+        "title": "Spenden & Unterstützung",
+        "description": "Fragen zu Spendenmöglichkeiten und wie Sie helfen können"
+      },
+      {
+        "icon": "Users",
+        "title": "Ehrenamtliche Arbeit",
+        "description": "Interesse an ehrenamtlicher Mitarbeit in unseren Projekten"
+      },
+      {
+        "icon": "Building",
+        "title": "Partnerschaften",
+        "description": "Zusammenarbeit mit Unternehmen, NGOs oder Institutionen"
+      },
+      {
+        "icon": "MessageCircle",
+        "title": "Allgemeine Anfragen",
+        "description": "Fragen zu unserer Organisation oder unseren Projekten"
+      }
+    ]
+  },
+  "en": {
+    "title": "Contact",
+    "subtitle": "Do you have questions or would like to collaborate with us? We look forward to your message.",
+    "form": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Your full name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "your.email@example.com"
+      },
+      "subject": {
+        "label": "Subject",
+        "placeholder": "What is your message about?"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Tell us how we can help you..."
+      },
+      "send": "Send Message",
+      "success": "Thank you! Your message has been sent. We will get back to you soon.",
+      "error": "There was an error sending the message. Please try again."
+    },
+    "info": {
+      "title": "Contact Information",
+      "items": [
+        {
+          "icon": "Mail",
+          "label": "Email",
+          "value": "info.shamsyr@gmail.com",
+          "link": "mailto:info.shamsyr@gmail.com"
+        },
+        {
+          "icon": "Phone",
+          "label": "Phone",
+          "value": "+49 911 43332926",
+          "link": "tel:+4991143332926"
+        },
+        {
+          "icon": "MapPin",
+          "label": "Address",
+          "value": "ShamSy e.V.\nNürnberg, 90425",
+          "link": null
+        }
+      ]
+    },
+    "reasons": [
+      {
+        "icon": "Heart",
+        "title": "Donations & Support",
+        "description": "Questions about donation opportunities and how you can help"
+      },
+      {
+        "icon": "Users",
+        "title": "Volunteer Work",
+        "description": "Interest in volunteering in our projects"
+      },
+      {
+        "icon": "Building",
+        "title": "Partnerships",
+        "description": "Collaboration with companies, NGOs or institutions"
+      },
+      {
+        "icon": "MessageCircle",
+        "title": "General Inquiries",
+        "description": "Questions about our organization or our projects"
+      }
+    ]
+  },
+  "ar": {
+    "title": "تواصل معنا",
+    "subtitle": "هل لديك أسئلة أو تريد التعاون معنا؟ نتطلع إلى رسالتك.",
+    "form": {
+      "name": {
+        "label": "الاسم",
+        "placeholder": "اسمك الكامل"
+      },
+      "email": {
+        "label": "البريد الإلكتروني",
+        "placeholder": "your.email@example.com"
+      },
+      "subject": {
+        "label": "الموضوع",
+        "placeholder": "ما موضوع رسالتك؟"
+      },
+      "message": {
+        "label": "الرسالة",
+        "placeholder": "أخبرنا كيف يمكننا مساعدتك..."
+      },
+      "send": "إرسال الرسالة",
+      "success": "شكراً لك! تم إرسال رسالتك. سنتواصل معك قريباً.",
+      "error": "حدث خطأ في الإرسال. يرجى المحاولة مرة أخرى."
+    },
+    "info": {
+      "title": "معلومات الاتصال",
+      "items": [
+        {
+          "icon": "Mail",
+          "label": "البريد الإلكتروني",
+          "value": "info.shamsyr@gmail.com",
+          "link": "mailto:info.shamsyr@gmail.com"
+        },
+        {
+          "icon": "Phone",
+          "label": "الهاتف",
+          "value": "+49 911 43332926",
+          "link": "tel:+4991143332926"
+        },
+        {
+          "icon": "MapPin",
+          "label": "العنوان",
+          "value": "ShamSy e.V.\nNürnberg, 90425",
+          "link": null
+        }
+      ]
+    },
+    "reasons": [
+      {
+        "icon": "Heart",
+        "title": "التبرعات والدعم",
+        "description": "أسئلة حول فرص التبرع وكيف يمكنك المساعدة"
+      },
+      {
+        "icon": "Users",
+        "title": "العمل التطوعي",
+        "description": "الاهتمام بالعمل التطوعي في مشاريعنا"
+      },
+      {
+        "icon": "Building",
+        "title": "الشراكات",
+        "description": "التعاون مع الشركات أو المنظمات غير الحكومية أو المؤسسات"
+      },
+      {
+        "icon": "MessageCircle",
+        "title": "الاستفسارات العامة",
+        "description": "أسئلة حول منظمتنا أو مشاريعنا"
+      }
+    ]
+  }
+}
