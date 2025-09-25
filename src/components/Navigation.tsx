@@ -58,7 +58,8 @@ const Navigation = () => {
           { href: "/geschichte", label: "Geschichte" },
           { href: "/projekte", label: "Aktuelle Projekte" },
           { href: "/vergangene-projekte", label: "Alte Projekte" },
-          { href: "/mitmachen", label: "Mitmachen" }
+          { href: "/mitmachen", label: "Mitmachen" },
+          { href: "/kontakt", label: "Kontakt" }
         ];
     }
   };
