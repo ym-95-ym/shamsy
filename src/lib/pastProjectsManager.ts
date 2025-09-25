@@ -12,11 +12,12 @@ interface PastProject {
   image: string;
 }
 
-export const getPastProjects = async (): Promise<PastProject[]> => {
+export const getPastProjects = async (language: string = 'de'): Promise<PastProject[]> => {
   try {
-    const response = await fetch('/shamsy/past-projects-template.csv');
+    const csvFile = language === 'de' ? '/past-projects-template.csv' : `/past-projects-template-${language}.csv`;
+    const response = await fetch(csvFile);
     if (!response.ok) {
-      console.log('CSV file not found, using default past projects');
+      console.log(`CSV file ${csvFile} not found, using default past projects`);
       return getFallbackPastProjects();
     }
     const csvContent = await response.text();
@@ -49,7 +50,7 @@ export const getPastProjects = async (): Promise<PastProject[]> => {
           challenges: values[7] || '',
           impact: values[8] || '',
           status: values[9] || '',
-          image: values[10] || '/shamsy/images/help.jpg'
+          image: values[10] || '/images/help.jpg'
         };
         projects.push(project);
       }
@@ -57,7 +58,7 @@ export const getPastProjects = async (): Promise<PastProject[]> => {
     
     return projects.length > 0 ? projects : getFallbackPastProjects();
   } catch (error) {
-    console.log('Error loading past projects CSV, using default projects:', error);
+    console.log(`Error loading past projects CSV ${language}, using default projects:`, error);
     return getFallbackPastProjects();
   }
 };
@@ -96,7 +97,7 @@ const getFallbackPastProjects = (): PastProject[] => [
     challenges: "Beschaffung von Materialien, Transport in unsichere Gebiete, Koordination mit lokalen Partnern unter Geheimhaltung",
     impact: "Bessere Lernbedingungen für eine ganze Generation",
     status: "Erfolgreich abgeschlossen",
-    image: "/shamsy/images/kindergruppe.jpg"
+    image: "/images/kindergruppe.jpg"
   },
   {
     id: 2,
@@ -109,7 +110,7 @@ const getFallbackPastProjects = (): PastProject[] => [
     challenges: "Materialtransport unter Kriegsbedingungen, Sicherheit der Bauteams, Geheimhaltung vor dem Regime",
     impact: "Über 500 Menschen erhielten sicheren Wohnraum",
     status: "Erfolgreich abgeschlossen",
-    image: "/shamsy/images/hero-destruction.jpg"
+    image: "/images/hero-destruction.jpg"
   },
   {
     id: 3,
@@ -122,7 +123,7 @@ const getFallbackPastProjects = (): PastProject[] => [
     challenges: "Suche nach bedürftigen Patienten in Kriegszeiten, Koordination mit Ärzten und Krankenhäuser, Anschaffung medizinischer Geräte",
     impact: "Menschenleben gerettet, Neue Möglichkeiten geschaffen",
     status: "Erfolgreich abgeschlossen",
-    image: "/shamsy/images/operation.jpg"
+    image: "/images/operation.jpg"
   },
   {
     id: 4,
@@ -135,7 +136,7 @@ const getFallbackPastProjects = (): PastProject[] => [
     challenges: "Materialtransport unter Kriegsbedingungen und von Deutschland nach Syrien, Geheimhaltung vor dem Regime",
     impact: "Überlebenssicherung und neue Perspektiven",
     status: "laufend",
-    image: "/shamsy/images/kindergruppe.jpg"
+    image: "/images/kindergruppe.jpg"
   },
   {
     id: 5,
@@ -148,6 +149,6 @@ const getFallbackPastProjects = (): PastProject[] => [
     challenges: "Materialtransport unter Kriegsbedingungen und von Deutschland nach Syrien, Geheimhaltung vor dem Regime",
     impact: "Lebensrettende medizinische Versorgung sichergestellt",
     status: "Erfolgreich abgeschlossen",
-    image: "/shamsy/images/help.jpg"
+    image: "/images/help.jpg"
   }
 ];

@@ -101,7 +101,7 @@ export const defaultProjects: Project[] = [
     raised: 0,
     progress: 0,
     icon: Heart,
-    image: "/shamsy/images/children.jpg"
+    image: "/images/children.jpg"
   },
   {
     id: "gehalt",
@@ -113,7 +113,7 @@ export const defaultProjects: Project[] = [
     raised: 0,
     progress: 0,
     icon: Heart,
-    image: "/shamsy/images/gehalt.jpg"
+    image: "/images/gehalt.jpg"
   },
   {
     id: "brunnen",
@@ -125,19 +125,19 @@ export const defaultProjects: Project[] = [
     raised: 0,
     progress: 0,
     icon: Users,
-    image: "/shamsy/images/water.jpg"
+    image: "/images/water.jpg"
   },
   {
     id: "solar",
     category: "Energie & Bildung",
-    title: "Der El-Asafir Solarsystem",
+    title: "Der El-Asafir Gemeinschaftsinfrastruktur",
     description: "250 kW Solarsystem für ländliche Schule und Gemeinschaft. 10.000+ Menschen erhalten stabile Elektrizität.",
     type: "major",
     goal: 0,
     raised: 0,
     progress: 0,
     icon: Zap,
-    image: "/shamsy/images/pv-sys.jpg",
+    image: "/images/pv-sys.jpg",
     stats: [
       { number: "10.000", label: "Menschen mit Strom versorgen" },
       { number: "500+", label: "Schüler mit Strom versorgen" },
@@ -154,7 +154,7 @@ export const defaultProjects: Project[] = [
     raised: 0,
     progress: 0,
     icon: Heart,
-    image: "/shamsy/images/douma-hospital-after.jpg",
+    image: "/images/douma-hospital-after.jpg",
     stats: [
       { number: "1 Mio+", label: "Patienten/Jahr" },
       { number: "100%", label: "Notwendig" },
@@ -171,7 +171,7 @@ export const defaultProjects: Project[] = [
     raised: 0,
     progress: 0,
     icon: GraduationCap,
-    image: "/shamsy/images/schule.jpg",
+    image: "/images/schule.jpg",
     stats: [
       { number: "3000+", label: "Schüler" },
       { number: "5", label: "Schulen" },
@@ -181,17 +181,18 @@ export const defaultProjects: Project[] = [
 ];
 
 // Load projects from CSV or return defaults
-export async function loadProjects(): Promise<Project[]> {
+export async function loadProjects(language: string = 'de'): Promise<Project[]> {
   try {
-    const response = await fetch('/shamsy/projects-template.csv');
+    const csvFile = language === 'de' ? '/projects-template.csv' : `/projects-template-${language}.csv`;
+    const response = await fetch(csvFile);
     if (!response.ok) {
-      console.log('CSV file not found, using default projects');
+      console.log(`CSV file ${csvFile} not found, using default projects`);
       return defaultProjects;
     }
     const csvContent = await response.text();
     return parseProjectsFromCSV(csvContent);
   } catch (error) {
-    console.log('Error loading CSV, using default projects:', error);
+    console.log(`Error loading CSV ${language}, using default projects:`, error);
     return defaultProjects;
   }
 }
