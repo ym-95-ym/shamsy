@@ -14,7 +14,7 @@ interface PastProject {
 
 export const getPastProjects = async (language: string = 'de'): Promise<PastProject[]> => {
   try {
-    const csvFile = language === 'de' ? '/past-projects-template.csv' : `/past-projects-template-${language}.csv`;
+    const csvFile = language === 'de' ? '/shamsy/past-projects-template.csv' : `/past-projects-template-${language}.csv`;
     const response = await fetch(csvFile);
     if (!response.ok) {
       console.log(`CSV file ${csvFile} not found, using default past projects`);
