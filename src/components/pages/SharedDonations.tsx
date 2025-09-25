@@ -626,7 +626,7 @@ const SharedDonations = () => {
                     variant="outline" 
                     className="w-full border-shamsy-primary text-shamsy-primary hover:bg-shamsy-primary hover:text-white"
                   >
-                    <Link to="mailto:info@shamsy.org">{content.contact.button}</Link>
+                    <Link to="/kontakt"></Link>
                   </Button>
                 </CardContent>
               </Card>
