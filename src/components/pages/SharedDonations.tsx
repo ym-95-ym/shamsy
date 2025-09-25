@@ -174,9 +174,9 @@ const SharedDonations = () => {
       
       // Dynamically import Stripe
       const { loadStripe } = await import('@stripe/stripe-js');
-      const stripe = await loadStripe(STRIPE_PUBLISHABLE_KEY);
+      const stripePromise = await loadStripe(STRIPE_PUBLISHABLE_KEY);
 
-      if (!stripe) {
+      if (!stripePromise) {
         throw new Error('Failed to load Stripe');
       }
 
@@ -194,7 +194,7 @@ const SharedDonations = () => {
 
       export default function App() {
         return (
-          <CheckoutProvider stripe={stripe} options={{fetchClientSecret}}>
+          <CheckoutProvider stripe={stripePromise} options={{fetchClientSecret}}>
             <CheckoutForm />
           </CheckoutProvider>
         );
@@ -222,7 +222,7 @@ const SharedDonations = () => {
       };*/
 
       // Use Stripe's embedded checkout which supports price_data
-      const { error } = await stripe.redirectToCheckout(checkoutOptions);
+      const { error } = await stripe.redirectToCheckout(fetchClientSecret);
 
       if (error) {
         throw new Error(error.message);
