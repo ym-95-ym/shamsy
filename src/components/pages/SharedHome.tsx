@@ -31,14 +31,14 @@ const SharedHome = () => {
         title="ShamSy e.V. - Wiederaufbau Syriens durch nachhaltige Projekte"
         description={`${hero.description1} ${hero.description2}`.replace(/<[^>]*>/g, '').replace(/\*\*/g, '')}
         keywords="ShamSy, Syrien, Wiederaufbau, Hilfsorganisation, Spenden, nachhaltige Projekte"
-        ogImage="/images/hero-destruction.jpg"
+        ogImage="/shamsy/images/hero-destruction.jpg"
       />
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center text-center text-white pt-20">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
-            src="/images/hero-destruction.jpg"
+            src="/shamsy/images/hero-destruction.jpg"
             alt="Hero background - ShamSy Archive"
             className="w-full h-full object-cover"
           />
