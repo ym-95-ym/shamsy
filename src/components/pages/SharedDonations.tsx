@@ -27,9 +27,9 @@ import {
 import { loadProjects, Project } from "@/lib/projectManager";
 import { useDonationsContent } from "@/hooks/useContent";
 import { toast } from "sonner";
- 
-// Stripe Publishable Key - Replace with your actual key
-const STRIPE_PUBLISHABLE_KEY = "pk_test_51SBEOBHF4Z0Mcr4wdgPvmOsv74mrnhw2Ur75ZmtQFelitMffNOw60qxYSm1XSVneWkLtGDrzMc2RP8ZwRp5oRwDQ00vAAR17TB"; // TODO: Replace with your Stripe publishable key
+
+// Stripe Publishable Key - Replace with your actual key from Stripe Dashboard
+const STRIPE_PUBLISHABLE_KEY = "pk_test_51SBEOBHF4Z0Mcr4wdgPvmOsv74mrnhw2Ur75ZmtQFelitMffNOw60qxYSm1XSVneWkLtGDrzMc2RP8ZwRp5oRwDQ00vAAR17TB"; // Get this from your Stripe Dashboard
 
 const SharedDonations = () => {
   const content = useDonationsContent();
@@ -152,7 +152,7 @@ const SharedDonations = () => {
       return;
     }
 
-    if (!STRIPE_PUBLISHABLE_KEY || STRIPE_PUBLISHABLE_KEY === "pk_test_...") {
+    if (!STRIPE_PUBLISHABLE_KEY || STRIPE_PUBLISHABLE_KEY === "pk_test_51SBEOBHF4Z0Mcr4wdgPvmOsv74mrnhw2Ur75ZmtQFelitMffNOw60qxYSm1XSVneWkLtGDrzMc2RP8ZwRp5oRwDQ00vAAR17TB") {
       toast.error(
         content?.language === 'de' 
           ? 'Stripe ist noch nicht konfiguriert. Bitte Stripe Publishable Key hinzufügen.'
@@ -626,7 +626,7 @@ const SharedDonations = () => {
                     variant="outline" 
                     className="w-full border-shamsy-primary text-shamsy-primary hover:bg-shamsy-primary hover:text-white"
                   >
-                    <Link to="/kontakt"></Link>
+                    <Link to="mailto:info@shamsy.org">{content.contact.button}</Link>
                   </Button>
                 </CardContent>
               </Card>
