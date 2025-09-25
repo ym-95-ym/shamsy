@@ -29,7 +29,7 @@ app.post('/create-checkout-session', async (req, res) => {
       cancel_url: `${req.headers.origin}/spenden?canceled=true`,
     });
 
-    res.json({ checkoutSessionClientSecret: session.url });
+    res.json({ url: session.url });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Failed to create Stripe session' });
