@@ -1,3 +1,4 @@
+import React from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -26,6 +27,7 @@ import HistoryEn from "@/pages/en/History";
 import PastProjectsEn from "@/pages/en/PastProjects";
 import GetInvolvedEn from "@/pages/en/GetInvolved";
 import DonateEn from "@/pages/en/Donate";
+import ContactEn from "@/pages/en/Contact";
 
 // Arabic pages  
 import HomeAr from "@/pages/ar/Home";
@@ -34,21 +36,26 @@ import HistoryAr from "@/pages/ar/History";
 import PastProjectsAr from "@/pages/ar/PastProjects";
 import GetInvolvedAr from "@/pages/ar/GetInvolved";
 import DonateAr from "@/pages/ar/Donate";
+import ContactAr from "@/pages/ar/Contact";
 
+// Create QueryClient outside component to prevent recreation
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
       staleTime: 5 * 60 * 1000, // 5 minutes
       gcTime: 10 * 60 * 1000, // 10 minutes
+      retry: 1,
+      refetchOnWindowFocus: false,
     },
   },
 });
 
-const AppContent = () => {
+const AppContent: React.FC = () => {
+  // Call hook directly in component body - NOT inside useEffect
   usePerformance();
   
   return (
-    <BrowserRouter basename="/shamsy">
+    <BrowserRouter>
       <SEOHead />
       <ScrollToTop />
       <div className="min-h-screen flex flex-col">
@@ -72,6 +79,7 @@ const AppContent = () => {
             <Route path="/en/past-projects" element={<PastProjectsEn />} />
             <Route path="/en/get-involved" element={<GetInvolvedEn />} />
             <Route path="/en/donate" element={<DonateEn />} />
+            <Route path="/en/contact" element={<ContactEn />} />
 
             {/* Arabic routes */}
             <Route path="/ar" element={<HomeAr />} />
@@ -81,6 +89,7 @@ const AppContent = () => {
             <Route path="/ar/past-projects" element={<PastProjectsAr />} />
             <Route path="/ar/get-involved" element={<GetInvolvedAr />} />
             <Route path="/ar/donate" element={<DonateAr />} />
+            <Route path="/ar/contact" element={<ContactAr />} />
 
             {/* Catch-all route */}
             <Route path="*" element={<NotFound />} />
@@ -92,16 +101,20 @@ const AppContent = () => {
   );
 };
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <ErrorBoundary>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <AppContent />
-      </TooltipProvider>
-    </ErrorBoundary>
-  </QueryClientProvider>
-);
+const App: React.FC = () => {
+  return (
+    <React.StrictMode>
+      <ErrorBoundary>
+        <QueryClientProvider client={queryClient}>
+          <TooltipProvider>
+            <AppContent />
+            <Toaster />
+            <Sonner />
+          </TooltipProvider>
+        </QueryClientProvider>
+      </ErrorBoundary>
+    </React.StrictMode>
+  );
+};
 
 export default App;
