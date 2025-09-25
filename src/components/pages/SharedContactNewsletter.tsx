@@ -87,28 +87,6 @@ const SharedContactNewsletter = () => {
             </CardContent>
           </Card>
         </div>
-
-        {/* Contact Information */}
-        <div className="mt-16 max-w-4xl mx-auto">
-          <Card className="shamsy-card">
-            <CardContent className="p-8">
-              <div className="grid md:grid-cols-3 gap-8 text-center">
-                {contactContent.info.items.map((item: any, index: number) => {
-                  const IconComponent = iconMap[item.icon] || Mail;
-                  return (
-                    <div key={index} className="space-y-3">
-                      <div className="w-12 h-12 bg-shamsy-primary/10 rounded-full flex items-center justify-center mx-auto">
-                        <IconComponent className="w-6 h-6 text-shamsy-primary" />
-                      </div>
-                      <h3 className="font-semibold text-shamsy-primary">{item.label}</h3>
-                      <p className="text-muted-foreground text-sm whitespace-pre-line">{item.value}</p>
-                    </div>
-                  );
-                })}
-              </div>
-            </CardContent>
-          </Card>
-        </div>
       </main>
     </div>
   );
