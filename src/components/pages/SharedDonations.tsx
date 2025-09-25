@@ -186,7 +186,20 @@ const SharedDonations = () => {
         : "Einmalige Spende für ShamSy e.V.";
 
       // Use Stripe's embedded checkout for frontend-only dynamic pricing
-      const checkoutOptions = {
+      const fetchClientSecret = () => {
+        return fetch('/create-checkout-session', {method: 'POST'})
+          .then((response) => response.json())
+          .then((json) => json.checkoutSessionClientSecret)
+      };
+
+      export default function App() {
+        return (
+          <CheckoutProvider stripe={stripe} options={{fetchClientSecret}}>
+            <CheckoutForm />
+          </CheckoutProvider>
+        );
+      };
+      /*const checkoutOptions = {
         mode: mode as "payment" | "subscription",
         lineItems: [{
           priceData: {
@@ -206,7 +219,7 @@ const SharedDonations = () => {
         }],
         successUrl: `${window.location.origin}/spenden?success=true&amount=${amount}&type=${donationType}`,
         cancelUrl: `${window.location.origin}/spenden?canceled=true`,
-      };
+      };*/
 
       // Use Stripe's embedded checkout which supports price_data
       const { error } = await stripe.redirectToCheckout(checkoutOptions);
