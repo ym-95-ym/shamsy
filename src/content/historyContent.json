@@ -54,29 +54,29 @@
   "en": {
     "header": {
       "title": "Our History",
-      "subtitle": "From Flight to Mission - A Journey Full of Challenges and Hope"
+      "subtitle": "From Refuge to Rebuilding Mission - A Journey Full of Challenges and Hope"
     },
     "intro": {
       "title": "A Story of Hope",
-      "description": "ShamSy was born from the deep desire to never stop helping the people in Syria, despite all adversities. Our story begins with flight, but it ends with a mission of hope and reconstruction."
+      "description": "ShamSy was born from the deep desire to never stop helping the people in Syria, despite all adversities. Our story begins with seeking refuge, but ends with a mission of hope and reconstruction."
     },
     "timeline": [
       {
         "period": "2011-2015",
-        "title": "The Beginning: Flight from Syria",
-        "description": "We took to the streets for freedom and justice. The response was: persecution, torture, and bombs. Around seven million people, a quarter of the population, had to flee to safety - some, like us, to Germany. But our hearts remained in Syria and with those who could not flee.",
-        "quote": "Even then we knew: We must help those who could not flee. They have nothing else."
+        "title": "The Beginning: Escaping from Syria",
+        "description": "We took to the streets for freedom and justice. The response was: persecution, torture, and bombs. Around seven million people, a quarter of the population, had to flee outside the country for safety - some, like us, to Germany. But our hearts remained in Syria and with those who could not flee.",
+        "quote": "Even then we knew: We must help those who could not flee. They have no one else."
       },
       {
         "period": "2015-2019",
         "title": "Integration and Network Building",
         "description": "While we integrated into Germany and found a new home, we continuously built networks. We learned about life in Germany, studied, worked - and always kept Syria in our hearts.",
-        "highlight": "In parallel, we secretly organized first aid operations in Syria, despite the danger from the Assad regime."
+        "highlight": "In parallel, we secretly organized humanitarian operations in Syria, despite the danger from the Assad regime."
       },
       {
         "period": "2011-2024",
         "title": "Secret Help Despite Danger",
-        "description": "Despite the danger to us and our families, we never stopped helping. Through support of our numerous local partners and NGOs, we could provide assistance where no help was allowed in. Many projects and humanitarian aid operations were planned and realized. The most significant are: supporting families in need, building 15 shelters for displaced families, life-saving operations for war victims, school renovations in bombed neighborhoods, planning solar systems for villages and industry - all secret, all against the regime's will, all from love and for justice for an oppressed people.",
+        "description": "Despite the danger to us and our families, we never stopped helping. Through support of our numerous local partners and NGOs, we could provide assistance where no help was permitted. Many projects and humanitarian aid operations were planned and realized. The most significant are: supporting families in need, building 15 shelters for displaced families, life-saving operations for war victims, school renovations in bombed regions, planning solar systems for villages and industry - all secret, all against the regime's will, all from love and for justice for the oppressed people.",
         "stats": [
           { "number": "15", "label": "Shelters Built" },
           { "number": "50+", "label": "Medical Operations" },
@@ -86,7 +86,7 @@
       {
         "period": "2025-Today",
         "title": "Liberation After 55 Years! ShamSy Becomes Official",
-        "description": "After more than half a century of dictatorship, Syria is finally free. For the first time, we can live without fear, help without hiding, rebuild without corruption. A new chapter begins for our beloved but exploited country. A decisive chapter for Syria's future, which we can all help shape this time.\nShamSy e.V. is now officially registered as an NGO - in Germany and in Syria. What once happened in the shadows and through third parties, we now continue officially. Through our years in Syria and in Germany, we have established diverse experience and wide-reaching networks. With this, we sustainably rebuild our country for everyone. We have the hope of an entire generation!",
+        "description": "After more than half a century of dictatorship, Syria is finally free. For the first time, we can live without fear, help without hiding, rebuild without corruption. A new chapter begins for our beloved but exploited country. A decisive chapter for Syria's future, which we can all help shape this time.<br/>ShamSy e.V. is now officially registered as an NGO - in Germany and in Syria. What once happened in the shadows and through third parties, we now continue officially. Through our years in Syria and in Germany, we have established diverse experience and wide-reaching networks. With this, we sustainably rebuild our country for everyone. We have the hope of an entire generation!",
         "vision": {
           "title": "Our Vision for Free Syria:",
           "points": [
@@ -106,11 +106,11 @@
   "ar": {
     "header": {
       "title": "قصتنا",
-      "subtitle": "من الهروب إلى الدعم - رحلة مليئة بالتحديات والأمل"
+      "subtitle": "من اللجوء إلى الدعم - رحلة مليئة بالتحديات والأمل"
     },
     "intro": {
       "title": "قصة أمل",
-      "description": "وُلدت شمس سوريا من الرغبة العميقة في عدم التوقف أبداً عن مساعدة الشعب السوري، رغم كل الصعاب. تبدأ قصتنا بالهروب، لكنها تنتهي برسالة أمل وإعادة إعمار."
+      "description": "وُلدت جمعية شمس سوريا من الرغبة العميقة في عدم التوقف أبداً عن مساعدة الشعب السوري، رغم كل الصعاب. تبدأ قصتنا باللجوء، لكنها تنتهي برسالة أمل وإعادة إعمار."
     },
     "timeline": [
       {
@@ -122,13 +122,13 @@
       {
         "period": "2015-2019",
         "title": "الاندماج وبناء الشبكات",
-        "description": "بينما اندمجنا في ألمانيا ووجدنا منزلاً جديداً، بنينا باستمرار شبكات. تعلمنا عن الحياة في ألمانيا، ودرسنا، وعملنا - وأبقينا دائماً سوريا في قلوبنا.",
-        "highlight": "نظمنا سراً عمليات إغاثة أولى في سوريا، رغم الخطر من نظام الأسد ."
+        "description": "بينما اندمجنا في ألمانيا ووجدنا منزلاً جديداً، بنينا باستمرار شبكات. تعلمنا عن الحياة في ألمانيا، ودرسنا، وعملنا - وأبقينا سوريا دائماً في قلوبنا.",
+        "highlight": "نظمنا سراً عمليات مساعدة في سوريا، رغم الخطر و الخوف من نظام الأسد ."
       },
       {
         "period": "2011-2024",
         "title": "مساعدة سرية رغم الخطر",
-        "description": "رغم الخطر علينا وعلى عائلاتنا، لم نتوقف أبداً عن المساعدة. من خلال دعم شركائنا المحليين والمنظمات الخيرية العديدة، تمكنا من تقديم المساعدة حيث لم تكن المساعدة مسموحة. تم التخطيط لمشاريع وعمليات مساعدة إنسانية عديدة وتنفيذها. الأبرز منها: دعم الأسر المحتاجة، بناء ١٥ مأوى للأسر النازحة، عمليات إنقاذ حياة لضحايا الحرب، ترميم المدارس في الأحياء المقصوفة، التخطيط لأنظمة طاقة شمسية للقرى والصناعة - كل شيء سري، كل شيء ضد إرادة النظام، كل شيء من الحب والعدالة لشعب مضطهد.",
+        "description": "رغم الخطر علينا وعلى عائلاتنا، لم نتوقف أبداً عن المساعدة. من خلال دعم شركائنا المحليين والمنظمات الخيرية العديدة، تمكنا من تقديم المساعدة هناك حيث لم  تكن المساعدة مسموحة. تم تخطيط و تنفيذ مشاريع وعمليات مساعدة إنسانية عديدة. الأبرز منها: دعم الأسر المحتاجة، بناء ١٥ مأوى للأسر النازحة، عمليات طبية لضحايا الحرب، ترميم المدارس في الأحياء المقصوفة، تخطيط لأنظمة طاقة شمسية للقرى والصناعات المحلية - كل شيء سري، كل شيء ضد إرادة النظام، كل شيء من الحب والعدالة لشعب مضطهد.",
         "stats": [
           { "number": "15", "label": "مأوى تم بناؤه" },
           { "number": "50+", "label": "عملية طبية" },
@@ -137,8 +137,8 @@
       },
       {
         "period": "2025-اليوم",
-        "title": "التحرر بعد ٥٥ عاماً! شمس سوريا تصبح رسمية",
-        "description": "بعد أكثر من نصف قرن من الديكتاتورية، سوريا حرة أخيراً. لأول مرة، يمكننا أن نعيش بلا خوف، ونساعد بلا اختباء، ونعيد البناء بلا فساد. فصل جديد يبدأ لبلدنا المحبوب المتضهد. فصل حاسم لمستقبل سوريا، والذي يمكننا جميعاً المساعدة في تشكيله هذه المرة.  ما كنا نفعله في الظلال وعبر أطراف ثالثة، نواصله الآن رسمياً. من خلال سنواتنا في سوريا وفي ألمانيا، أسسنا خبرة متنوعة وشبكات واسعة النطاق. بهذا، نعيد بناء بلدنا بشكل مستدام للجميع. لدينا أمل جيل كامل!",
+        "title": "التحرر بعد ٥٥ عاماً! شمس سوريا تصبح منظمة رسمية",
+        "description": "بعد أكثر من نصف قرن من الديكتاتورية، سوريا حرة أخيراً. لأول مرة، يمكننا أن نعيش بلا خوف، ونساعد بلا اختباء، ونعيد البناء بلا فساد. فصل جديد يبدأ لبلدنا المحبوب المضطهد. فصل حاسم لمستقبل سوريا، والذي يمكننا جميعاً المساعدة في تشكيله هذه المرة.  ما كنا نفعله في الظلال وعبر أطراف ثالثة، نواصله الآن رسمياً. من خلال سنواتنا في سوريا وفي ألمانيا، جمعنا خبرات متنوعة وشبكات واسعة النطاق. بهذا، نعيد بناء بلدنا بشكل مستدام للجميع. لدينا أمل جيل كامل!",
         "vision": {
           "title": "رؤيتنا لسوريا الحرة:",
           "points": [
@@ -152,7 +152,7 @@
     ],
     "mission": {
       "title": "اليوم: أحرار، منفتحون، مليئون بالأمل",
-      "description": "بعد ١٤ عاماً في الظلال، يمكننا أخيراً أن نفعل ما أردناه دائماً: **مساعدة سوريا في إعادة البناء - بانفتاح، ومهنية، واستدامة.**"
+      "description": "بعد ١٤ عاماً في الحرب و الظلم، يمكننا أخيراً أن نفعل ما أردناه دائماً: **مساعدة سوريا في إعادة البناء - بانفتاح، ومهنية، واستدامة.**"
     }
   }
 }
