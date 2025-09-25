@@ -6,10 +6,15 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
+import ErrorBoundary from "@/components/ErrorBoundary";
+import SEOHead from "@/components/SEOHead";
+import usePerformance from "@/hooks/usePerformance";
 import Home from "@/pages/Home";
 import Geschichte from "@/pages/Geschichte";
 import Projekte from "@/pages/Projekte";
 import VergangeneProj from "@/pages/VergangeneProj";
+
+import Kontakt from "@/pages/Kontakt";
 import Mitmachen from "@/pages/Mitmachen";
 import Spenden from "@/pages/Spenden";
 import NotFound from "@/pages/NotFound";
@@ -30,53 +35,72 @@ import PastProjectsAr from "@/pages/ar/PastProjects";
 import GetInvolvedAr from "@/pages/ar/GetInvolved";
 import DonateAr from "@/pages/ar/Donate";
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: 5 * 60 * 1000, // 5 minutes
+      gcTime: 10 * 60 * 1000, // 10 minutes
+    },
+  },
+});
+
+const AppContent = () => {
+  usePerformance();
+  
+  return (
+    <BrowserRouter>
+      <SEOHead />
+      <ScrollToTop />
+      <div className="min-h-screen flex flex-col">
+        <Navigation />
+        <main className="flex-grow">
+          <Routes>
+            {/* German routes (default) */}
+            <Route path="/" element={<Home />} />
+            <Route path="/geschichte" element={<Geschichte />} />
+            <Route path="/projekte" element={<Projekte />} />
+            <Route path="/vergangene-projekte" element={<VergangeneProj />} />
+            <Route path="/kontakt" element={<Kontakt />} />
+            <Route path="/mitmachen" element={<Mitmachen />} />
+            <Route path="/spenden" element={<Spenden />} />
+
+            {/* English routes */}
+            <Route path="/en" element={<HomeEn />} />
+            <Route path="/en/" element={<HomeEn />} />
+            <Route path="/en/history" element={<HistoryEn />} />
+            <Route path="/en/projects" element={<ProjectsEn />} />
+            <Route path="/en/past-projects" element={<PastProjectsEn />} />
+            <Route path="/en/get-involved" element={<GetInvolvedEn />} />
+            <Route path="/en/donate" element={<DonateEn />} />
+
+            {/* Arabic routes */}
+            <Route path="/ar" element={<HomeAr />} />
+            <Route path="/ar/" element={<HomeAr />} />
+            <Route path="/ar/history" element={<HistoryAr />} />
+            <Route path="/ar/projects" element={<ProjectsAr />} />
+            <Route path="/ar/past-projects" element={<PastProjectsAr />} />
+            <Route path="/ar/get-involved" element={<GetInvolvedAr />} />
+            <Route path="/ar/donate" element={<DonateAr />} />
+
+            {/* Catch-all route */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </BrowserRouter>
+  );
+};
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter basename="/shamsy"> 
-        <ScrollToTop />
-        <div className="min-h-screen flex flex-col">
-          <Navigation />
-          <main className="flex-grow">
-            <Routes>
-              {/* German routes (default) */}
-              <Route path="/" element={<Home />} />
-              <Route path="/geschichte" element={<Geschichte />} />
-              <Route path="/projekte" element={<Projekte />} />
-              <Route path="/vergangene-projekte" element={<VergangeneProj />} />
-              <Route path="/mitmachen" element={<Mitmachen />} />
-              <Route path="/spenden" element={<Spenden />} />
-
-              {/* English routes */}
-              <Route path="/en" element={<HomeEn />} />
-              <Route path="/en/" element={<HomeEn />} />
-              <Route path="/en/history" element={<HistoryEn />} />
-              <Route path="/en/projects" element={<ProjectsEn />} />
-              <Route path="/en/past-projects" element={<PastProjectsEn />} />
-              <Route path="/en/get-involved" element={<GetInvolvedEn />} />
-              <Route path="/en/donate" element={<DonateEn />} />
-
-              {/* Arabic routes */}
-              <Route path="/ar" element={<HomeAr />} />
-              <Route path="/ar/" element={<HomeAr />} />
-              <Route path="/ar/history" element={<HistoryAr />} />
-              <Route path="/ar/projects" element={<ProjectsAr />} />
-              <Route path="/ar/past-projects" element={<PastProjectsAr />} />
-              <Route path="/ar/get-involved" element={<GetInvolvedAr />} />
-              <Route path="/ar/donate" element={<DonateAr />} />
-
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </main>
-          <Footer />
-        </div>
-      </BrowserRouter>
-    </TooltipProvider>
+    <ErrorBoundary>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <AppContent />
+      </TooltipProvider>
+    </ErrorBoundary>
   </QueryClientProvider>
 );
 
