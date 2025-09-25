@@ -152,7 +152,7 @@ const SharedDonations = () => {
       return;
     }
 
-    if (!STRIPE_PUBLISHABLE_KEY || STRIPE_PUBLISHABLE_KEY === "pk_test_51SBEOBHF4Z0Mcr4wdgPvmOsv74mrnhw2Ur75ZmtQFelitMffNOw60qxYSm1XSVneWkLtGDrzMc2RP8ZwRp5oRwDQ00vAAR17TB") {
+    if (!STRIPE_PUBLISHABLE_KEY || STRIPE_PUBLISHABLE_KEY.trim() === "") {
       toast.error(
         content?.language === 'de' 
           ? 'Stripe ist noch nicht konfiguriert. Bitte Stripe Publishable Key hinzufügen.'
