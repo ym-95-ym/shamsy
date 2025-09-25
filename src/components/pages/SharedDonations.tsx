@@ -174,7 +174,7 @@ const SharedDonations = () => {
       
       // Dynamically import Stripe
       const { loadStripe } = await import('@stripe/stripe-js');
-      const stripePromise = await loadStripe(STRIPE_PUBLISHABLE_KEY);
+      const stripePromise = loadStripe(STRIPE_PUBLISHABLE_KEY);
 
       if (!stripePromise) {
         throw new Error('Failed to load Stripe');
