@@ -11,14 +11,16 @@
     "en": {
       "title": "Shams Syria e.V.",
       "description1": "Syria is a country full of scars from **14 years of war, 55 years of dictatorship,** and lack of the most basic necessities of life.",
-      "description2": "But despite all this darkness, there is hope: People who stayed. People who are returning. People like us who **build bridges between the world and destroyed Syria**.<br./>We support from Germany, where we also call home.",
+      "description2": "But despite all this darkness, there is hope: People who stayed. People who are returning. People like us who **build bridges between the world and destroyed Syria**.",
+      "description3": "We support from Germany, where we also call home.",
       "button1": "Our Projects",
       "button2": "Help Now"
     },
     "ar": {
       "title": "شمس سوريا",
       "description1": "سوريا بلد مليء بالجراح من **١٤ عاماً من الحرب، ٥٥ عاماً من الديكتاتورية،** ونقص في أهم ضروريات الحياة.",
-      "description2": "تجاوز دكتاتورنا كل الخطوط الحمراء. كانت المساعدة ممنوعة في الأماكن التي سقطت فيها القنابل والأسلحة الكيميائية. تم تهجير العائلات. لم يُسمح برعاية  للغايةالجرحى إلا سرًا. كان الأمر قاسيًا… لكن كل هذا انتهى! الآن نبدأ بإعادة الإعمار و كلنا أمل.",
+      "description2": "تجاوز دكتاتورنا كل الخطوط الحمراء. كانت المساعدة ممنوعة في الأماكن التي سقطت فيها القنابل والأسلحة الكيميائية. تم تهجير العائلات. لم يُسمح برعاية  للغايةالجرحى إلا سرًا. كان الأمر قاسيًا…",
+      "description3": "لكن كل هذا انتهى! الآن نبدأ بإعادة الإعمار و كلنا أمل.",
       "button1": "مشاريعنا",
       "button2": "ساعد الآن"
     }
