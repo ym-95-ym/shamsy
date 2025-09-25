@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Badge } from "@/components/ui/badge";
 import { Link, useSearchParams } from "react-router-dom";
+import { loadStripe } from "@stripe/stripe-js";
 import { 
   Heart, 
   CreditCard, 
