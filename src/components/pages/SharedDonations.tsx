@@ -183,35 +183,36 @@ const SharedDonations = () => {
         ? "Monatliche Spende für ShamSy e.V." 
         : "Einmalige Spende für ShamSy e.V.";
 
-      // Create line items for Stripe
-      const lineItems = [{
-        price_data: {
-          currency: 'eur',
-          product_data: {
-            name: `Spende - ${projectName}`,
-            description: description,
-          },
-          unit_amount: Math.round(amount * 100), // Convert to cents
-          ...(donationType === "monthly" && {
-            recurring: {
-              interval: 'month',
+      // Use Stripe's embedded checkout for frontend-only dynamic pricing
+      const checkoutOptions = {
+        mode: mode as "payment" | "subscription",
+        lineItems: [{
+          priceData: {
+            currency: 'eur' as const,
+            productData: {
+              name: `Spende - ${projectName}`,
+              description: description,
             },
-          }),
-        },
-        quantity: 1,
-      }];
-
-      // Redirect to Stripe Checkout
-      const { error } = await stripe.redirectToCheckout({
-        mode,
-        lineItems,
+            unitAmount: Math.round(amount * 100), // Convert to cents
+            ...(donationType === "monthly" && {
+              recurring: {
+                interval: 'month' as const,
+              },
+            }),
+          },
+          quantity: 1,
+        }],
         successUrl: `${window.location.origin}/spenden?success=true&amount=${amount}&type=${donationType}`,
         cancelUrl: `${window.location.origin}/spenden?canceled=true`,
-      });
+      };
+
+      // Use Stripe's embedded checkout which supports price_data
+      const { error } = await stripe.redirectToCheckout(checkoutOptions);
 
       if (error) {
         throw new Error(error.message);
       }
+
       
     } catch (error) {
       console.error('Payment error:', error);
@@ -229,6 +230,7 @@ const SharedDonations = () => {
 
   const isRTL = content.language === 'ar';
   const projectsRoute = content.language === 'de' ? '/projekte' : `/${content.language}/projects`;
+  const contactRoute = content.language === 'de' ? '/kontakt' : `/${content.language}/contact`;
 
   return (
     <div className="min-h-screen" dir={isRTL ? 'rtl' : 'ltr'}>
@@ -626,7 +628,7 @@ const SharedDonations = () => {
                     variant="outline" 
                     className="w-full border-shamsy-primary text-shamsy-primary hover:bg-shamsy-primary hover:text-white"
                   >
-                    <Link to="mailto:info@shamsy.org">{content.contact.button}</Link>
+                    <Link to={contactRoute}>{content.contact.button}</Link>
                   </Button>
                 </CardContent>
               </Card>
