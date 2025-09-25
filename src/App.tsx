@@ -48,7 +48,7 @@ const AppContent = () => {
   usePerformance();
   
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/shamsy">
       <SEOHead />
       <ScrollToTop />
       <div className="min-h-screen flex flex-col">
