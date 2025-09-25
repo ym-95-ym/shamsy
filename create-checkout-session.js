@@ -1,7 +1,7 @@
 const express = require('express');
 const Stripe = require('stripe');
 const app = express();
-const stripe = Stripe('pk_test_51SBEOBHF4Z0Mcr4wdgPvmOsv74mrnhw2Ur75ZmtQFelitMffNOw60qxYSm1XSVneWkLtGDrzMc2RP8ZwRp5oRwDQ00vAAR17TB'); // Replace with your secret key
+const stripe = Stripe('pk_test_51SBEOBHF4Z0Mcr4wAV4bf5G8d3SIDMcIe7HJgFrZYKGqUMOsZnMIFHmJe19CqA1DOwAPhPxzDCd9fIaUnkMrch0I00CWCLIbiX'); // Replace with your SK key
 
 app.use(express.json());
 
