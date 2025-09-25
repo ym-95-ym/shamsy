@@ -141,9 +141,11 @@ const SharedPastProjects = () => {
                         {/* Project Image */}
                         <div className="relative h-48 md:h-64 lg:h-auto">
                           <img 
+                            key={`${project.id}-${content.language}`}
                             src={project.image} 
                             alt={project.title}
                             className="w-full h-full object-cover"
+                            loading="lazy"
                           />
                           <div className={`absolute top-2 md:top-4 ${isRTL ? 'right-2 md:right-4' : 'left-2 md:left-4'}`}>
                             <Badge className="bg-shamsy-primary text-white text-xs">
