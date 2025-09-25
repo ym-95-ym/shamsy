@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Heart } from "lucide-react";
 import { useHomeContent } from "@/hooks/useContent";
+import LazyImage from "@/components/LazyImage";
+import SEOHead from "@/components/SEOHead";
 
 // Helper function to render text with markdown-style bold formatting
 function renderText(text: string) {
@@ -25,14 +27,20 @@ const SharedHome = () => {
 
   return (
     <div className="min-h-screen" dir={isRTL ? 'rtl' : 'ltr'}>
+      <SEOHead 
+        title="ShamSy e.V. - Wiederaufbau Syriens durch nachhaltige Projekte"
+        description={`${hero.description1} ${hero.description2}`.replace(/<[^>]*>/g, '').replace(/\*\*/g, '')}
+        keywords="ShamSy, Syrien, Wiederaufbau, Hilfsorganisation, Spenden, nachhaltige Projekte"
+        ogImage="/images/hero-destruction.jpg"
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center text-center text-white pt-20">
         {/* Background Image */}
         <div className="absolute inset-0">
-          <img 
-            src="/shamsy/images/hero-destruction.jpg" 
+          <LazyImage 
+            src="/images/hero-destruction.jpg"
             alt="Hero background - ShamSy Archive"
-            className="w-full h-full object-cover"
+            className="w-full h-full"
           />
           <div className={`absolute bottom-2 ${isRTL ? 'left-2' : 'right-2'} bg-black/60 text-white text-xs px-2 py-1 rounded`}>
             {language === 'de' ? 'Quelle: ShamSy Archive' : 
@@ -59,10 +67,6 @@ const SharedHome = () => {
               <p className="break-words" dangerouslySetInnerHTML={{ __html: hero.description2.split('**').map((part, index) => 
                 index % 2 === 0 ? part : `<strong>${part}</strong>`
               ).join('') }} />
-              
-              <p className="break-words">
-                {renderText(hero.description3)}
-              </p>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">

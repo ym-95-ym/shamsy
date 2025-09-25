@@ -22,7 +22,7 @@ const SharedPastProjects = () => {
 
   useEffect(() => {
     const loadData = async () => {
-      const projects = await getPastProjects();
+      const projects = await getPastProjects(content?.language || 'de');
       const stats = await getStats();
       
       // Map projects with icons
@@ -39,7 +39,7 @@ const SharedPastProjects = () => {
     };
     
     loadData();
-  }, []);
+  }, [content?.language]);
 
   useEffect(() => {
     if (content?.language) {

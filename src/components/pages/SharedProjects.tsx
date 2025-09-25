@@ -7,6 +7,9 @@ import { ArrowRight } from "lucide-react";
 import { loadProjects, Project } from "@/lib/projectManager";
 import { useProjectsContent } from "@/hooks/useContent";
 import { getStats } from "@/lib/statsManager";
+import ShareButton from "@/components/ui/share-button";
+import LazyImage from "@/components/LazyImage";
+import SEOHead from "@/components/SEOHead";
 
 const SharedProjects = () => {
   const content = useProjectsContent();
@@ -18,7 +21,7 @@ const SharedProjects = () => {
     const fetchData = async () => {
       try {
         const [loadedProjects, loadedStats] = await Promise.all([
-          loadProjects(),
+          loadProjects(content?.language || 'de'),
           getStats()
         ]);
         setProjects(loadedProjects);
@@ -31,7 +34,7 @@ const SharedProjects = () => {
     };
     
     fetchData();
-  }, []);
+  }, [content?.language]);
 
   useEffect(() => {
     if (content?.language) {
@@ -55,6 +58,11 @@ const SharedProjects = () => {
 
   return (
     <div className="min-h-screen" dir={isRTL ? 'rtl' : 'ltr'}>
+      <SEOHead 
+        title={`${content.header.title} - ShamSy e.V.`}
+        description={content.header.subtitle}
+        keywords="Syrien Projekte, Wiederaufbau, Hilfsorganisation, Spenden, aktuelle Projekte"
+      />
       <PageHeader 
         title={content.header.title}
         subtitle={content.header.subtitle}
@@ -106,20 +114,20 @@ const SharedProjects = () => {
                 return (
                   <Card key={project.id} className="shamsy-card border-shamsy-primary/20 overflow-hidden hover:shadow-xl shamsy-transition group hover:-translate-y-2">
                     <CardContent className="p-0">
-                      <div className="relative h-64">
-                        <img 
-                          src={project.image} 
-                          alt={project.title}
-                          className="w-full h-full object-cover group-hover:scale-105 shamsy-transition"
-                        />
-                        <div className={`absolute bottom-2 ${isRTL ? 'left-2' : 'right-2'} bg-black/60 text-white text-xs px-2 py-1 rounded`}>
-                          {content.imageSource}
-                        </div>
-                        <div className={`absolute top-4 ${isRTL ? 'right-4' : 'left-4'} bg-shamsy-primary text-white px-3 py-1 rounded-full text-sm font-semibold`}>
-                          {project.category}
-                        </div>
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
-                      </div>
+              <div className="relative h-64">
+                <LazyImage 
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full group-hover:scale-105 shamsy-transition"
+                />
+                <div className={`absolute bottom-2 ${isRTL ? 'left-2' : 'right-2'} bg-black/60 text-white text-xs px-2 py-1 rounded`}>
+                  {content.imageSource}
+                </div>
+                <div className={`absolute top-4 ${isRTL ? 'right-4' : 'left-4'} bg-shamsy-primary text-white px-3 py-1 rounded-full text-sm font-semibold`}>
+                  {project.category}
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+              </div>
 
                       <div className="p-6">
                         <div className="flex items-start gap-3 mb-4">
@@ -131,6 +139,12 @@ const SharedProjects = () => {
                               {project.title}
                             </h3>
                           </div>
+                          <ShareButton 
+                            title={project.title}
+                            description={project.description}
+                            size="sm"
+                            variant="ghost"
+                          />
                         </div>
 
                         <p className="text-muted-foreground text-sm leading-relaxed mb-6 line-clamp-4 break-words">
@@ -178,10 +192,10 @@ const SharedProjects = () => {
                       <div className="grid grid-cols-1 lg:grid-cols-2">
                         {/* Project Image */}
                         <div className="relative h-80 lg:h-auto">
-                          <img 
-                            src={project.image} 
+                          <LazyImage 
+                            src={project.image}
                             alt={project.title}
-                            className="w-full h-full object-cover group-hover:scale-105 shamsy-transition"
+                            className="w-full h-full group-hover:scale-105 shamsy-transition"
                           />
                           <div className={`absolute bottom-2 ${isRTL ? 'left-2' : 'right-2'} bg-black/60 text-white text-xs px-2 py-1 rounded`}>
                             {content.imageSource}
@@ -204,6 +218,12 @@ const SharedProjects = () => {
                                   {project.title}
                                 </h3>
                               </div>
+                              <ShareButton 
+                                title={project.title}
+                                description={project.description}
+                                size="sm"
+                                variant="ghost"
+                              />
                             </div>
 
                             <p className="text-muted-foreground mb-8 leading-relaxed text-lg break-words">
