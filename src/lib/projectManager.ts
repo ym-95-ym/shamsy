@@ -101,7 +101,7 @@ export const defaultProjects: Project[] = [
     raised: 0,
     progress: 0,
     icon: Heart,
-    image: "/images/children.jpg"
+    image: "/shamsy/images/children.jpg"
   },
   {
     id: "gehalt",
@@ -113,7 +113,7 @@ export const defaultProjects: Project[] = [
     raised: 0,
     progress: 0,
     icon: Heart,
-    image: "/images/gehalt.jpg"
+    image: "/shamsy/images/gehalt.jpg"
   },
   {
     id: "brunnen",
@@ -125,7 +125,7 @@ export const defaultProjects: Project[] = [
     raised: 0,
     progress: 0,
     icon: Users,
-    image: "/images/water.jpg"
+    image: "/shamsy/images/water.jpg"
   },
   {
     id: "solar",
@@ -137,7 +137,7 @@ export const defaultProjects: Project[] = [
     raised: 0,
     progress: 0,
     icon: Zap,
-    image: "/images/pv-sys.jpg",
+    image: "/shamsy/images/pv-sys.jpg",
     stats: [
       { number: "10.000", label: "Menschen mit Strom versorgen" },
       { number: "500+", label: "Schüler mit Strom versorgen" },
@@ -154,7 +154,7 @@ export const defaultProjects: Project[] = [
     raised: 0,
     progress: 0,
     icon: Heart,
-    image: "/images/douma-hospital-after.jpg",
+    image: "/shamsy/images/douma-hospital-after.jpg",
     stats: [
       { number: "1 Mio+", label: "Patienten/Jahr" },
       { number: "100%", label: "Notwendig" },
@@ -171,7 +171,7 @@ export const defaultProjects: Project[] = [
     raised: 0,
     progress: 0,
     icon: GraduationCap,
-    image: "/images/schule.jpg",
+    image: "/shamsy/images/schule.jpg",
     stats: [
       { number: "3000+", label: "Schüler" },
       { number: "5", label: "Schulen" },
@@ -183,7 +183,7 @@ export const defaultProjects: Project[] = [
 // Load projects from CSV or return defaults
 export async function loadProjects(language: string = 'de'): Promise<Project[]> {
   try {
-    const csvFile = language === 'de' ? '/projects-template.csv' : `/projects-template-${language}.csv`;
+    const csvFile = language === 'de' ? '/shamsy/projects-template.csv' : `/projects-template-${language}.csv`;
     const response = await fetch(csvFile);
     if (!response.ok) {
       console.log(`CSV file ${csvFile} not found, using default projects`);
