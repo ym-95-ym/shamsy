@@ -42,7 +42,8 @@ const Navigation = () => {
           { href: `${basePath}/history`, label: "History" },
           { href: `${basePath}/projects`, label: "Projects" },
           { href: `${basePath}/past-projects`, label: "Past Projects" },
-          { href: `${basePath}/get-involved`, label: "Get Involved" }
+          { href: `${basePath}/get-involved`, label: "Get Involved" },
+          { href: `${basePath}/contact`, label: "Contact & Newsletter" }
         ];
       case 'ar':
         return [
@@ -50,7 +51,8 @@ const Navigation = () => {
           { href: `${basePath}/history`, label: "قصتنا" },
           { href: `${basePath}/projects`, label: "المشاريع" },
           { href: `${basePath}/past-projects`, label: "المشاريع السابقة" },
-          { href: `${basePath}/get-involved`, label: "شارك معنا" }
+          { href: `${basePath}/get-involved`, label: "شارك معنا" },
+          { href: `${basePath}/contact`, label: "التواصل و المجلة السنوية" }
         ];
       default:
         return [
