@@ -207,28 +207,35 @@ const SharedDonations = () => {
         cancelUrl: `${window.location.origin}/spenden?canceled=true`,
       };
 
-      // Use Stripe's embedded checkout which supports price_data
-      const { error } = await stripe.redirectToCheckout(checkoutOptions);
+    // Backend-Aufruf für die Checkout-Session
+      const response = await fetch('/create-checkout-session', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          amount,
+          donationType,
+          projectName,
+        }),
+      });
 
-      if (error) {
-        throw new Error(error.message);
-      }
+      const data = await response.json();
+      if (!response.ok) throw new Error(data.error || 'Failed to create session');
 
-      
+    // Weiterleitung zu Stripe
+      window.location.href = data.checkoutSessionClientSecret;
     } catch (error) {
       console.error('Payment error:', error);
-      toast.error(
-        content?.language === 'de' 
-          ? 'Fehler beim Erstellen der Zahlung. Bitte versuchen Sie es erneut.'
-          : content?.language === 'en'
-          ? 'Error creating payment. Please try again.'
+      toast.error(content?.language === 'de' 
+            ? 'Fehler beim Erstellen der Zahlung. Bitte versuchen Sie es erneut.'
+            : content?.language === 'en'
+            ? 'Error creating payment. Please try again.'
           : 'خطأ في إنشاء الدفع. يرجى المحاولة مرة أخرى.'
-      );
+        );
     } finally {
       setProcessingPayment(false);
     }
   };
-
+      
   const isRTL = content.language === 'ar';
   const projectsRoute = content.language === 'de' ? '/projekte' : `/${content.language}/projects`;
   const contactRoute = content.language === 'de' ? '/kontakt' : `/${content.language}/contact`;
