@@ -34,16 +34,14 @@ const LazyImage = ({
     );
 
     const currentImg = imgRef.current;
-    if (currentImg) {
+    if (currentImg && !isInView) {
       observer.observe(currentImg);
     }
 
     return () => {
-      if (currentImg) {
-        observer.unobserve(currentImg);
-      }
+      observer.disconnect();
     };
-  }, []);
+  }, [isInView]);
 
   const handleLoad = () => {
     setIsLoaded(true);
