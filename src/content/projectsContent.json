@@ -124,7 +124,7 @@
     "stats": [
       { "label": "Current Projects", "key": "projectCount" },
       { "value": "1 Million+", "label": "People to help" },
-      { "value": "All contributions count!", "label": "Support orphan" },
+      { "value": "Every penny", "label": "counts" },
       { "value": "100%", "label": "Transparency" }
     ],
     "humanitarian": {
@@ -241,7 +241,7 @@
     "stats": [
       { "label": "المشاريع الحالية", "key": "projectCount" },
       { "value": "1 مليون+", "label": "شخص للمساعدة" },
-      { "value": "كل دعم له أثر كبير", "label": "دعم يتيم" },
+      { "value": "أي دعم صغير", "label": "له أثر كبير" },
       { "value": "100%", "label": "الشفافية" }
     ],
     "humanitarian": {
