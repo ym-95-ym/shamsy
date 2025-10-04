@@ -124,7 +124,7 @@
     "stats": [
       { "label": "Current Projects", "key": "projectCount" },
       { "value": "1 Million+", "label": "People to help" },
-      { "value": "from €13 monthly", "label": "Support orphan" },
+      { "value": "All contributions count!", "label": "Support orphan" },
       { "value": "100%", "label": "Transparency" }
     ],
     "humanitarian": {
@@ -241,7 +241,7 @@
     "stats": [
       { "label": "المشاريع الحالية", "key": "projectCount" },
       { "value": "1 مليون+", "label": "شخص للمساعدة" },
-      { "value": "من 13 € شهرياً", "label": "دعم يتيم" },
+      { "value": "كل دعم له أثر كبير", "label": "دعم يتيم" },
       { "value": "100%", "label": "الشفافية" }
     ],
     "humanitarian": {
