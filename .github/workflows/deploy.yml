@@ -33,13 +33,13 @@ jobs:
           VITE_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY }}
 
     - name: Setup Supabase CLI
-        uses: supabase/setup-cli@v1
-        with:
+      uses: supabase/setup-cli@v1
+      with:
           version: latest
           
     - name: Deploy Edge Functions
-        run: supabase functions deploy create-donation-checkout
-        env:
+       run: supabase functions deploy create-donation-checkout
+       env:
           SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
           SUPABASE_PROJECT_ID: ${{ secrets.SUPABASE_PROJECT_ID }}
           
