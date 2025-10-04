@@ -52,6 +52,8 @@ serve(async (req) => {
     } catch (authError) {
       console.log("No authenticated user, proceeding with guest checkout");
     }
+    
+    console.log("Processing donation:", { amount, donationType, projectId, hasUser: !!user });
 
     // Determine mode and product name
     const mode = donationType === "monthly" ? "subscription" : "payment";
