@@ -158,7 +158,7 @@ const SharedProjects = () => {
                         >
                           <Link to={donateRoute} className="flex items-center justify-center gap-2">
                             {content.humanitarian.button}
-                            <span className="truncate">{donateRoute}</span>
+                            <span className="truncate">"Jetzt Spenden"</span>
                             <ArrowRight className={`w-4 h-4 flex-shrink-0 ${isRTL ? 'rotate-180' : ''}`} />
                           </Link>
                         </Button>
@@ -258,6 +258,7 @@ const SharedProjects = () => {
                             >
                               <Link to={donateRoute} className="flex items-center justify-center gap-2">
                                 {content.major.supportButton}
+                                <span className="truncate">"Jetzt Spenden"</span>
                                 <ArrowRight className={`w-5 h-5 ${isRTL ? 'rotate-180' : ''}`} />
                               </Link>
                             </Button>
@@ -269,6 +270,7 @@ const SharedProjects = () => {
                             >
                               <Link to={getInvolvedRoute} className="flex items-center justify-center gap-2">
                                 {content.major.learnMoreButton}
+                                <span className="truncate">"Jetzt Mitmachen"</span>
                                 <ArrowRight className={`w-5 h-5 ${isRTL ? 'rotate-180' : ''}`} />
                               </Link>
                             </Button>
@@ -303,6 +305,7 @@ const SharedProjects = () => {
                 >
                   <Link to={donateRoute} className="flex items-center gap-2">
                     {content.cta.donateButton}
+                    <span className="truncate">"Jetzt Spenden"</span>
                     <ArrowRight className={`w-5 h-5 ${isRTL ? 'rotate-180' : ''}`} />
                   </Link>
                 </Button>
@@ -313,6 +316,7 @@ const SharedProjects = () => {
                   className="border-shamsy-primary text-shamsy-primary hover:bg-shamsy-primary hover:text-white"
                 >
                   <Link to={getInvolvedRoute}>{content.cta.memberButton}</Link>
+                  <span className="truncate">"Jetzt Mitmachen"</span>
                 </Button>
               </div>
             </CardContent>
