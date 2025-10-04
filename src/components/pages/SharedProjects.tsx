@@ -158,7 +158,7 @@ const SharedProjects = () => {
                         >
                           <Link to={donateRoute} className="flex items-center justify-center gap-2">
                             {content.humanitarian.button}
-                            <ArrowRight className={`w-4 h-4 ${isRTL ? 'rotate-180' : ''}`} />
+                            <ArrowRight className={`w-4 h-4 flex-shrink-0 ${isRTL ? 'rotate-180' : ''}`} />
                           </Link>
                         </Button>
                       </div>
