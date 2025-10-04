@@ -1,4 +1,2 @@
 project_id = "rettteuaqjtgvcaxsuba"
 
-[functions.create-donation-checkout]
-verify_jwt = false
