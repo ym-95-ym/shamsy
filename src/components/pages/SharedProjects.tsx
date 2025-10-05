@@ -270,7 +270,7 @@ const SharedProjects = () => {
                             >
                               <Link to={getInvolvedRoute} className="flex items-center justify-center gap-2">
                                 {content.major.learnMoreButton}
-                                <span className="truncate">{donateRoute}</span>
+                                <span className="truncate">{getInvolvedRoute}</span>
                                 <ArrowRight className={`w-5 h-5 ${isRTL ? 'rotate-180' : ''}`} />
                               </Link>
                             </Button>
