@@ -316,7 +316,6 @@ const SharedProjects = () => {
                   className="border-shamsy-primary text-shamsy-primary hover:bg-shamsy-primary hover:text-white"
                 >
                   <Link to={getInvolvedRoute}>{content.cta.memberButton}</Link>
-                  <span className="truncate">"Jetzt Mitmachen"</span>
                 </Button>
               </div>
             </CardContent>
