@@ -122,7 +122,7 @@ const SharedProjects = () => {
                   className="w-full h-full object-cover group-hover:scale-105 shamsy-transition"
                 />
                 <div className={`absolute bottom-2 ${isRTL ? 'left-2' : 'right-2'} bg-black/60 text-white text-xs px-2 py-1 rounded`}>
-                  {content.imageSource}
+                  {project.imageSource}
                 </div>
                 <div className={`absolute top-4 ${isRTL ? 'right-4' : 'left-4'} bg-shamsy-primary text-white px-3 py-1 rounded-full text-sm font-semibold`}>
                   {project.category}
@@ -200,7 +200,7 @@ const SharedProjects = () => {
                             className="w-full h-full object-cover group-hover:scale-105 shamsy-transition"
                           />
                           <div className={`absolute bottom-2 ${isRTL ? 'left-2' : 'right-2'} bg-black/60 text-white text-xs px-2 py-1 rounded`}>
-                            {content.imageSource}
+                            {project.imageSource}
                           </div>
                           <div className={`absolute top-4 ${isRTL ? 'right-4' : 'left-4'} bg-shamsy-primary text-white px-4 py-2 rounded-full text-sm font-semibold`}>
                             {project.category}
