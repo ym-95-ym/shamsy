@@ -1,5 +1,7 @@
 {
   "de": {
+    "language": "de",
+    "imageSource": "Eigene Aufnahmen",
     "header": {
       "title": "Aktuelle Projekte",
       "subtitle": "Energie, Bildung, Gesundheit - Unsere laufenden Initiativen für nachhaltigen Wiederaufbau"
@@ -13,6 +15,7 @@
     "humanitarian": {
       "title": "Humanitäre Projekte",
       "subtitle": "Direkte Hilfe für Menschen in Not - jeder Beitrag hilft enorm.",
+      "button": "Jetzt Spenden",
       "projects": [
         {
           "title": "Einer Familie in Not einen Monatslohn schenken",
@@ -68,6 +71,8 @@
     "major": {
       "title": "Großprojekte: Für Sponsors und Crowdfunding",
       "subtitle": "Nachhaltige Infrastrukturprojekte mit großer Wirkung",
+      "supportButton": "Projekt unterstützen",
+      "learnMoreButton": "Mehr erfahren",
       "projects": [
         {
           "title": "Der El-Asafir Gemeinde-Infrastruktur",
@@ -110,6 +115,8 @@
     "cta": {
       "title": "Werden Sie Teil unserer Mission",
       "description": "Jeder Beitrag hilft uns dabei, Syrien Schritt für Schritt wieder aufzubauen. Unterstützen Sie unsere Projekte und werden Sie Teil der Lösung.",
+      "donateButton": "Jetzt Spenden",
+      "memberButton": "Mitglied werden",
       "buttons": [
         { "text": "Jetzt Spenden", "link": "/spenden" },
         { "text": "Mitglied werden", "link": "/mitmachen" }
@@ -117,6 +124,8 @@
     }
   },
   "en": {
+    "language": "en",
+    "imageSource": "Own photos",
     "header": {
       "title": "Current Projects",
       "subtitle": "Energy, Education, Health - Our ongoing initiatives for sustainable reconstruction"
@@ -124,12 +133,13 @@
     "stats": [
       { "label": "Current Projects", "key": "projectCount" },
       { "value": "1 Million+", "label": "People to help" },
-      { "value": "Every penny", "label": "counts" },
+      { "value": "from €13 monthly", "label": "Support orphan" },
       { "value": "100%", "label": "Transparency" }
     ],
     "humanitarian": {
       "title": "Humanitarian Projects",
       "subtitle": "Direct help for people in need - every contribution reaches its destination",
+      "button": "Donate Now",
       "projects": [
         {
           "title": "Give a monthly salary to a family in need",
@@ -185,6 +195,8 @@
     "major": {
       "title": "Major Projects: For Sponsors and Crowdfunding",
       "subtitle": "Partial donations possible! Sustainable infrastructure projects with great impact",
+      "supportButton": "Support Project",
+      "learnMoreButton": "Learn More",
       "projects": [
         {
           "title": "Der El-Asafir Community Infrastructure",
@@ -227,6 +239,8 @@
     "cta": {
       "title": "Become Part of Our Mission",
       "description": "Every contribution helps us rebuild Syria step by step. Support our projects and become part of the solution.",
+      "donateButton": "Donate Now",
+      "memberButton": "Become Member",
       "buttons": [
         { "text": "Donate Now", "link": "/en/donate" },
         { "text": "Become Member", "link": "/en/get-involved" }
@@ -234,6 +248,8 @@
     }
   },
   "ar": {
+    "language": "ar",
+    "imageSource": "صور خاصة",
     "header": {
       "title": "المشاريع الحالية",
       "subtitle": "الطاقة، التعليم، الصحة - مبادراتنا الجارية لإعادة الإعمار المستدام"
@@ -241,12 +257,13 @@
     "stats": [
       { "label": "المشاريع الحالية", "key": "projectCount" },
       { "value": "1 مليون+", "label": "شخص للمساعدة" },
-      { "value": "أي دعم صغير", "label": "له أثر كبير" },
+      { "value": "من 13 € شهرياً", "label": "دعم يتيم" },
       { "value": "100%", "label": "الشفافية" }
     ],
     "humanitarian": {
       "title": "المشاريع الإنسانية",
       "subtitle": "مساعدة مباشرة للأشخاص المحتاجين - كل مساهمة تصل إلى وجهتها",
+      "button": "تبرع الآن",
       "projects": [
         {
           "title": "إهداء راتب شهري لعائلة محتاجة",
@@ -302,6 +319,8 @@
     "major": {
       "title": "المشاريع الكبرى: للرعاة والتمويل الجماعي",
       "subtitle": "التبرعات الجزئية ممكنة! مشاريع البنية التحتية المستدامة ذات التأثير الكبير",
+      "supportButton": "دعم المشروع",
+      "learnMoreButton": "اعرف المزيد",
       "projects": [
         {
           "title": "البنية التحتية المجتمعية دير العصافير",
@@ -344,6 +363,8 @@
     "cta": {
       "title": "كن جزءاً من مهمتنا",
       "description": "كل مساهمة تساعدنا على إعادة بناء سوريا خطوة بخطوة. ادعم مشاريعنا وكن جزءاً من الحل.",
+      "donateButton": "تبرع الآن",
+      "memberButton": "كن عضواً",
       "buttons": [
         { "text": "تبرع الآن", "link": "/ar/donate" },
         { "text": "كن عضواً", "link": "/ar/get-involved" }
