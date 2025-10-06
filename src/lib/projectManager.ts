@@ -11,6 +11,7 @@ export interface Project {
   progress: number;
   icon: LucideIcon;
   image: string;
+  imageSource?: string;
   stats?: Array<{
     number: string;
     label: string;
@@ -84,6 +85,7 @@ export function parseProjectsFromCSV(csvContent: string): Project[] {
       progress: parseInt(project.progress) || 0,
       icon: iconMap[project.icon] || Heart,
       image: project.image,
+      imageSource: project.imageSource,
       stats: stats.length > 0 ? stats : undefined,
     };
   });
@@ -101,7 +103,7 @@ export const defaultProjects: Project[] = [
     raised: 0,
     progress: 0,
     icon: Heart,
-    image: "/shamsy/images/children.jpg"
+    image: "/images/children.jpg"
   },
   {
     id: "gehalt",
@@ -113,7 +115,7 @@ export const defaultProjects: Project[] = [
     raised: 0,
     progress: 0,
     icon: Heart,
-    image: "/shamsy/images/gehalt.jpg"
+    image: "/images/gehalt.jpg"
   },
   {
     id: "brunnen",
@@ -125,7 +127,7 @@ export const defaultProjects: Project[] = [
     raised: 0,
     progress: 0,
     icon: Users,
-    image: "/shamsy/images/water.jpg"
+    image: "/images/water.jpg"
   },
   {
     id: "solar",
@@ -137,7 +139,7 @@ export const defaultProjects: Project[] = [
     raised: 0,
     progress: 0,
     icon: Zap,
-    image: "/shamsy/images/pv-sys.jpg",
+    image: "/images/pv-sys.jpg",
     stats: [
       { number: "10.000", label: "Menschen mit Strom versorgen" },
       { number: "500+", label: "Schüler mit Strom versorgen" },
@@ -154,7 +156,7 @@ export const defaultProjects: Project[] = [
     raised: 0,
     progress: 0,
     icon: Heart,
-    image: "/shamsy/images/douma-hospital-after.jpg",
+    image: "/images/douma-hospital-after.jpg",
     stats: [
       { number: "1 Mio+", label: "Patienten/Jahr" },
       { number: "100%", label: "Notwendig" },
@@ -171,7 +173,7 @@ export const defaultProjects: Project[] = [
     raised: 0,
     progress: 0,
     icon: GraduationCap,
-    image: "/shamsy/images/schule.jpg",
+    image: "/images/schule.jpg",
     stats: [
       { number: "3000+", label: "Schüler" },
       { number: "5", label: "Schulen" },
@@ -183,7 +185,7 @@ export const defaultProjects: Project[] = [
 // Load projects from CSV or return defaults
 export async function loadProjects(language: string = 'de'): Promise<Project[]> {
   try {
-    const csvFile = language === 'de' ? '/shamsy/projects-template.csv' : `/shamsy/projects-template-${language}.csv`;
+    const csvFile = language === 'de' ? '/projects-template.csv' : `/projects-template-${language}.csv`;
     const response = await fetch(csvFile);
     if (!response.ok) {
       console.log(`CSV file ${csvFile} not found, using default projects`);
