@@ -139,13 +139,18 @@ const SharedPastProjects = () => {
                     <CardContent className="p-0">
                       <div className="grid grid-cols-1 lg:grid-cols-3">
                         {/* Project Image */}
-                        <div className="relative h-48 md:h-64 lg:h-auto">
+                          <div className="relative h-48 md:h-64 lg:h-auto">
                           <img 
                             key={`${project.id}-${content.language}`}
                             src={project.image} 
                             alt={project.title}
                             className="w-full h-full object-cover"
                           />
+                          {project.imageSource && (
+                            <div className={`absolute bottom-2 ${isRTL ? 'left-2' : 'right-2'} bg-black/60 text-white text-xs px-2 py-1 rounded`}>
+                              {project.imageSource}
+                            </div>
+                          )}
                           <div className={`absolute top-2 md:top-4 ${isRTL ? 'right-2 md:right-4' : 'left-2 md:left-4'}`}>
                             <Badge className="bg-shamsy-primary text-white text-xs">
                               {project.category}
