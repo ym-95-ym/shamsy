@@ -10,6 +10,7 @@ interface PastProject {
   impact: string;
   status: string;
   image: string;
+  imageSource?: string;
 }
 
 export const getPastProjects = async (language: string = 'de'): Promise<PastProject[]> => {
@@ -50,7 +51,8 @@ export const getPastProjects = async (language: string = 'de'): Promise<PastProj
           challenges: values[7] || '',
           impact: values[8] || '',
           status: values[9] || '',
-          image: values[10] || '/images/help.jpg'
+          image: values[10] || '/images/help.jpg',
+          imageSource: values[11] || ''
         };
         projects.push(project);
       }
@@ -88,7 +90,7 @@ const parseCSVLine = (line: string): string[] => {
 const getFallbackPastProjects = (): PastProject[] => [
   {
     id: 1,
-    title: "Schulen renoviert und ausgestattet test",
+    title: "Schulen renoviert und ausgestattet",
     category: "Bildung",
     location: "Der El-Asafir, Rural Damaskus",
     year: "2022-2024",
