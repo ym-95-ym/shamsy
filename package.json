@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ym-95-ym.github.io/shamsy",
+  "homepage": "http//www.shams-syria.de",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
