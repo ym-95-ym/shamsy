@@ -11,7 +11,7 @@ interface Stats {
 
 export const getStats = async (): Promise<Stats> => {
   try {
-    const response = await fetch('/shamsy/stats-template.csv');
+    const response = await fetch('/stats-template.csv');
     if (!response.ok) {
       console.log('CSV file not found, using default stats');
       return getFallbackStats();
