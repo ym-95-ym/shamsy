@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "http//www.shams-syria.de",
+  "homepage": "https//www.shams-syria.de",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
