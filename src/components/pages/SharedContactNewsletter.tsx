@@ -47,6 +47,7 @@ const SharedContactNewsletter = () => {
 
       <main className="container mx-auto px-4 py-16">
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+
           {/* Contact Form */}
           <Card className="shamsy-card">
             <CardContent>
