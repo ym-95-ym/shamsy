@@ -55,7 +55,7 @@ const AppContent: React.FC = () => {
   usePerformance();
   
   return (
-    <BrowserRouter basename="/shamsy">
+    <BrowserRouter basename="/">
       <SEOHead />
       <ScrollToTop />
       <div className="min-h-screen flex flex-col">
