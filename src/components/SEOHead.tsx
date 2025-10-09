@@ -68,7 +68,7 @@ const SEOHead = ({
       "name": "ShamSy e.V.",
       "alternateName": "Shams Syria",
       "url": window.location.origin,
-      "logo": `${window.location.origin}/favicon.ico`,
+      "logo": `${window.location.origin}/flag-syria-clean.jpeg`,
       "description": description,
       "address": {
         "@type": "PostalAddress",
