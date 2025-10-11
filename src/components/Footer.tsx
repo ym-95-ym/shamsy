@@ -129,7 +129,7 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="border-t border-gray-600 pt-6 text-center">
           <p className="text-gray-400 text-sm">
-            &copy; 2025 ShamSy e.V. - Alle Rechte vorbehalten | 
+            &copy; 2025 Shams Syria e.V. - Alle Rechte vorbehalten | 
             <span className="mx-2">•</span>
             Ein Projekt für den Wiederaufbau Syriens
           </p>
