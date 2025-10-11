@@ -254,7 +254,7 @@ const SharedHome = () => {
           </div>
         </section>
       )}
- 
+
       {/* Overview Section */}
       <section className="py-20 shamsy-bg-gradient">
         <div className="container mx-auto px-4">
@@ -293,6 +293,7 @@ const SharedHome = () => {
           </div>
         </div>
       </section>
+    </div>
   );
 };
 
