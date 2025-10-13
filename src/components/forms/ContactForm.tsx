@@ -39,11 +39,18 @@ const ContactForm = () => {
     setIsSubmitting(true);
     
     try {
-      // In a real implementation, you would send this to your backend
-      console.log('Contact form submission:', data);
-      
-      // Simulate API delay
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const response = await fetch(`${import.meta.env.VITE_SUPABASE_URL}/functions/v1/send-contact-email`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY}`,
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send email');
+      }
       
       toast({
         title: "Nachricht gesendet!",
@@ -52,6 +59,7 @@ const ContactForm = () => {
       
       form.reset();
     } catch (error) {
+      console.error('Error sending contact form:', error);
       toast({
         title: "Fehler",
         description: content?.form.error || "Es gab einen Fehler beim Senden. Bitte versuchen Sie es erneut.",
@@ -75,23 +83,23 @@ const ContactForm = () => {
   };
 
   return (
-      <div className="max-w-6xl mx-auto space-y-8">
+    <div className="w-full space-y-8">
       {/* Header */}
-    {/*    <div className="text-center space-y-4">
-        <h1 className="text-4xl font-bold text-shamsy-primary">{content.title}</h1>
-        <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+      <div className="text-center space-y-4 px-4">
+        <h1 className="text-3xl md:text-4xl font-bold text-shamsy-primary">{content.title}</h1>
+        <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
           {content.subtitle}
         </p>
-      </div> */}
-      
+      </div>
+
       <div className="grid lg:grid-cols-3 gap-8">
         {/* Contact Form */}
         <div className="lg:col-span-2">
           <Card className="shamsy-card">
             <CardHeader>
-              <CardTitle>Nachricht senden</CardTitle>
+              <CardTitle className="break-words hyphens-auto">{content.form.title}</CardTitle>
               <CardDescription>
-                Füllen Sie das Formular aus und wir melden uns so schnell wie möglich bei Ihnen.
+                {content.form.description}
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -188,7 +196,7 @@ const ContactForm = () => {
           {/* Contact Information */}
           <Card className="shamsy-card">
             <CardHeader>
-              <CardTitle>{content.info.title}</CardTitle>
+              <CardTitle className="break-words hyphens-auto">{content.info.title}</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               {content.info.items.map((item, index) => {
@@ -222,7 +230,7 @@ const ContactForm = () => {
           {/* Contact Reasons */}
           <Card className="shamsy-card">
             <CardHeader>
-              <CardTitle>Wobei können wir helfen?</CardTitle>
+              <CardTitle className="break-words hyphens-auto">{content.reasonsTitle}</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               {content.reasons.map((reason, index) => {
