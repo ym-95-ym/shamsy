@@ -39,8 +39,8 @@ const SharedContactNewsletter = () => {
   document.documentElement.setAttribute('dir', contactContent.language === 'ar' ? 'rtl' : 'ltr');
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background to-shamsy-primary/5">
-      <main className="container mx-auto px-4 py-12 md:py-20">
+    <div className="min-h-screen bg-gradient-to-br from-background to-shamsy-primary/5 pt-24 md:pt-32">
+      <main className="container mx-auto px-4 pb-16 md:pb-24">
         <div className="max-w-7xl mx-auto">
           <ContactForm />
         </div>
