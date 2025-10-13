@@ -38,7 +38,9 @@ const LanguageSwitcher = () => {
       'mitmachen': { en: 'get-involved', ar: 'get-involved' },
       'get-involved': { de: 'mitmachen', ar: 'get-involved' },
       'spenden': { en: 'donate', ar: 'donate' },
-      'donate': { de: 'spenden', ar: 'donate' }
+      'donate': { de: 'spenden', ar: 'donate' },
+      'kontakt': { en: 'contact', ar: 'contact' },
+      'contact': { de: 'kontakt', ar: 'contact' }
     };
     
     // Extract current page name
