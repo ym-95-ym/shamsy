@@ -40,53 +40,9 @@ const SharedContactNewsletter = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background to-shamsy-primary/5">
-      <PageHeader 
-        title={contactContent.title}
-        subtitle={contactContent.subtitle}
-      />
-
-      <main className="container mx-auto px-4 py-16">
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-
-          {/* Contact Form */}
-          <Card className="shamsy-card">
-            <CardContent>
-              <ContactForm />
-            </CardContent>
-          </Card>
-
-          {/* Newsletter Form */}
-          <Card className="shamsy-card">
-            <CardHeader>
-              <CardTitle className="text-2xl text-shamsy-primary">
-                Newsletter abonnieren
-              </CardTitle>
-              <p className="text-muted-foreground">
-                Bleiben Sie über unsere Projekte und Erfolge informiert.
-              </p>
-            </CardHeader>
-            <CardContent>
-              <form onSubmit={handleNewsletterSubmit} className="space-y-6">
-                <div className="space-y-2">
-                  <Label htmlFor="newsletter-email">E-Mail Adresse</Label>
-                  <Input
-                    id="newsletter-email"
-                    type="email"
-                    placeholder="ihre.email@beispiel.de"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                  />
-                </div>
-                <Button 
-                  type="submit" 
-                  className="w-full bg-shamsy-primary hover:bg-shamsy-dark shamsy-transition"
-                >
-                  Newsletter abonnieren
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
+      <main className="container mx-auto px-4 py-12 md:py-20">
+        <div className="max-w-7xl mx-auto">
+          <ContactForm />
         </div>
       </main>
     </div>
