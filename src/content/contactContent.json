@@ -3,6 +3,8 @@
     "title": "Kontakt",
     "subtitle": "Haben Sie Fragen oder möchten Sie mit uns zusammenarbeiten? Wir freuen uns auf Ihre Nachricht.",
     "form": {
+      "title": "Nachricht senden",
+      "description": "Füllen Sie das Formular aus und wir melden uns so schnell wie möglich bei Ihnen.",
       "name": {
         "label": "Name",
         "placeholder": "Ihr vollständiger Name"
@@ -46,6 +48,7 @@
         }
       ]
     },
+    "reasonsTitle": "Wobei können wir helfen?",
     "reasons": [
       {
         "icon": "Heart",
@@ -73,6 +76,8 @@
     "title": "Contact",
     "subtitle": "Do you have questions or would like to collaborate with us? We look forward to your message.",
     "form": {
+      "title": "Send Message",
+      "description": "Fill out the form and we will get back to you as soon as possible.",
       "name": {
         "label": "Name",
         "placeholder": "Your full name"
@@ -116,6 +121,7 @@
         }
       ]
     },
+    "reasonsTitle": "How can we help?",
     "reasons": [
       {
         "icon": "Heart",
@@ -143,6 +149,8 @@
     "title": "تواصل معنا",
     "subtitle": "هل لديك أسئلة أو تريد التعاون معنا؟ نتطلع إلى رسالتك.",
     "form": {
+      "title": "إرسال رسالة",
+      "description": "املأ النموذج وسنتواصل معك في أقرب وقت ممكن.",
       "name": {
         "label": "الاسم",
         "placeholder": "اسمك الكامل"
@@ -186,6 +194,7 @@
         }
       ]
     },
+    "reasonsTitle": "كيف يمكننا المساعدة؟",
     "reasons": [
       {
         "icon": "Heart",
