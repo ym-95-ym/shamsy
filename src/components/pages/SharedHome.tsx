@@ -82,11 +82,11 @@ const SharedHome = () => {
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-light mb-6 md:mb-8 text-white drop-shadow-lg tracking-tight leading-tight break-words">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-light mb-6 md:mb-8 text-white tracking-tight leading-tight break-words" style={{ textShadow: '0 2px 12px rgba(0,0,0,0.8), 0 4px 24px rgba(0,0,0,0.6)' }}>
               {hero.title}
             </h1>
             
-            <div className="space-y-4 md:space-y-6 mb-8 md:mb-12 text-base sm:text-lg md:text-xl leading-relaxed drop-shadow-md px-2">
+            <div className="space-y-4 md:space-y-6 mb-8 md:mb-12 text-base sm:text-lg md:text-xl leading-relaxed px-2" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.8), 0 3px 16px rgba(0,0,0,0.6)' }}>
               <p className="break-words">
                 {renderText(hero.description1)}
               </p>
@@ -104,7 +104,7 @@ const SharedHome = () => {
               <Button 
                 asChild 
                 size="lg"
-                className="bg-shamsy-dark hover:bg-shamsy-primary shamsy-transition text-lg px-8 py-6 shamsy-shadow-green"
+                className="bg-white/30 border-white text-white hover:bg-white/40 hover:text-white backdrop-blur-sm text-lg px-8 py-6 border-2"
               >
                 <Link to={`${language === 'de' ? '/projekte' : '/' + language + '/projects'}`} className="flex items-center gap-2">
                   {hero.button1}
