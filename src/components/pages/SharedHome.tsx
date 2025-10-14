@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Heart, AlertTriangle } from "lucide-react";
+import { ArrowRight, Heart } from "lucide-react";
 import { useHomeContent } from "@/hooks/useContent";
 import { useEffect, useState } from "react";
 import { loadWarFacts, groupFactsByYear, type YearGroup } from "@/lib/factsManager";
@@ -147,7 +147,6 @@ const SharedHome = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12 md:mb-16 px-2">
               <div className="flex items-center justify-center gap-3 mb-4">
-                <AlertTriangle className="w-8 h-8 text-destructive" />
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-foreground tracking-tight break-words">
                   {factsTitle}
                 </h2>
