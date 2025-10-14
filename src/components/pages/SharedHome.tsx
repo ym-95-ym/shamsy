@@ -151,6 +151,49 @@ const SharedHome = () => {
                   {factsTitle}
                 </h2>
               </div>
+              
+              {/* Statistics Cards */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12 px-2">
+                <Card className="border-destructive/20 bg-card/50">
+                  <CardContent className="p-6">
+                    <div className="text-3xl md:text-4xl font-bold text-destructive mb-2">14 Mio.</div>
+                    <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                      {language === 'de' 
+                        ? 'Seit 2011 wurden >14 Mio. Syrer:innen aus ihren Häusern vertrieben. Ende 2024 zählte UNHCR 6,1 Mio. syrische Flüchtlinge außerhalb Syriens sowie 7,4 Mio. Binnenvertriebene (IDPs) innerhalb Syriens.'
+                        : language === 'en'
+                        ? 'Since 2011, >14 million Syrians have been displaced from their homes. By the end of 2024, UNHCR counted 6.1 million Syrian refugees outside Syria and 7.4 million internally displaced persons (IDPs) within Syria.'
+                        : 'منذ عام 2011، تم تهجير أكثر من 14 مليون سوري من منازلهم. بحلول نهاية عام 2024، أحصت المفوضية السامية للأمم المتحدة لشؤون اللاجئين 6.1 مليون لاجئ سوري خارج سوريا و 7.4 مليون نازح داخلي.'}
+                    </p>
+                  </CardContent>
+                </Card>
+                
+                <Card className="border-destructive/20 bg-card/50">
+                  <CardContent className="p-6">
+                    <div className="text-3xl md:text-4xl font-bold text-destructive mb-2">90%</div>
+                    <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                      {language === 'de'
+                        ? '90 Prozent der Syrer:innen und Syrer leben in Armut; zwei Drittel davon in extremer Armut.'
+                        : language === 'en'
+                        ? '90 percent of Syrians live in poverty; two-thirds of them in extreme poverty.'
+                        : '90 بالمائة من السوريين يعيشون في فقر؛ ثلثاهم في فقر مدقع.'}
+                    </p>
+                  </CardContent>
+                </Card>
+                
+                <Card className="border-destructive/20 bg-card/50">
+                  <CardContent className="p-6">
+                    <div className="text-3xl md:text-4xl font-bold text-destructive mb-2">85%</div>
+                    <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                      {language === 'de'
+                        ? '85 Prozent der Bevölkerung können ihre Grundbedürfnisse wie Nahrungsmittel, Wasser, Seife nicht decken.'
+                        : language === 'en'
+                        ? '85 percent of the population cannot meet their basic needs such as food, water, soap.'
+                        : '85 بالمائة من السكان لا يمكنهم تلبية احتياجاتهم الأساسية مثل الطعام والماء والصابون.'}
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+              
               <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed break-words">
                 {factsSubtitle}
               </p>
