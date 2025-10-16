@@ -345,8 +345,8 @@ const SharedHome = () => {
           </div>
         </section>
       )}
-   </div>
-  );
+  </div>
+ );
 };
 
 export default SharedHome;
