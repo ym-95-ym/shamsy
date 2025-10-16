@@ -142,6 +142,7 @@ const SharedHome = () => {
       </section>
 
       {/* War Facts Section */}
+      {yearGroups.length > 0 && (
         <section className="py-20 bg-destructive/5">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12 md:mb-16 px-2">
@@ -191,56 +192,6 @@ const SharedHome = () => {
                     </p>
                   </CardContent>
                 </Card>
-              </div>
-
-      {/* Overview Section */}
-      <section className="py-20 shamsy-bg-gradient">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12 md:mb-16 px-2">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-4 md:mb-6 tracking-tight break-words">
-              {overview.title}
-            </h2>
-            <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed break-words">
-              {overview.subtitle}
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {overview.cards.map((item: any, index: number) => (
-              <Card key={index} className="shamsy-card border-shamsy-primary/20 hover:shadow-xl shamsy-transition group">
-                <CardContent className="p-8 h-full flex flex-col">
-                  <h3 className="text-xl md:text-2xl font-semibold text-foreground mb-3 md:mb-4 group-hover:text-shamsy-primary shamsy-transition break-words">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm md:text-base text-muted-foreground mb-4 md:mb-6 flex-grow leading-relaxed break-words">
-                    {item.description}
-                  </p>
-                  <Button 
-                    asChild 
-                    variant="outline" 
-                    className="border-shamsy-primary text-shamsy-primary hover:bg-shamsy-primary hover:text-white shamsy-transition"
-                  >
-                    <Link to={item.link} className="flex items-center gap-2">
-                      {item.buttonText}
-                      <ArrowRight className={`w-4 h-4 ${isRTL ? 'rotate-180' : ''}`} />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* War Facts Section */}
-      {yearGroups.length > 0 && (
-        <section className="py-20 bg-destructive/5">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12 md:mb-16 px-2">
-              <div className="flex items-center justify-center gap-3 mb-4">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-foreground tracking-tight break-words">
-                  {factsTitle}
-                </h2>
               </div>
               
               <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed break-words">
@@ -345,6 +296,45 @@ const SharedHome = () => {
           </div>
         </section>
       )}
+
+      {/* Overview Section */}
+      <section className="py-20 shamsy-bg-gradient">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12 md:mb-16 px-2">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-4 md:mb-6 tracking-tight break-words">
+              {overview.title}
+            </h2>
+            <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed break-words">
+              {overview.subtitle}
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {overview.cards.map((item: any, index: number) => (
+              <Card key={index} className="shamsy-card border-shamsy-primary/20 hover:shadow-xl shamsy-transition group">
+                <CardContent className="p-8 h-full flex flex-col">
+                  <h3 className="text-xl md:text-2xl font-semibold text-foreground mb-3 md:mb-4 group-hover:text-shamsy-primary shamsy-transition break-words">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm md:text-base text-muted-foreground mb-4 md:mb-6 flex-grow leading-relaxed break-words">
+                    {item.description}
+                  </p>
+                  <Button 
+                    asChild 
+                    variant="outline" 
+                    className="border-shamsy-primary text-shamsy-primary hover:bg-shamsy-primary hover:text-white shamsy-transition"
+                  >
+                    <Link to={item.link} className="flex items-center gap-2">
+                      {item.buttonText}
+                      <ArrowRight className={`w-4 h-4 ${isRTL ? 'rotate-180' : ''}`} />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
