@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Heart } from "lucide-react";
+import { ArrowRight, Heart, AlertTriangle } from "lucide-react";
 import { useHomeContent } from "@/hooks/useContent";
 import { useEffect, useState } from "react";
 import { loadWarFacts, groupFactsByYear, type YearGroup } from "@/lib/factsManager";
@@ -141,6 +141,91 @@ const SharedHome = () => {
         </div>
       </section>
 
+      {/* Statistics Section */}
+      <section className="py-20 bg-destructive/5">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto px-2">
+            <Card className="border-destructive/20 bg-card/50">
+              <CardContent className="p-6 text-center">
+                <div className="text-3xl md:text-4xl font-bold text-destructive mb-2">14 Mio.</div>
+                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                  {language === 'de' 
+                    ? 'Syrer:innen wurden seit 2011 aus ihren Häusern vertrieben. Ende 2024 zählte UNHCR 6,1 Mio. syrische Flüchtlinge außerhalb Syriens sowie 7,4 Mio. Binnenvertriebene (IDPs) innerhalb Syriens.'
+                    : language === 'en'
+                    ? 'Syrians have been displaced from their homes since 2011. By the end of 2024, UNHCR counted 6.1 million Syrian refugees outside Syria and 7.4 million internally displaced persons (IDPs) within Syria.'
+                    : 'منذ عام 2011، تم تهجير أكثر من 14 مليون سوري من منازلهم. بحلول نهاية عام 2024، أحصت المفوضية السامية للأمم المتحدة لشؤون اللاجئين 6.1 مليون لاجئ سوري خارج سوريا و 7.4 مليون نازح داخلي.'}
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card className="border-destructive/20 bg-card/50">
+              <CardContent className="p-6 text-center">
+                <div className="text-3xl md:text-4xl font-bold text-destructive mb-2">90%</div>
+                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                  {language === 'de'
+                    ? 'der Syrer:innen und Syrer leben in Armut; zwei Drittel davon in extremer Armut.'
+                    : language === 'en'
+                    ? 'of Syrians live in poverty; two-thirds of them in extreme poverty.'
+                    : 'من السوريين يعيشون في فقر؛ ثلثاهم في فقر مدقع.'}
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card className="border-destructive/20 bg-card/50">
+              <CardContent className="p-6 text-center">
+                <div className="text-3xl md:text-4xl font-bold text-destructive mb-2">85%</div>
+                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                  {language === 'de'
+                    ? 'der Bevölkerung können ihre Grundbedürfnisse wie Nahrungsmittel, Wasser, Seife nicht decken.'
+                    : language === 'en'
+                    ? 'of the population cannot meet their basic needs such as food, water, soap.'
+                    : 'من السكان لا يمكنهم تلبية احتياجاتهم الأساسية مثل الطعام والماء والصابون.'}
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Overview Section */}
+      <section className="py-20 shamsy-bg-gradient">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12 md:mb-16 px-2">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-4 md:mb-6 tracking-tight break-words">
+              {overview.title}
+            </h2>
+            <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed break-words">
+              {overview.subtitle}
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {overview.cards.map((item: any, index: number) => (
+              <Card key={index} className="shamsy-card border-shamsy-primary/20 hover:shadow-xl shamsy-transition group">
+                <CardContent className="p-8 h-full flex flex-col">
+                  <h3 className="text-xl md:text-2xl font-semibold text-foreground mb-3 md:mb-4 group-hover:text-shamsy-primary shamsy-transition break-words">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm md:text-base text-muted-foreground mb-4 md:mb-6 flex-grow leading-relaxed break-words">
+                    {item.description}
+                  </p>
+                  <Button 
+                    asChild 
+                    variant="outline" 
+                    className="border-shamsy-primary text-shamsy-primary hover:bg-shamsy-primary hover:text-white shamsy-transition"
+                  >
+                    <Link to={item.link} className="flex items-center gap-2">
+                      {item.buttonText}
+                      <ArrowRight className={`w-4 h-4 ${isRTL ? 'rotate-180' : ''}`} />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* War Facts Section */}
       {yearGroups.length > 0 && (
         <section className="py-20 bg-destructive/5">
@@ -150,48 +235,6 @@ const SharedHome = () => {
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-foreground tracking-tight break-words">
                   {factsTitle}
                 </h2>
-              </div>
-              
-              {/* Statistics Cards */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12 px-2">
-                <Card className="border-destructive/20 bg-card/50">
-                  <CardContent className="p-6">
-                    <div className="text-3xl md:text-4xl font-bold text-destructive mb-2">14 Mio.</div>
-                    <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                      {language === 'de' 
-                        ? 'Syrer:innen wurden seit 2011 aus ihren Häusern vertrieben. Ende 2024 zählte UNHCR 6,1 Mio. syrische Flüchtlinge außerhalb Syriens sowie 7,4 Mio. Binnenvertriebene (IDPs) innerhalb Syriens.'
-                        : language === 'en'
-                        ? 'Syrians have been displaced from their homes since 2011. By the end of 2024, UNHCR counted 6.1 million Syrian refugees outside Syria and 7.4 million internally displaced persons (IDPs) within Syria.'
-                        : 'منذ عام 2011، تم تهجير أكثر من 14 مليون سوري من منازلهم. بحلول نهاية عام 2024، أحصت المفوضية السامية للأمم المتحدة لشؤون اللاجئين 6.1 مليون لاجئ سوري خارج سوريا و 7.4 مليون نازح داخلي.'}
-                    </p>
-                  </CardContent>
-                </Card>
-                
-                <Card className="border-destructive/20 bg-card/50">
-                  <CardContent className="p-6">
-                    <div className="text-3xl md:text-4xl font-bold text-destructive mb-2">90%</div>
-                    <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                      {language === 'de'
-                        ? 'der Syrer:innen und Syrer leben in Armut; zwei Drittel davon in extremer Armut.'
-                        : language === 'en'
-                        ? 'of Syrians live in poverty; two-thirds of them in extreme poverty.'
-                        : 'من السوريين يعيشون في فقر؛ ثلثاهم في فقر مدقع.'}
-                    </p>
-                  </CardContent>
-                </Card>
-                
-                <Card className="border-destructive/20 bg-card/50">
-                  <CardContent className="p-6">
-                    <div className="text-3xl md:text-4xl font-bold text-destructive mb-2">85%</div>
-                    <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                      {language === 'de'
-                        ? 'der Bevölkerung können ihre Grundbedürfnisse wie Nahrungsmittel, Wasser, Seife nicht decken.'
-                        : language === 'en'
-                        ? 'of the population cannot meet their basic needs such as food, water, soap.'
-                        : 'من السكان لا يمكنهم تلبية احتياجاتهم الأساسية مثل الطعام والماء والصابون.'}
-                    </p>
-                  </CardContent>
-                </Card>
               </div>
               
               <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed break-words">
@@ -296,45 +339,6 @@ const SharedHome = () => {
           </div>
         </section>
       )}
-
-      {/* Overview Section */}
-      <section className="py-20 shamsy-bg-gradient">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12 md:mb-16 px-2">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-4 md:mb-6 tracking-tight break-words">
-              {overview.title}
-            </h2>
-            <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed break-words">
-              {overview.subtitle}
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {overview.cards.map((item: any, index: number) => (
-              <Card key={index} className="shamsy-card border-shamsy-primary/20 hover:shadow-xl shamsy-transition group">
-                <CardContent className="p-8 h-full flex flex-col">
-                  <h3 className="text-xl md:text-2xl font-semibold text-foreground mb-3 md:mb-4 group-hover:text-shamsy-primary shamsy-transition break-words">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm md:text-base text-muted-foreground mb-4 md:mb-6 flex-grow leading-relaxed break-words">
-                    {item.description}
-                  </p>
-                  <Button 
-                    asChild 
-                    variant="outline" 
-                    className="border-shamsy-primary text-shamsy-primary hover:bg-shamsy-primary hover:text-white shamsy-transition"
-                  >
-                    <Link to={item.link} className="flex items-center gap-2">
-                      {item.buttonText}
-                      <ArrowRight className={`w-4 h-4 ${isRTL ? 'rotate-180' : ''}`} />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
