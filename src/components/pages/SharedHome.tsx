@@ -150,9 +150,9 @@ const SharedHome = () => {
                 <div className="text-3xl md:text-4xl font-bold text-destructive mb-2">14 Mio.</div>
                 <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
                   {language === 'de' 
-                    ? 'Syrer:innen wurden seit 2011 aus ihren Häusern vertrieben. Ende 2024 zählte UNHCR 6,1 Mio. syrische Flüchtlinge außerhalb Syriens sowie 7,4 Mio. Binnenvertriebene (IDPs) innerhalb Syriens.'
+                    ? 'Syrer:innen wurden seit 2011 aus ihren Häusern vertrieben. Ende 2024 zählte UNHCR <strong>6,1 Mio. syrische Flüchtlinge</strong> außerhalb Syriens sowie 7,4 Mio. Binnenvertriebene (IDPs) innerhalb Syriens.'
                     : language === 'en'
-                    ? 'Syrians have been displaced from their homes since 2011. By the end of 2024, UNHCR counted 6.1 million Syrian refugees outside Syria and 7.4 million internally displaced persons (IDPs) within Syria.'
+                    ? 'Syrians have been displaced from their homes since 2011. By the end of 2024, UNHCR counted <strong>6.1 million Syrian refugees</strong> outside Syria and 7.4 million internally displaced persons (IDPs) within Syria.'
                     : 'منذ عام 2011، تم تهجير أكثر من 14 مليون سوري من منازلهم. بحلول نهاية عام 2024، أحصت المفوضية السامية للأمم المتحدة لشؤون اللاجئين 6.1 مليون لاجئ سوري خارج سوريا و 7.4 مليون نازح داخلي.'}
                 </p>
               </CardContent>
