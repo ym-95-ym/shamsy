@@ -150,10 +150,10 @@ const SharedHome = () => {
                 <div className="text-3xl md:text-4xl font-bold text-destructive mb-2">14 Mio.</div>
                 <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
                   {language === 'de' 
-                    ? 'Syrer:innen wurden seit 2011 aus ihren Häusern vertrieben. Ende 2024 zählte UNHCR <strong>6,1 Mio. syrische Flüchtlinge</strong> außerhalb Syriens sowie 7,4 Mio. Binnenvertriebene (IDPs) innerhalb Syriens.'
+                    ? <>Syrer:innen wurden <strong>seit 2011 aus ihren Häusern vertrieben.</strong> Ende 2024 zählte UNHCR <strong>6,1 Mio. syrische Flüchtlinge</strong> außerhalb Syriens sowie <strong>7,4 Mio. Binnenvertriebene (IDPs)</strong> innerhalb Syriens.</>
                     : language === 'en'
-                    ? 'Syrians have been displaced from their homes since 2011. By the end of 2024, UNHCR counted <strong>6.1 million Syrian refugees</strong> outside Syria and 7.4 million internally displaced persons (IDPs) within Syria.'
-                    : 'منذ عام 2011، تم تهجير أكثر من 14 مليون سوري من منازلهم. بحلول نهاية عام 2024، أحصت المفوضية السامية للأمم المتحدة لشؤون اللاجئين 6.1 مليون لاجئ سوري خارج سوريا و 7.4 مليون نازح داخلي.'}
+                    ? <>Syrians have been <strong>displaced from their homes since 2011.</strong> By the end of 2024, UNHCR counted <strong>6.1 million Syrian refugees</strong> outside Syria and <strong>7.4 million internally displaced persons (IDPs)</strong> within Syria.</>
+                    : <>منذ عام 2011، <strong>تم تهجير أكثر من 14 مليون سوري من منازلهم.</strong> بحلول نهاية عام 2024، أحصت المفوضية السامية للأمم المتحدة لشؤون اللاجئين <strong>6.1 مليون لاجئ سوري</strong> خارج سوريا و <strong>7.4 مليون نازح داخلي.</strong></>}
                 </p>
               </CardContent>
             </Card>
@@ -163,10 +163,10 @@ const SharedHome = () => {
                 <div className="text-3xl md:text-4xl font-bold text-destructive mb-2">90%</div>
                 <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
                   {language === 'de'
-                    ? 'der Syrer:innen und Syrer leben in Armut; zwei Drittel davon in extremer Armut.'
+                    ? <>der Syrer:innen und Syrer leben in Armut; <strong>zwei Drittel davon in extremer Armut.</strong></>
                     : language === 'en'
-                    ? 'of Syrians live in poverty; two-thirds of them in extreme poverty.'
-                    : 'من السوريين يعيشون في فقر؛ ثلثاهم في فقر مدقع.'}
+                    ? <>of Syrians live in poverty; <strong>two-thirds of them in extreme poverty.</strong></>
+                    : <>من السوريين يعيشون في فقر؛ <strong>ثلثاهم في فقر مدقع.</strong></>}
                 </p>
               </CardContent>
             </Card>
@@ -176,10 +176,10 @@ const SharedHome = () => {
                 <div className="text-3xl md:text-4xl font-bold text-destructive mb-2">85%</div>
                 <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
                   {language === 'de'
-                    ? 'der Bevölkerung können ihre Grundbedürfnisse wie Nahrungsmittel, Wasser, Seife nicht decken.'
+                    ? <>der Bevölkerung <strong>können ihre Grundbedürfnisse</strong> wie Nahrungsmittel, Wasser, Seife <strong>nicht decken.</strong></>
                     : language === 'en'
-                    ? 'of the population cannot meet their basic needs such as food, water, soap.'
-                    : 'من السكان لا يمكنهم تلبية احتياجاتهم الأساسية مثل الطعام والماء والصابون.'}
+                    ? <>of the population <strong>cannot meet their basic needs</strong> such as food, water, soap.</>
+                    : <>من السكان <strong>لا يمكنهم تلبية احتياجاتهم الأساسية</strong> مثل الطعام والماء والصابون.</>}
                 </p>
               </CardContent>
             </Card>
