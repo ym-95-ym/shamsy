@@ -142,7 +142,6 @@ const SharedHome = () => {
       </section>
 
       {/* War Facts Section */}
-      {yearGroups.length > 0 && (
         <section className="py-20 bg-destructive/5">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12 md:mb-16 px-2">
@@ -193,7 +192,6 @@ const SharedHome = () => {
                   </CardContent>
                 </Card>
               </div>
-      )}
 
       {/* Overview Section */}
       <section className="py-20 shamsy-bg-gradient">
