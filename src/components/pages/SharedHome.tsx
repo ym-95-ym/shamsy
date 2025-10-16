@@ -344,7 +344,6 @@ const SharedHome = () => {
             </div>
           </div>
         </section>
-      )}
     </div>
   );
 };
