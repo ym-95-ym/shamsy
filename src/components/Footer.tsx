@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Brand Section */}
           <div className="lg:col-span-1">
-            <h3 className="text-2xl font-bold text-shamsy-light mb-3">ShamSy</h3>
+            <h3 className="text-2xl font-bold text-shamsy-light mb-3">Shams Syria e.V.</h3>
             <p className="text-gray-300 mb-4 leading-relaxed">
               Die Sonne Syriens - Wiederaufbau in eigener Hand
             </p>
@@ -43,7 +43,7 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-shamsy-light mt-0.5 flex-shrink-0" />
                 <span className="text-gray-300">
-                  ShamSy e.V.<br />
+                  Shams Syria e.V.<br />
                   Nürnberg, 90425
                 </span>
               </div>
