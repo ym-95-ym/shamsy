@@ -32,8 +32,8 @@
       "impactTitle": "Ihre Wirkung:",
       "impactPrefix": "Mit €{amount} können Sie:",
       "impacts": {
-        "1000": "{count} Familien 1 Monat mit Solarstrom versorgen",
-        "500": "{count} Schulkinder 1 Jahr mit Schulmaterialien ausstatten", 
+        "1000": "{count} Familien 1 Jahr mit Solarstrom versorgen",
+        "500": "{count} Waisenkinder für 1 Jahr versorgen", 
         "100": "{count} medizinische Behandlungen ermöglichen",
         "50": "2 Familien 1 Woche mit Notversorgung helfen",
         "25": "1 Familie 1 Woche mit Grundversorgung helfen",
