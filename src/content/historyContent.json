@@ -12,19 +12,19 @@
       {
         "period": "2011-2015",
         "title": "Der Beginn: Flucht aus Syrien",
-        "description": "Wir gingen auf die Straße für Freiheit und Gerechtigkeit. Die Antwort war: Verfolgung, Folter und Bomben. Rund sieben Millionen, ein Viertel der Bevölkerung, mussten in die Sicherheit fliehen - manche sowie wir nach Deutschland. Aber unser Herz blieb in Syrien und mit denen, die nicht fliehen konnten.",
-        "quote": "Schon damals wussten wir: Wir müssen die helfen, die nicht fliehen konnten. Sie haben sonst Nichts."
+        "description": "Wir gingen auf die Straße für Freiheit und Gerechtigkeit. Die Antwort war: Verfolgung, Folter und Bomben. Rund sieben Millionen, ein Viertel der Bevölkerung, mussten aus dem Land in die Sicherheit fliehen - manche sowie wir nach Deutschland. Aber unser Herz blieb in Syrien und mit denen, die nicht fliehen konnten.",
+        "quote": "Schon damals wussten wir: Wir müssen denen helfen, die nicht fliehen konnten. Sie haben sonst Nichts."
       },
       {
         "period": "2015-2019",
-        "title": "Integration und Netzwerkaufbau",
-        "description": "Während wir uns in Deutschland integrierten und neue Heimat fanden, bauten wir kontinuierlich Netzwerke auf. Wir lernten das Leben in Deutschland kennen, studierten, arbeiteten - und behielten dabei immer Syrien im Herzen.",
-        "highlight": "Parallel organisierten wir im Geheimen erste Hilfsaktionen in Syrien, trotz der Gefahr durch das Assad-Regime."
+        "title": "Integration und Heimweh",
+        "description": "Während wir uns in Deutschland integrierten und eine neue Heimat fanden, behielten wir Syrien dabei immer im Herzen. Wir lernten zwar das Leben in Deutschland kennen, studierten, arbeiteten und schafften Beziehungen fürs Leben.",
+        "highlight": "Syrien blieb aber die Wunde, die noch offen und voller Blut ist."
       },
       {
         "period": "2011-2024",
         "title": "Heimliche Hilfe trotz Gefahr",
-        "description": "Trotz der Gefahr für uns und unsere Familien haben wir nie aufgehört zu helfen. Durch Unterstützung unserer zahlreichen lokalen Partner und NGOs konnten wir dort unterstützen, wo keine Hilfe reingelassen wurde. Viele Projekte und humanitäre Hilfsaktionen wurden geplant und realisiert. Am prägantesten sind: Unterstützung Familien in Not, Aufbau 15 Unterkünfte für vertriebene Familien, lebensrettende Operationen für Kriegsopfer, Schulrenovierungen in zerbombten Vierteln, Planung Solar-Systeme für Dörfer und Industrie - alles heimlich, alles gegen den Willen des Regimes, alles aus Liebe und für Gerechtigkeit zu einem unterdrückten Volk.",
+        "description": "Trotz der Gefahr für uns und unsere Familien haben wir nie aufgehört zu helfen. Durch Unterstützung unserer zahlreichen lokalen Partner und NGOs konnten wir dort unterstützen, wo sonst keine Hilfe reingelassen wurde. Viele Projekte und humanitäre Hilfsaktionen wurden geplant und realisiert. Am prägantesten sind: jahrelange Unterstützung Familien in Not, Aufbau 15 Unterkünfte für vertriebene Familien, lebensrettende Operationen für Kriegsopfer, Schulrenovierungen in zerbombten Vierteln, Planung Solar-Systeme für Dörfer und Industrie - alles heimlich, alles gegen den Willen des Regimes, alles aus Liebe und für die Gerechtigkeit zu einem unterdrückten Volk.",
         "stats": [
           { "number": "15", "label": "Shelter gebaut" },
           { "number": "50+", "label": "Medizinische Operationen" },
@@ -34,7 +34,8 @@
       {
         "period": "2025-Heute",
         "title": "Die Befreiung nach 55 Jahren! ShamSy wird offiziell",
-        "description": "Nach über einem halben Jahrhundert Diktatur ist Syrien endlich frei. Zum ersten Mal können wir ohne Angst leben, ohne Verstecken helfen, ohne Korruption wiederaufbauen. Ein neues Kapitel beginnt für unser geliebtes aber ausgebeutetes Land. Ein entscheidendes Kapitel für die Zukunft Syriens, was wir aber diesmal alle mit gestalten können.\nShamSy e.V. ist jetzt offiziell als NGO registriert - in Deutschland und in Syrien. Was einst im Schatten und über Dritte geschah, führen wir nun offiziell fort. Durch unsere Jahre in Syrien und in Deutschland haben wir diverse Erfahrung und weitgestreckte Netzwerke etabliert. Damit bauen wir unser Land nachhaltig und für Alle wieder auf. Wir haben die Hoffnung einer ganzen Generation!",
+        "description": "Nach über einem halben Jahrhundert Diktatur ist Syrien endlich frei. Zum ersten Mal können wir ohne Angst leben, ohne Verstecken helfen, ohne Korruption wiederaufbauen. Ein neues Kapitel beginnt für unser geliebtes aber ausgebeutetes Land. Ein entscheidendes Kapitel für die Zukunft Syriens, was wir aber diesmal alle mit gestalten können.
+        ShamSy e.V. ist jetzt offiziell als NGO registriert - in Deutschland und in Syrien. Was einst im Schatten und über Dritte geschah, führen wir nun offiziell fort. Aufgrund jahrelanger Aufenthalten in Syrien und in Deutschland haben wir diverse Erfahrung und weitgestreckte Netzwerke etabliert. Damit bauen wir unser Land nachhaltig und für Alle wieder auf. Wir haben die Hoffnung einer ganzen Generation!",
         "vision": {
           "title": "Unsere Vision für das freie Syrien:",
           "points": [
@@ -70,8 +71,8 @@
       {
         "period": "2015-2019",
         "title": "Integration and Network Building",
-        "description": "While we integrated into Germany and found a new home, we continuously built networks. We learned about life in Germany, studied, worked - and always kept Syria in our hearts.",
-        "highlight": "In parallel, we secretly organized humanitarian operations in Syria, despite the danger from the Assad regime."
+        "description": "While we integrated into Germany and found a new home, we always kept Syria in our hearts. We learned about life in Germany, studied, worked - and created lifelong relationships.",
+        "highlight": "Nonetheless, Syrie remained the wound that was open and bleeding."
       },
       {
         "period": "2011-2024",
@@ -86,7 +87,8 @@
       {
         "period": "2025-Today",
         "title": "Liberation After 55 Years! ShamSy Becomes Official",
-        "description": "After more than half a century of dictatorship, Syria is finally free. For the first time, we can live without fear, help without hiding, rebuild without corruption. A new chapter begins for our beloved but exploited country. A decisive chapter for Syria's future, which we can all help shape this time.<br/>ShamSy e.V. is now officially registered as an NGO - in Germany and in Syria. What once happened in the shadows and through third parties, we now continue officially. Through our years in Syria and in Germany, we have established diverse experience and wide-reaching networks. With this, we sustainably rebuild our country for everyone. We have the hope of an entire generation!",
+        "description": "After more than half a century of dictatorship, Syria is finally free. For the first time, we can live without fear, help without hiding, rebuild without corruption. A new chapter begins for our beloved but exploited country. A decisive chapter for Syria's future, which we can all help shape this time. 
+        ShamSy e.V. is now officially registered as an NGO - in Germany and in Syria. What once happened in the shadows and through third parties, we now continue officially. Through our years in Syria and in Germany, we have established diverse experience and wide-reaching networks. With this, we sustainably rebuild our country for everyone. We have the hope of an entire generation!",
         "vision": {
           "title": "Our Vision for Free Syria:",
           "points": [
@@ -122,8 +124,8 @@
       {
         "period": "2015-2019",
         "title": "الاندماج وبناء الشبكات",
-        "description": "بينما اندمجنا في ألمانيا ووجدنا منزلاً جديداً، بنينا باستمرار شبكات. تعلمنا عن الحياة في ألمانيا، ودرسنا، وعملنا - وأبقينا سوريا دائماً في قلوبنا.",
-        "highlight": "نظمنا سراً عمليات مساعدة في سوريا، رغم الخطر و الخوف من نظام الأسد ."
+        "description": "بينما اندمجنا في ألمانيا ووجدنا منزلاً جديداً، أبقينا سوريا دائماً في قلوبنا. تعلمنا عن الحياة في ألمانيا، ودرسنا، وعملنا و أنشأنا علاقات لمدى الحياة..",
+        "highlight": "ولكن بقيت سوريا جرحاً ينزف و يناشد العالم بالدواء."
       },
       {
         "period": "2011-2024",
