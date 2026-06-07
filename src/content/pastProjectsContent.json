@@ -1,69 +1,51 @@
 {
   "de": {
     "header": {
-      "title": "Vergangene Projekte",
-      "subtitle": "Unsere Erfolge vor der Befreiung - Hilfe trotz Angst und Verfolgung"
-    },
-    "warning": {
-      "title": "Hilfe unter extremen Bedingungen",
-      "description": "**Alle Projekte vor 2024 wurden unter der Assad-Diktatur durchgeführt.** Das bedeutete: Ständige Angst vor Verfolgung, Geheimhaltung zum Schutz unserer Familien in Syrien sowie enorme logistische Herausforderungen. Jedes Projekt war ein Risiko - aber auch ein Akt der Hoffnung. Alles wäre unmöglich ohne Unterstützung unserer Partner NGOs und Kollegen in Syrien."
+      "title": "Vergangene Projekte"
     },
     "stats": {
       "title": "Erfolge trotz allen Hürden",
-      "subtitle": "Was wir seit Jahren heimlicher Arbeit erreicht haben.",
       "items": [
         { "label": "Projekte erfolgreich durchgeführt", "key": "projectCount" },
         { "label": "Spendengelder eingesetzt", "key": "totalCost", "format": "€{value}" }
       ]
     },
     "testimonial": {
-      "quote": "Jedes dieser Projekte kam aus der Not. Unser Diktator hat ganze Städte und viele Familien zerstört. Er hat alle rote Linien überschritten. Hilfe war dort verboten, wo Bomben und chemische Waffen gefallen sind. Familien von politischen Gefangenen wurden vertrieben. Verletzte aus Kriegsgebieten durften nur heimlich versorgt werden. Es war grausam... Aber die Diktatur ist vorbei!",
+      "quote": "Jedes dieser Projekte kam aus der Not. Al-Assad hat ganze Städte und viele Familien zerstört. Er hat alle rote Linien überschritten. Hilfe war dort verboten, wo Bomben und chemische Waffen gefallen sind. Familien von politischen Gefangenen wurden vertrieben. Verletzte aus Kriegsgebieten durften nur heimlich versorgt werden. Es war grausam... Aber die Diktatur ist vorbei!",
       "author": "Yazan, ShamSy Gründungsmitglied",
       "highlight": "Seit 2024 können systematisch planen und agieren. Jetzt dürfen wir offiziell dort helfen, wo es verboten war."
     }
   },
   "en": {
     "header": {
-      "title": "Past Projects",
-      "subtitle": "Our successes before liberation - Help despite fear and persecution"
-    },
-    "warning": {
-      "title": "Help under extreme conditions",
-      "description": "**All projects before 2024 were carried out under the Assad dictatorship.** This meant: Constant fear of persecution, secrecy to protect our families in Syria, and enormous logistical challenges. Every project was a risk - but also an act of hope. Everything would have been impossible without the support of our partner NGOs and colleagues in Syria."
+      "title": "Past Projects"
     },
     "stats": {
       "title": "Success despite all obstacles",
-      "subtitle": "What we have achieved through years of secret work.",
       "items": [
         { "label": "Projects successfully completed", "key": "projectCount" },
         { "label": "Donations deployed", "key": "totalCost", "format": "€{value}" }
       ]
     },
     "testimonial": {
-      "quote": "Each of these projects came from necessity. Our dictator destroyed entire cities and many families. He crossed all red lines. Help was forbidden where bombs and chemical weapons fell. Families of political prisoners were expelled. Injured from war zones could only be treated in secret. It was cruel... But the dictatorship is over!",
+      "quote": "Each of these projects came from necessity. Al-Assad destroyed entire cities and many families. He crossed all red lines. Help was forbidden where bombs and chemical weapons fell. Families of political prisoners were expelled. Injured from war zones could only be treated in secret. It was cruel... But the dictatorship is over!",
       "author": "Yazan, ShamSy founding member",
       "highlight": "Since 2024 we can plan and act systematically. Now we are officially allowed to help where it was forbidden."
     }
   },
   "ar": {
     "header": {
-      "title": "المشاريع السابقة",
-      "subtitle": "نجاحاتنا قبل التحرير - المساعدة رغم الخوف والاضطهاد"
-    },
-    "warning": {
-      "title": "المساعدة في ظروف قاسية",
-      "description": "**جميع المشاريع قبل 2024 تم تنفيذها تحت ديكتاتورية الأسد.** هذا يعني: خوف مستمر من الاضطهاد، السرية لحماية عائلاتنا في سوريا، وتحديات لوجستية هائلة. كل مشروع كان مخاطرة - لكنه أيضاً عمل أمل. كل شيء كان مستحيلاً بدون دعم المنظمات غير الحكومية الشريكة وزملائنا في سوريا."
+      "title": "المشاريع السابقة"
     },
     "stats": {
       "title": "النجاح رغم كل العقبات",
-      "subtitle": "ما حققناه خلال سنوات من العمل السري.",
       "items": [
         { "label": "مشاريع تم تنفيذها بنجاح", "key": "projectCount" },
         { "label": "تبرعات تم استخدامها", "key": "totalCost", "format": "€{value}" }
       ]
     },
     "testimonial": {
-      "quote": "كل مشروع من هذه المشاريع جاء من الضرورة. ديكتاتورنا دمر مدن كاملة وعائلات كثيرة. تجاوز كل الخطوط الحمراء. المساعدة كانت ممنوعة حيث سقطت القنابل والأسلحة الكيميائية. عائلات السجناء السياسيين تم طردها. المصابون من مناطق الحرب كان يُسمح بعلاجهم سراً فقط. كان قاسياً... لكن الديكتاتورية انتهت!",
+      "quote": "كل مشروع من هذه المشاريع جاء من الضرورة. الديكتاتور الاسد دمر مدن كاملة وعائلات كثيرة. تجاوز كل الخطوط الحمراء. المساعدة كانت ممنوعة حيث سقطت القنابل والأسلحة الكيميائية. عائلات السجناء السياسيين تم طردها. المصابون من مناطق الحرب كان يُسمح بعلاجهم سراً فقط. كان قاسياً... لكن الديكتاتورية انتهت!",
       "author": "يزن، عضو مؤسس في شمس سوريا",
       "highlight": "منذ 2024 يمكننا التخطيط والعمل بشكل منهجي. الآن يُسمح لنا رسمياً بالمساعدة حيث كان ممنوعاً."
     }
