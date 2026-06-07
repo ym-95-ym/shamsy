@@ -7,7 +7,6 @@ import {
   GraduationCap, 
   Users, 
   ShieldCheck,
-  AlertTriangle,
   Star
 } from "lucide-react";
 import { getPastProjects } from "@/lib/pastProjectsManager";
@@ -63,28 +62,6 @@ const SharedPastProjects = () => {
         title={content.header.title}
         subtitle={content.header.subtitle}
       />
-
-      {/* Warning Banner */}
-      <section className="py-8 md:py-12 shamsy-bg-gradient">
-        <div className="container mx-auto px-4">
-          <Card className="border-orange-200 bg-white/90 backdrop-blur-sm">
-            <CardContent className="p-4 md:p-8">
-              <div className="flex items-start gap-3 md:gap-4">
-                <AlertTriangle className="w-6 h-6 md:w-8 md:h-8 text-orange-500 mt-1 flex-shrink-0" />
-                <div>
-                  <h3 className="text-lg md:text-2xl font-semibold text-orange-800 mb-2 md:mb-3">
-                    {content.warning.title}
-                  </h3>
-                  <p className="text-orange-700 leading-relaxed text-sm md:text-lg">
-                    <strong>{content.warning.description.split('**')[1]}</strong>{' '}
-                    {content.warning.description.split('**')[2]}
-                  </p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
 
       {/* Success Stats */}
       <section className="py-16 shamsy-bg-gradient">
@@ -198,7 +175,6 @@ const SharedPastProjects = () => {
                           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6">
                             <div className="bg-red-50 p-4 rounded-lg border border-red-100">
                               <h4 className="font-semibold text-red-800 mb-2 flex items-center gap-2">
-                                <AlertTriangle className="w-4 h-4" />
                                 {content.language === 'ar' ? 'التحديات' : content.language === 'en' ? 'Challenges' : 'Herausforderungen'}
                               </h4>
                               <p className="text-red-700 text-sm leading-relaxed">
