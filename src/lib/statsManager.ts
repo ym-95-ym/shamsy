@@ -35,14 +35,14 @@ export const getStats = async (): Promise<Stats> => {
     const values = parseCSVLine(lines[1]);
     
     const stats: Stats = {
-      totalDonated: values[0] || "300,000 €",
+      totalDonated: values[0] || "7,326 €",
       activeMembers: parseInt(values[1]) || 10,
       volunteers: parseInt(values[2]) || 10,
       partnerships: parseInt(values[3]) || 1,
       totalBeneficiaries: parseInt(values[4]) || 2972,
-      totalCost: parseInt(values[5]) || 300000,
-      projectCount: parseInt(values[6]) || 7,
-      timespan: values[7] || "2011-2024"
+      totalCost: parseInt(values[5]) || 7326,
+      projectCount: parseInt(values[6]) || 1,
+      timespan: values[7] || "2025-2026"
     };
     
     return stats;
@@ -75,12 +75,12 @@ const parseCSVLine = (line: string): string[] => {
 };
 
 const getFallbackStats = (): Stats => ({
-  totalDonated: "300,000 €",
+  totalDonated: "7,326 €",
   activeMembers: 10,
   volunteers: 10,
   partnerships: 1,
   totalBeneficiaries: 2972,
-  totalCost: 300000,
-  projectCount: 7,
-  timespan: "2011-2024"
+  totalCost: 7326,
+  projectCount: 1,
+  timespan: "2025-2026"
 });
